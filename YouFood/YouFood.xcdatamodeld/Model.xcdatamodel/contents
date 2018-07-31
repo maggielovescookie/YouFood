@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1510" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="MealPlanBreakfast" representedClassName="MealPlanBreakfast" syncable="YES" codeGenerationType="class">
-        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="MealPlanDate" representedClassName="MealPlanDate" syncable="YES" codeGenerationType="class">
-        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="MealPlanDinner" representedClassName="MealPlanDinner" syncable="YES" codeGenerationType="class">
-        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="MealPlanLunch" representedClassName="MealPlanLunch" syncable="YES" codeGenerationType="class">
-        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
-        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MealPlan" representedClassName="MealPlan" syncable="YES" codeGenerationType="class">
+        <attribute name="breakfastAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="breakfastTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateMonth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateYear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dinnerAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dinnerTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lunchAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lunchTitle" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="MealPlanBreakfast" positionX="-45" positionY="27" width="128" height="75"/>
-        <element name="MealPlanDinner" positionX="-36" positionY="36" width="128" height="75"/>
-        <element name="MealPlanLunch" positionX="-18" positionY="45" width="128" height="75"/>
-        <element name="Users" positionX="-45" positionY="0" width="128" height="90"/>
-        <element name="MealPlanDate" positionX="-27" positionY="36" width="128" height="60"/>
+        <element name="MealPlan" positionX="-63" positionY="-18" width="128" height="180"/>
     </elements>
 </model>

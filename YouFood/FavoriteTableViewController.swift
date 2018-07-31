@@ -98,6 +98,9 @@ class FavoriteTableViewController: UITableViewController {
             var ref: DatabaseReference!
             ref = Database.database().reference().child("users").child(uid).child("favorite")
             
+            var refMainStream: DatabaseReference!
+            refMainStream = Database.database().reference().child("mainstream")
+            
             databaseHandle_2 = ref.observe(.childAdded, with: {(snapshot) -> Void in
                 // If there are no recipes
                     
@@ -108,6 +111,29 @@ class FavoriteTableViewController: UITableViewController {
                     alert.addButton(withTitle: "Ok")
                     alert.show()
                     return
+
+                    /*
+                     //=========================================================
+                     // Dealing with user's favorite array problems. A recipe that is removed in 'mainstream' stays in favorite array
+                     //=========================================================
+                    print("**************************")
+                    print(snapshot.key)
+                    print("**************************")
+                    let keyVal = snapshot.key
+                    
+                    refMainStream.observeSingleEvent(of: .value, with: {(snapshot) -> Void in
+                        print(keyVal)
+                        let value = snapshot.value
+                        let dic = value as! [String: [String:Any]]
+                        for index in dic {
+                            if index.key == key {
+                            }
+                        }
+                    })
+                     //=========================================================
+                     // Dealing with user's favorite array problems. A recipe that is removed in 'mainstream' stays in favorite array
+                     //=========================================================
+                    */
                 }
                 
                 print("?????????????")

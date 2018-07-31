@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             print(error.localizedDescription)
             return
         }
-        if GIDSignIn.sharedInstance().hasAuthInKeychain() == false{
+        if GIDSignIn.sharedInstance().hasAuthInKeychain() == true{
             let user = Auth.auth().currentUser
             if let user = user {
                 // The user's ID, unique to the Firebase project.
@@ -62,10 +62,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     "uid" : "\(uid)",
                     "email" : "\(email)",
                     "photoURL" : "\(photoURL)",
-                    "displayName" : "\(displayName)",
-                    "favorite" : ""
+                    "displayName" : "\(displayName)"
                     ] as [String : Any]
-                reference.setValue(userDictionary)
+                
+                reference.updateChildValues(userDictionary)
             }
         }
         

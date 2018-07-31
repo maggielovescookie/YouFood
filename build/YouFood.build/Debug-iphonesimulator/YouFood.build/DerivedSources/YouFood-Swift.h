@@ -347,8 +347,6 @@ SWIFT_CLASS("_TtC7YouFood27FavoriteTableViewController")
 SWIFT_CLASS("_TtC7YouFood19LogInViewController")
 @interface LogInViewController : UIViewController <GIDSignInUIDelegate>
 - (IBAction)signInAction:(GIDSignInButton * _Nonnull)sender;
-@property (nonatomic, weak) IBOutlet GIDSignInButton * _Null_unspecified signInButton;
-@property (nonatomic, weak) IBOutlet GIDSignInButton * _Null_unspecified logInButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -358,50 +356,22 @@ SWIFT_CLASS("_TtC7YouFood19LogInViewController")
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
-SWIFT_CLASS_NAMED("MealPlanBreakfast")
-@interface MealPlanBreakfast : NSManagedObject
+SWIFT_CLASS_NAMED("MealPlan")
+@interface MealPlan : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface MealPlanBreakfast (SWIFT_EXTENSION(YouFood))
-@property (nonatomic, copy) NSString * _Nullable author;
-@property (nonatomic, copy) NSString * _Nullable title;
-@end
-
-
-SWIFT_CLASS_NAMED("MealPlanDate")
-@interface MealPlanDate : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MealPlanDate (SWIFT_EXTENSION(YouFood))
-@property (nonatomic, copy) NSString * _Nullable date;
-@end
-
-
-SWIFT_CLASS_NAMED("MealPlanDinner")
-@interface MealPlanDinner : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MealPlanDinner (SWIFT_EXTENSION(YouFood))
-@property (nonatomic, copy) NSString * _Nullable author;
-@property (nonatomic, copy) NSString * _Nullable title;
-@end
-
-
-SWIFT_CLASS_NAMED("MealPlanLunch")
-@interface MealPlanLunch : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MealPlanLunch (SWIFT_EXTENSION(YouFood))
-@property (nonatomic, copy) NSString * _Nullable author;
-@property (nonatomic, copy) NSString * _Nullable title;
+@interface MealPlan (SWIFT_EXTENSION(YouFood))
+@property (nonatomic, copy) NSString * _Nullable breakfastAuthor;
+@property (nonatomic, copy) NSString * _Nullable breakfastTitle;
+@property (nonatomic, copy) NSString * _Nullable dateDay;
+@property (nonatomic, copy) NSString * _Nullable dateMonth;
+@property (nonatomic, copy) NSString * _Nullable dateYear;
+@property (nonatomic, copy) NSString * _Nullable dinnerAuthor;
+@property (nonatomic, copy) NSString * _Nullable dinnerTitle;
+@property (nonatomic, copy) NSString * _Nullable lunchAuthor;
+@property (nonatomic, copy) NSString * _Nullable lunchTitle;
 @end
 
 @class UICollectionView;
@@ -433,7 +403,6 @@ SWIFT_CLASS("_TtC7YouFood26MealPlanMainViewController")
 - (void)tapBreakfastWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)tapLunchWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)tapDinnerWithSender:(UITapGestureRecognizer * _Nonnull)sender;
-- (void)tapDateWithCell:(DateCollectionViewCell * _Nonnull)cell sender:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -586,19 +555,6 @@ SWIFT_CLASS("_TtC7YouFood22SettingsViewController")
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS_NAMED("Users")
-@interface Users : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface Users (SWIFT_EXTENSION(YouFood))
-@property (nonatomic, copy) NSString * _Nullable age;
-@property (nonatomic, copy) NSString * _Nullable password;
-@property (nonatomic, copy) NSString * _Nullable username;
 @end
 
 SWIFT_MODULE_NAMESPACE_POP

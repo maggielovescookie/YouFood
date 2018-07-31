@@ -1,5 +1,5 @@
 //
-//  MealPlanDate+CoreDataClass.swift
+//  MealPlan+CoreDataClass.swift
 //  
 //
 //  Created by Sukkwon On on 2018-07-30.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(MealPlanDate)
-public class MealPlanDate: NSManagedObject {
+@objc(MealPlan)
+public class MealPlan: NSManagedObject {
 
 }

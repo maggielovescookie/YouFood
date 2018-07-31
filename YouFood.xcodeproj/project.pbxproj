@@ -64,6 +64,13 @@
 			remoteGlobalIDString = 327D1435D7F47D0725353CE27A005201;
 			remoteInfo = FirebaseStorage;
 		};
+		4964C0F821101028008F0896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EABBFA5620EC37C90093F7ED /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0DD59CE60EC5FBD5A743B4AA362AF4BD;
+			remoteInfo = GTMOAuth2;
+		};
 		EABBFA6B20EC37CB0093F7ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EABBFA5620EC37C90093F7ED /* Pods.xcodeproj */;
@@ -384,6 +391,7 @@
 				EABBFA7C20EC37CB0093F7ED /* gRPCCertificates.bundle */,
 				EABBFA7E20EC37CB0093F7ED /* libgRPC-ProtoRPC.a */,
 				EABBFA8020EC37CB0093F7ED /* libgRPC-RxLibrary.a */,
+				4964C0F921101028008F0896 /* libGTMOAuth2.a */,
 				EABBFA8220EC37CB0093F7ED /* libGTMSessionFetcher.a */,
 				EABBFA8420EC37CB0093F7ED /* libleveldb-library.a */,
 				EABBFA8620EC37CB0093F7ED /* libnanopb.a */,
@@ -513,6 +521,13 @@
 			fileType = archive.ar;
 			path = libFirebaseStorage.a;
 			remoteRef = 0D31F24420F85BC300538E8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4964C0F921101028008F0896 /* libGTMOAuth2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTMOAuth2.a;
+			remoteRef = 4964C0F821101028008F0896 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		EABBFA6C20EC37CB0093F7ED /* libBoringSSL.a */ = {

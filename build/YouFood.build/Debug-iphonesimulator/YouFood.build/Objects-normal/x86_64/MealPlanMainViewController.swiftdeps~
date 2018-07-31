@@ -24,11 +24,11 @@ provides-dynamic-lookup:
 - "nutritionCollectionView"
 - "prepare"
 - "tapBreakfast"
-- "tapDate"
 - "tapDinner"
 - "tapLunch"
 - "viewDidLoad"
 depends-top-level:
+- !private "!"
 - !private "!="
 - !private "&&"
 - !private "+"
@@ -40,10 +40,11 @@ depends-top-level:
 - !private "<"
 - !private "=="
 - !private ">"
+- !private "??"
 - !private "AppDelegate"
 - "Array"
 - "AssignmentPrecedence"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - !private "CGFloat"
 - !private "CGSize"
 - "Calendar"
@@ -51,7 +52,7 @@ depends-top-level:
 - !private "CircularProgressView"
 - "DataEnteredDelegate"
 - "Date"
-- "DateCollectionViewCell"
+- !private "DateCollectionViewCell"
 - !private "DateComponents"
 - !private "DetailedRecipeViewController"
 - !private "Float"
@@ -98,7 +99,6 @@ depends-member:
 - !private ["7YouFood11AppDelegateC", "persistentContainer"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
-- ["Sa", "init"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "author"]
 - !private ["s10ArraySliceV", "percentage"]
@@ -117,12 +117,12 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["s23BidirectionalCollectionP", "title"]
 - !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "DateLabel"]
 - !private ["So15CALayerDelegateP", "addButton"]
 - !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "addSubview"]
-- !private ["So15CALayerDelegateP", "allowsMultipleSelection"]
 - !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "cellForItem"]
 - !private ["So15CALayerDelegateP", "collectionViewLayout"]
@@ -137,7 +137,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "register"]
 - !private ["So15CALayerDelegateP", "reloadData"]
 - !private ["So15CALayerDelegateP", "scrollIndicatorInsets"]
-- !private ["So15CALayerDelegateP", "selectItem"]
 - !private ["So15CALayerDelegateP", "show"]
 - !private ["So15CALayerDelegateP", "tag"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -150,13 +149,13 @@ depends-member:
 - ["s7CVarArgP", "Calendar"]
 - !private ["s7CVarArgP", "CircularProgressView"]
 - ["s7CVarArgP", "Date"]
-- ["s7CVarArgP", "DateCollectionViewCell"]
+- !private ["s7CVarArgP", "DateCollectionViewCell"]
 - !private ["s7CVarArgP", "DateComponents"]
 - !private ["s7CVarArgP", "DateLabel"]
 - !private ["s7CVarArgP", "DaysInMonths"]
 - !private ["s7CVarArgP", "Direction"]
 - !private ["s7CVarArgP", "Float"]
-- !private ["s7CVarArgP", "IndexPath"]
+- !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "LeapYearCounter"]
 - !private ["s7CVarArgP", "MealPlanMainViewController"]
 - !private ["s7CVarArgP", "MonthLabel"]
@@ -174,7 +173,6 @@ depends-member:
 - !private ["s7CVarArgP", "addButton"]
 - !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addSubview"]
-- !private ["s7CVarArgP", "allowsMultipleSelection"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "black"]
@@ -185,6 +183,9 @@ depends-member:
 - ["s7CVarArgP", "collectionView"]
 - !private ["s7CVarArgP", "collectionViewLayout"]
 - !private ["s7CVarArgP", "contentInset"]
+- !private ["s7CVarArgP", "coreDataDay"]
+- !private ["s7CVarArgP", "coreDataMonth"]
+- !private ["s7CVarArgP", "coreDataYear"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "counter"]
 - !private ["s7CVarArgP", "currentMonth"]
@@ -201,7 +202,9 @@ depends-member:
 - !private ["s7CVarArgP", "estimatedItemSize"]
 - !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "fetch"]
+- !private ["s7CVarArgP", "firstLoad"]
 - !private ["s7CVarArgP", "foodNutrientLabels"]
+- !private ["s7CVarArgP", "getMealsForDate"]
 - !private ["s7CVarArgP", "getNutrientsFromTodaysMealPlan"]
 - !private ["s7CVarArgP", "identifier"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
@@ -212,6 +215,7 @@ depends-member:
 - !private ["s7CVarArgP", "isUserInteractionEnabled"]
 - !private ["s7CVarArgP", "lightGray"]
 - !private ["s7CVarArgP", "lunchSelection"]
+- !private ["s7CVarArgP", "magenta"]
 - !private ["s7CVarArgP", "message"]
 - !private ["s7CVarArgP", "minimumInteritemSpacing"]
 - !private ["s7CVarArgP", "minimumLineSpacing"]
@@ -247,7 +251,6 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillBeginDragging"]
 - ["s7CVarArgP", "scrollViewWillBeginZooming"]
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
-- !private ["s7CVarArgP", "selectItem"]
 - !private ["s7CVarArgP", "setValue"]
 - ["s7CVarArgP", "shapeColor"]
 - !private ["s7CVarArgP", "shared"]
@@ -301,13 +304,13 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "Calendar"]
 - !private ["s28CustomDebugStringConvertibleP", "CircularProgressView"]
 - ["s28CustomDebugStringConvertibleP", "Date"]
-- ["s28CustomDebugStringConvertibleP", "DateCollectionViewCell"]
+- !private ["s28CustomDebugStringConvertibleP", "DateCollectionViewCell"]
 - !private ["s28CustomDebugStringConvertibleP", "DateComponents"]
 - !private ["s28CustomDebugStringConvertibleP", "DateLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "DaysInMonths"]
 - !private ["s28CustomDebugStringConvertibleP", "Direction"]
 - !private ["s28CustomDebugStringConvertibleP", "Float"]
-- !private ["s28CustomDebugStringConvertibleP", "IndexPath"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "LeapYearCounter"]
 - !private ["s28CustomDebugStringConvertibleP", "MealPlanMainViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "MonthLabel"]
@@ -325,7 +328,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addButton"]
 - !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
-- !private ["s28CustomDebugStringConvertibleP", "allowsMultipleSelection"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "author"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
@@ -338,6 +340,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "collectionViewLayout"]
 - ["s28CustomDebugStringConvertibleP", "component"]
 - !private ["s28CustomDebugStringConvertibleP", "contentInset"]
+- !private ["s28CustomDebugStringConvertibleP", "coreDataDay"]
+- !private ["s28CustomDebugStringConvertibleP", "coreDataMonth"]
+- !private ["s28CustomDebugStringConvertibleP", "coreDataYear"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "counter"]
 - ["s28CustomDebugStringConvertibleP", "current"]
@@ -356,7 +361,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "estimatedItemSize"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "fetch"]
+- !private ["s28CustomDebugStringConvertibleP", "firstLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "foodNutrientLabels"]
+- !private ["s28CustomDebugStringConvertibleP", "getMealsForDate"]
 - !private ["s28CustomDebugStringConvertibleP", "getNutrientsFromTodaysMealPlan"]
 - !private ["s28CustomDebugStringConvertibleP", "identifier"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
@@ -369,6 +376,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "item"]
 - !private ["s28CustomDebugStringConvertibleP", "lightGray"]
 - !private ["s28CustomDebugStringConvertibleP", "lunchSelection"]
+- !private ["s28CustomDebugStringConvertibleP", "magenta"]
 - !private ["s28CustomDebugStringConvertibleP", "message"]
 - !private ["s28CustomDebugStringConvertibleP", "minimumInteritemSpacing"]
 - !private ["s28CustomDebugStringConvertibleP", "minimumLineSpacing"]
@@ -406,7 +414,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDragging"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginZooming"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
-- !private ["s28CustomDebugStringConvertibleP", "selectItem"]
 - !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - ["s28CustomDebugStringConvertibleP", "shapeColor"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
@@ -455,13 +462,13 @@ depends-member:
 - ["s23CustomStringConvertibleP", "Calendar"]
 - !private ["s23CustomStringConvertibleP", "CircularProgressView"]
 - ["s23CustomStringConvertibleP", "Date"]
-- ["s23CustomStringConvertibleP", "DateCollectionViewCell"]
+- !private ["s23CustomStringConvertibleP", "DateCollectionViewCell"]
 - !private ["s23CustomStringConvertibleP", "DateComponents"]
 - !private ["s23CustomStringConvertibleP", "DateLabel"]
 - !private ["s23CustomStringConvertibleP", "DaysInMonths"]
 - !private ["s23CustomStringConvertibleP", "Direction"]
 - !private ["s23CustomStringConvertibleP", "Float"]
-- !private ["s23CustomStringConvertibleP", "IndexPath"]
+- !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "LeapYearCounter"]
 - !private ["s23CustomStringConvertibleP", "MealPlanMainViewController"]
 - !private ["s23CustomStringConvertibleP", "MonthLabel"]
@@ -480,7 +487,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addButton"]
 - !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
-- !private ["s23CustomStringConvertibleP", "allowsMultipleSelection"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "author"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
@@ -493,6 +499,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "collectionViewLayout"]
 - ["s23CustomStringConvertibleP", "component"]
 - !private ["s23CustomStringConvertibleP", "contentInset"]
+- !private ["s23CustomStringConvertibleP", "coreDataDay"]
+- !private ["s23CustomStringConvertibleP", "coreDataMonth"]
+- !private ["s23CustomStringConvertibleP", "coreDataYear"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "counter"]
 - ["s23CustomStringConvertibleP", "current"]
@@ -511,7 +520,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "estimatedItemSize"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "fetch"]
+- !private ["s23CustomStringConvertibleP", "firstLoad"]
 - !private ["s23CustomStringConvertibleP", "foodNutrientLabels"]
+- !private ["s23CustomStringConvertibleP", "getMealsForDate"]
 - !private ["s23CustomStringConvertibleP", "getNutrientsFromTodaysMealPlan"]
 - !private ["s23CustomStringConvertibleP", "identifier"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
@@ -524,6 +535,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "item"]
 - !private ["s23CustomStringConvertibleP", "lightGray"]
 - !private ["s23CustomStringConvertibleP", "lunchSelection"]
+- !private ["s23CustomStringConvertibleP", "magenta"]
 - !private ["s23CustomStringConvertibleP", "message"]
 - !private ["s23CustomStringConvertibleP", "minimumInteritemSpacing"]
 - !private ["s23CustomStringConvertibleP", "minimumLineSpacing"]
@@ -561,7 +573,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillBeginDragging"]
 - ["s23CustomStringConvertibleP", "scrollViewWillBeginZooming"]
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
-- !private ["s23CustomStringConvertibleP", "selectItem"]
 - !private ["s23CustomStringConvertibleP", "setValue"]
 - ["s23CustomStringConvertibleP", "shapeColor"]
 - !private ["s23CustomStringConvertibleP", "shared"]
@@ -592,12 +603,12 @@ depends-member:
 - ["7YouFood19DataEnteredDelegateP", "Calendar"]
 - !private ["7YouFood19DataEnteredDelegateP", "CircularProgressView"]
 - ["7YouFood19DataEnteredDelegateP", "Date"]
-- ["7YouFood19DataEnteredDelegateP", "DateCollectionViewCell"]
+- !private ["7YouFood19DataEnteredDelegateP", "DateCollectionViewCell"]
 - !private ["7YouFood19DataEnteredDelegateP", "DateComponents"]
 - !private ["7YouFood19DataEnteredDelegateP", "DaysInMonths"]
 - !private ["7YouFood19DataEnteredDelegateP", "Direction"]
 - !private ["7YouFood19DataEnteredDelegateP", "Float"]
-- !private ["7YouFood19DataEnteredDelegateP", "IndexPath"]
+- !private ["7YouFood19DataEnteredDelegateP", "Int"]
 - !private ["7YouFood19DataEnteredDelegateP", "LeapYearCounter"]
 - !private ["7YouFood19DataEnteredDelegateP", "MealPlanMainViewController"]
 - !private ["7YouFood19DataEnteredDelegateP", "MonthLabel"]
@@ -615,13 +626,18 @@ depends-member:
 - !private ["7YouFood19DataEnteredDelegateP", "breakfastSelection"]
 - !private ["7YouFood19DataEnteredDelegateP", "calendarCollectionView"]
 - ["7YouFood19DataEnteredDelegateP", "collectionView"]
+- !private ["7YouFood19DataEnteredDelegateP", "coreDataDay"]
+- !private ["7YouFood19DataEnteredDelegateP", "coreDataMonth"]
+- !private ["7YouFood19DataEnteredDelegateP", "coreDataYear"]
 - !private ["7YouFood19DataEnteredDelegateP", "counter"]
 - !private ["7YouFood19DataEnteredDelegateP", "currentMonth"]
 - !private ["7YouFood19DataEnteredDelegateP", "day"]
 - !private ["7YouFood19DataEnteredDelegateP", "deleteFromCoreData"]
 - !private ["7YouFood19DataEnteredDelegateP", "dinnerSelection"]
 - !private ["7YouFood19DataEnteredDelegateP", "fatalError"]
+- !private ["7YouFood19DataEnteredDelegateP", "firstLoad"]
 - !private ["7YouFood19DataEnteredDelegateP", "foodNutrientLabels"]
+- !private ["7YouFood19DataEnteredDelegateP", "getMealsForDate"]
 - !private ["7YouFood19DataEnteredDelegateP", "getNutrientsFromTodaysMealPlan"]
 - ["7YouFood19DataEnteredDelegateP", "indexPathForPreferredFocusedView"]
 - ["7YouFood19DataEnteredDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -693,13 +709,13 @@ depends-member:
 - ["s9EquatableP", "Calendar"]
 - !private ["s9EquatableP", "CircularProgressView"]
 - ["s9EquatableP", "Date"]
-- ["s9EquatableP", "DateCollectionViewCell"]
+- !private ["s9EquatableP", "DateCollectionViewCell"]
 - !private ["s9EquatableP", "DateComponents"]
 - !private ["s9EquatableP", "DateLabel"]
 - !private ["s9EquatableP", "DaysInMonths"]
 - !private ["s9EquatableP", "Direction"]
 - !private ["s9EquatableP", "Float"]
-- !private ["s9EquatableP", "IndexPath"]
+- !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "LeapYearCounter"]
 - !private ["s9EquatableP", "MealPlanMainViewController"]
 - !private ["s9EquatableP", "MonthLabel"]
@@ -718,7 +734,6 @@ depends-member:
 - !private ["s9EquatableP", "addButton"]
 - !private ["s9EquatableP", "addGestureRecognizer"]
 - !private ["s9EquatableP", "addSubview"]
-- !private ["s9EquatableP", "allowsMultipleSelection"]
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "black"]
 - !private ["s9EquatableP", "breakfastSelection"]
@@ -729,6 +744,9 @@ depends-member:
 - !private ["s9EquatableP", "collectionViewLayout"]
 - ["s9EquatableP", "component"]
 - !private ["s9EquatableP", "contentInset"]
+- !private ["s9EquatableP", "coreDataDay"]
+- !private ["s9EquatableP", "coreDataMonth"]
+- !private ["s9EquatableP", "coreDataYear"]
 - !private ["s9EquatableP", "counter"]
 - ["s9EquatableP", "current"]
 - !private ["s9EquatableP", "currentMonth"]
@@ -746,7 +764,9 @@ depends-member:
 - !private ["s9EquatableP", "estimatedItemSize"]
 - !private ["s9EquatableP", "fatalError"]
 - !private ["s9EquatableP", "fetch"]
+- !private ["s9EquatableP", "firstLoad"]
 - !private ["s9EquatableP", "foodNutrientLabels"]
+- !private ["s9EquatableP", "getMealsForDate"]
 - !private ["s9EquatableP", "getNutrientsFromTodaysMealPlan"]
 - !private ["s9EquatableP", "identifier"]
 - ["s9EquatableP", "indexPathForPreferredFocusedView"]
@@ -759,6 +779,7 @@ depends-member:
 - !private ["s9EquatableP", "item"]
 - !private ["s9EquatableP", "lightGray"]
 - !private ["s9EquatableP", "lunchSelection"]
+- !private ["s9EquatableP", "magenta"]
 - !private ["s9EquatableP", "message"]
 - !private ["s9EquatableP", "minimumInteritemSpacing"]
 - !private ["s9EquatableP", "minimumLineSpacing"]
@@ -795,7 +816,6 @@ depends-member:
 - ["s9EquatableP", "scrollViewWillBeginDragging"]
 - ["s9EquatableP", "scrollViewWillBeginZooming"]
 - ["s9EquatableP", "scrollViewWillEndDragging"]
-- !private ["s9EquatableP", "selectItem"]
 - !private ["s9EquatableP", "setValue"]
 - ["s9EquatableP", "shapeColor"]
 - !private ["s9EquatableP", "shared"]
@@ -824,7 +844,6 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "author"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
-- ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "item"]
 - !private ["s25ExpressibleByArrayLiteralP", "percentage"]
 - !private ["s25ExpressibleByArrayLiteralP", "quantity"]
@@ -838,20 +857,22 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
 - !private ["Sf", "init"]
 - !private ["s13FloatingPointP", "init"]
+- !private ["So17GIDSignInDelegateP", "persistentContainer"]
 - !private ["s8HashableP", "CGFloat"]
 - !private ["s8HashableP", "CGSize"]
 - ["s8HashableP", "Calendar"]
 - !private ["s8HashableP", "CircularProgressView"]
 - ["s8HashableP", "Date"]
-- ["s8HashableP", "DateCollectionViewCell"]
+- !private ["s8HashableP", "DateCollectionViewCell"]
 - !private ["s8HashableP", "DateComponents"]
 - !private ["s8HashableP", "DateLabel"]
 - !private ["s8HashableP", "DaysInMonths"]
 - !private ["s8HashableP", "Direction"]
 - !private ["s8HashableP", "Float"]
-- !private ["s8HashableP", "IndexPath"]
+- !private ["s8HashableP", "Int"]
 - !private ["s8HashableP", "LeapYearCounter"]
 - !private ["s8HashableP", "MealPlanMainViewController"]
 - !private ["s8HashableP", "MonthLabel"]
@@ -870,7 +891,6 @@ depends-member:
 - !private ["s8HashableP", "addButton"]
 - !private ["s8HashableP", "addGestureRecognizer"]
 - !private ["s8HashableP", "addSubview"]
-- !private ["s8HashableP", "allowsMultipleSelection"]
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "black"]
 - !private ["s8HashableP", "breakfastSelection"]
@@ -881,6 +901,9 @@ depends-member:
 - !private ["s8HashableP", "collectionViewLayout"]
 - ["s8HashableP", "component"]
 - !private ["s8HashableP", "contentInset"]
+- !private ["s8HashableP", "coreDataDay"]
+- !private ["s8HashableP", "coreDataMonth"]
+- !private ["s8HashableP", "coreDataYear"]
 - !private ["s8HashableP", "counter"]
 - ["s8HashableP", "current"]
 - !private ["s8HashableP", "currentMonth"]
@@ -898,7 +921,9 @@ depends-member:
 - !private ["s8HashableP", "estimatedItemSize"]
 - !private ["s8HashableP", "fatalError"]
 - !private ["s8HashableP", "fetch"]
+- !private ["s8HashableP", "firstLoad"]
 - !private ["s8HashableP", "foodNutrientLabels"]
+- !private ["s8HashableP", "getMealsForDate"]
 - !private ["s8HashableP", "getNutrientsFromTodaysMealPlan"]
 - !private ["s8HashableP", "identifier"]
 - ["s8HashableP", "indexPathForPreferredFocusedView"]
@@ -911,6 +936,7 @@ depends-member:
 - !private ["s8HashableP", "item"]
 - !private ["s8HashableP", "lightGray"]
 - !private ["s8HashableP", "lunchSelection"]
+- !private ["s8HashableP", "magenta"]
 - !private ["s8HashableP", "message"]
 - !private ["s8HashableP", "minimumInteritemSpacing"]
 - !private ["s8HashableP", "minimumLineSpacing"]
@@ -947,7 +973,6 @@ depends-member:
 - ["s8HashableP", "scrollViewWillBeginDragging"]
 - ["s8HashableP", "scrollViewWillBeginZooming"]
 - ["s8HashableP", "scrollViewWillEndDragging"]
-- !private ["s8HashableP", "selectItem"]
 - !private ["s8HashableP", "setValue"]
 - ["s8HashableP", "shapeColor"]
 - !private ["s8HashableP", "shared"]
@@ -973,9 +998,9 @@ depends-member:
 - ["s8HashableP", "weekday"]
 - ["s8HashableP", "year"]
 - ["s8HashableP", ""]
-- !private ["10Foundation9IndexPathV", "init"]
 - !private ["10Foundation9IndexPathV", "item"]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["7YouFood26MealPlanMainViewControllerC", "AddBreakfast"]
@@ -988,7 +1013,7 @@ depends-member:
 - ["7YouFood26MealPlanMainViewControllerC", "Calendar"]
 - !private ["7YouFood26MealPlanMainViewControllerC", "CircularProgressView"]
 - ["7YouFood26MealPlanMainViewControllerC", "Date"]
-- ["7YouFood26MealPlanMainViewControllerC", "DateCollectionViewCell"]
+- !private ["7YouFood26MealPlanMainViewControllerC", "DateCollectionViewCell"]
 - !private ["7YouFood26MealPlanMainViewControllerC", "DateComponents"]
 - ["7YouFood26MealPlanMainViewControllerC", "DaysInMonths"]
 - !private ["7YouFood26MealPlanMainViewControllerC", "DetailedRecipeViewController"]
@@ -1025,6 +1050,9 @@ depends-member:
 - ["7YouFood26MealPlanMainViewControllerC", "breakfastSelection"]
 - ["7YouFood26MealPlanMainViewControllerC", "calendarCollectionView"]
 - ["7YouFood26MealPlanMainViewControllerC", "collectionView"]
+- ["7YouFood26MealPlanMainViewControllerC", "coreDataDay"]
+- ["7YouFood26MealPlanMainViewControllerC", "coreDataMonth"]
+- ["7YouFood26MealPlanMainViewControllerC", "coreDataYear"]
 - !private ["7YouFood26MealPlanMainViewControllerC", "counter"]
 - ["7YouFood26MealPlanMainViewControllerC", "currentMonth"]
 - ["7YouFood26MealPlanMainViewControllerC", "day"]
@@ -1036,7 +1064,9 @@ depends-member:
 - ["7YouFood26MealPlanMainViewControllerC", "deleteLunch"]
 - ["7YouFood26MealPlanMainViewControllerC", "dinnerSelection"]
 - !private ["7YouFood26MealPlanMainViewControllerC", "fatalError"]
+- ["7YouFood26MealPlanMainViewControllerC", "firstLoad"]
 - !private ["7YouFood26MealPlanMainViewControllerC", "foodNutrientLabels"]
+- ["7YouFood26MealPlanMainViewControllerC", "getMealsForDate"]
 - ["7YouFood26MealPlanMainViewControllerC", "getNutrientsFromTodaysMealPlan"]
 - ["7YouFood26MealPlanMainViewControllerC", "indexPathForPreferredFocusedView"]
 - ["7YouFood26MealPlanMainViewControllerC", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1067,9 +1097,7 @@ depends-member:
 - ["7YouFood26MealPlanMainViewControllerC", "scrollViewWillBeginDragging"]
 - ["7YouFood26MealPlanMainViewControllerC", "scrollViewWillBeginZooming"]
 - ["7YouFood26MealPlanMainViewControllerC", "scrollViewWillEndDragging"]
-- ["7YouFood26MealPlanMainViewControllerC", "searches"]
 - ["7YouFood26MealPlanMainViewControllerC", "tapBreakfast"]
-- ["7YouFood26MealPlanMainViewControllerC", "tapDate"]
 - ["7YouFood26MealPlanMainViewControllerC", "tapDinner"]
 - ["7YouFood26MealPlanMainViewControllerC", "tapLunch"]
 - !private ["7YouFood26MealPlanMainViewControllerC", "testRecipes"]
@@ -1085,7 +1113,6 @@ depends-member:
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "author"]
 - !private ["s17MutableCollectionP", "count"]
-- ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "item"]
 - !private ["s17MutableCollectionP", "percentage"]
 - !private ["s17MutableCollectionP", "quantity"]
@@ -1098,13 +1125,13 @@ depends-member:
 - ["So8NSCodingP", "Calendar"]
 - !private ["So8NSCodingP", "CircularProgressView"]
 - ["So8NSCodingP", "Date"]
-- ["So8NSCodingP", "DateCollectionViewCell"]
+- !private ["So8NSCodingP", "DateCollectionViewCell"]
 - !private ["So8NSCodingP", "DateComponents"]
 - !private ["So8NSCodingP", "DateLabel"]
 - !private ["So8NSCodingP", "DaysInMonths"]
 - !private ["So8NSCodingP", "Direction"]
 - !private ["So8NSCodingP", "Float"]
-- !private ["So8NSCodingP", "IndexPath"]
+- !private ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "LeapYearCounter"]
 - !private ["So8NSCodingP", "MealPlanMainViewController"]
 - !private ["So8NSCodingP", "MonthLabel"]
@@ -1122,7 +1149,6 @@ depends-member:
 - !private ["So8NSCodingP", "addButton"]
 - !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "addSubview"]
-- !private ["So8NSCodingP", "allowsMultipleSelection"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "black"]
 - !private ["So8NSCodingP", "breakfastSelection"]
@@ -1132,6 +1158,9 @@ depends-member:
 - ["So8NSCodingP", "collectionView"]
 - !private ["So8NSCodingP", "collectionViewLayout"]
 - !private ["So8NSCodingP", "contentInset"]
+- !private ["So8NSCodingP", "coreDataDay"]
+- !private ["So8NSCodingP", "coreDataMonth"]
+- !private ["So8NSCodingP", "coreDataYear"]
 - !private ["So8NSCodingP", "counter"]
 - !private ["So8NSCodingP", "currentMonth"]
 - !private ["So8NSCodingP", "cyan"]
@@ -1146,7 +1175,9 @@ depends-member:
 - !private ["So8NSCodingP", "estimatedItemSize"]
 - !private ["So8NSCodingP", "fatalError"]
 - !private ["So8NSCodingP", "fetch"]
+- !private ["So8NSCodingP", "firstLoad"]
 - !private ["So8NSCodingP", "foodNutrientLabels"]
+- !private ["So8NSCodingP", "getMealsForDate"]
 - !private ["So8NSCodingP", "getNutrientsFromTodaysMealPlan"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1156,6 +1187,7 @@ depends-member:
 - !private ["So8NSCodingP", "isUserInteractionEnabled"]
 - !private ["So8NSCodingP", "lightGray"]
 - !private ["So8NSCodingP", "lunchSelection"]
+- !private ["So8NSCodingP", "magenta"]
 - !private ["So8NSCodingP", "message"]
 - !private ["So8NSCodingP", "minimumInteritemSpacing"]
 - !private ["So8NSCodingP", "minimumLineSpacing"]
@@ -1188,7 +1220,6 @@ depends-member:
 - ["So8NSCodingP", "scrollViewWillBeginDragging"]
 - ["So8NSCodingP", "scrollViewWillBeginZooming"]
 - ["So8NSCodingP", "scrollViewWillEndDragging"]
-- !private ["So8NSCodingP", "selectItem"]
 - !private ["So8NSCodingP", "show"]
 - !private ["So8NSCodingP", "tag"]
 - !private ["So8NSCodingP", "tapBreakfast"]
@@ -1213,6 +1244,7 @@ depends-member:
 - !private ["So9NSCopyingP", "entity"]
 - ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "lightGray"]
+- !private ["So9NSCopyingP", "magenta"]
 - !private ["So9NSCopyingP", "returnsObjectsAsFaults"]
 - !private ["So19NSEntityDescriptionC", "entity"]
 - !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
@@ -1220,12 +1252,12 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "Calendar"]
 - !private ["So26NSExtensionRequestHandlingP", "CircularProgressView"]
 - ["So26NSExtensionRequestHandlingP", "Date"]
-- ["So26NSExtensionRequestHandlingP", "DateCollectionViewCell"]
+- !private ["So26NSExtensionRequestHandlingP", "DateCollectionViewCell"]
 - !private ["So26NSExtensionRequestHandlingP", "DateComponents"]
 - !private ["So26NSExtensionRequestHandlingP", "DaysInMonths"]
 - !private ["So26NSExtensionRequestHandlingP", "Direction"]
 - !private ["So26NSExtensionRequestHandlingP", "Float"]
-- !private ["So26NSExtensionRequestHandlingP", "IndexPath"]
+- !private ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "LeapYearCounter"]
 - !private ["So26NSExtensionRequestHandlingP", "MealPlanMainViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "MonthLabel"]
@@ -1243,6 +1275,9 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "breakfastSelection"]
 - !private ["So26NSExtensionRequestHandlingP", "calendarCollectionView"]
 - ["So26NSExtensionRequestHandlingP", "collectionView"]
+- !private ["So26NSExtensionRequestHandlingP", "coreDataDay"]
+- !private ["So26NSExtensionRequestHandlingP", "coreDataMonth"]
+- !private ["So26NSExtensionRequestHandlingP", "coreDataYear"]
 - !private ["So26NSExtensionRequestHandlingP", "counter"]
 - !private ["So26NSExtensionRequestHandlingP", "currentMonth"]
 - !private ["So26NSExtensionRequestHandlingP", "day"]
@@ -1250,7 +1285,9 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "deleteFromCoreData"]
 - !private ["So26NSExtensionRequestHandlingP", "dinnerSelection"]
 - !private ["So26NSExtensionRequestHandlingP", "fatalError"]
+- !private ["So26NSExtensionRequestHandlingP", "firstLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "foodNutrientLabels"]
+- !private ["So26NSExtensionRequestHandlingP", "getMealsForDate"]
 - !private ["So26NSExtensionRequestHandlingP", "getNutrientsFromTodaysMealPlan"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1305,11 +1342,13 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "cyan"]
 - ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "lightGray"]
+- !private ["So21NSItemProviderReadingP", "magenta"]
 - !private ["So21NSItemProviderWritingP", "black"]
 - !private ["So21NSItemProviderWritingP", "clear"]
 - !private ["So21NSItemProviderWritingP", "cyan"]
 - ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "lightGray"]
+- !private ["So21NSItemProviderWritingP", "magenta"]
 - !private ["So9NSLockingP", "delete"]
 - !private ["So9NSLockingP", "fetch"]
 - !private ["So9NSLockingP", "save"]
@@ -1330,7 +1369,7 @@ depends-member:
 - ["So8NSObjectC", "Calendar"]
 - !private ["So8NSObjectC", "CircularProgressView"]
 - ["So8NSObjectC", "Date"]
-- ["So8NSObjectC", "DateCollectionViewCell"]
+- !private ["So8NSObjectC", "DateCollectionViewCell"]
 - !private ["So8NSObjectC", "DateComponents"]
 - !private ["So8NSObjectC", "DateLabel"]
 - ["So8NSObjectC", "DaysInMonths"]
@@ -1368,7 +1407,6 @@ depends-member:
 - !private ["So8NSObjectC", "addButton"]
 - !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "addSubview"]
-- !private ["So8NSObjectC", "allowsMultipleSelection"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "black"]
 - ["So8NSObjectC", "breakfastSelection"]
@@ -1378,6 +1416,9 @@ depends-member:
 - ["So8NSObjectC", "collectionView"]
 - !private ["So8NSObjectC", "collectionViewLayout"]
 - !private ["So8NSObjectC", "contentInset"]
+- ["So8NSObjectC", "coreDataDay"]
+- ["So8NSObjectC", "coreDataMonth"]
+- ["So8NSObjectC", "coreDataYear"]
 - !private ["So8NSObjectC", "counter"]
 - ["So8NSObjectC", "currentMonth"]
 - !private ["So8NSObjectC", "cyan"]
@@ -1397,7 +1438,9 @@ depends-member:
 - !private ["So8NSObjectC", "estimatedItemSize"]
 - !private ["So8NSObjectC", "fatalError"]
 - !private ["So8NSObjectC", "fetch"]
+- ["So8NSObjectC", "firstLoad"]
 - !private ["So8NSObjectC", "foodNutrientLabels"]
+- ["So8NSObjectC", "getMealsForDate"]
 - ["So8NSObjectC", "getNutrientsFromTodaysMealPlan"]
 - !private ["So8NSObjectC", "identifier"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
@@ -1408,6 +1451,7 @@ depends-member:
 - !private ["So8NSObjectC", "isUserInteractionEnabled"]
 - !private ["So8NSObjectC", "lightGray"]
 - ["So8NSObjectC", "lunchSelection"]
+- !private ["So8NSObjectC", "magenta"]
 - !private ["So8NSObjectC", "message"]
 - !private ["So8NSObjectC", "minimumInteritemSpacing"]
 - !private ["So8NSObjectC", "minimumLineSpacing"]
@@ -1444,15 +1488,12 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillBeginDragging"]
 - ["So8NSObjectC", "scrollViewWillBeginZooming"]
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
-- ["So8NSObjectC", "searches"]
-- !private ["So8NSObjectC", "selectItem"]
 - !private ["So8NSObjectC", "setValue"]
 - ["So8NSObjectC", "shapeColor"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "show"]
 - !private ["So8NSObjectC", "tag"]
 - ["So8NSObjectC", "tapBreakfast"]
-- ["So8NSObjectC", "tapDate"]
 - ["So8NSObjectC", "tapDinner"]
 - ["So8NSObjectC", "tapLunch"]
 - !private ["So8NSObjectC", "testRecipes"]
@@ -1476,13 +1517,13 @@ depends-member:
 - ["So16NSObjectProtocolP", "Calendar"]
 - !private ["So16NSObjectProtocolP", "CircularProgressView"]
 - ["So16NSObjectProtocolP", "Date"]
-- ["So16NSObjectProtocolP", "DateCollectionViewCell"]
+- !private ["So16NSObjectProtocolP", "DateCollectionViewCell"]
 - !private ["So16NSObjectProtocolP", "DateComponents"]
 - !private ["So16NSObjectProtocolP", "DateLabel"]
 - !private ["So16NSObjectProtocolP", "DaysInMonths"]
 - !private ["So16NSObjectProtocolP", "Direction"]
 - !private ["So16NSObjectProtocolP", "Float"]
-- !private ["So16NSObjectProtocolP", "IndexPath"]
+- !private ["So16NSObjectProtocolP", "Int"]
 - !private ["So16NSObjectProtocolP", "LeapYearCounter"]
 - !private ["So16NSObjectProtocolP", "MealPlanMainViewController"]
 - !private ["So16NSObjectProtocolP", "MonthLabel"]
@@ -1500,7 +1541,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "addButton"]
 - !private ["So16NSObjectProtocolP", "addGestureRecognizer"]
 - !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "allowsMultipleSelection"]
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "black"]
 - !private ["So16NSObjectProtocolP", "breakfastSelection"]
@@ -1510,6 +1550,9 @@ depends-member:
 - ["So16NSObjectProtocolP", "collectionView"]
 - !private ["So16NSObjectProtocolP", "collectionViewLayout"]
 - !private ["So16NSObjectProtocolP", "contentInset"]
+- !private ["So16NSObjectProtocolP", "coreDataDay"]
+- !private ["So16NSObjectProtocolP", "coreDataMonth"]
+- !private ["So16NSObjectProtocolP", "coreDataYear"]
 - !private ["So16NSObjectProtocolP", "counter"]
 - !private ["So16NSObjectProtocolP", "currentMonth"]
 - !private ["So16NSObjectProtocolP", "cyan"]
@@ -1525,7 +1568,9 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "estimatedItemSize"]
 - !private ["So16NSObjectProtocolP", "fatalError"]
 - !private ["So16NSObjectProtocolP", "fetch"]
+- !private ["So16NSObjectProtocolP", "firstLoad"]
 - !private ["So16NSObjectProtocolP", "foodNutrientLabels"]
+- !private ["So16NSObjectProtocolP", "getMealsForDate"]
 - !private ["So16NSObjectProtocolP", "getNutrientsFromTodaysMealPlan"]
 - !private ["So16NSObjectProtocolP", "identifier"]
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedView"]
@@ -1536,6 +1581,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "isUserInteractionEnabled"]
 - !private ["So16NSObjectProtocolP", "lightGray"]
 - !private ["So16NSObjectProtocolP", "lunchSelection"]
+- !private ["So16NSObjectProtocolP", "magenta"]
 - !private ["So16NSObjectProtocolP", "message"]
 - !private ["So16NSObjectProtocolP", "minimumInteritemSpacing"]
 - !private ["So16NSObjectProtocolP", "minimumLineSpacing"]
@@ -1571,7 +1617,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "scrollViewWillBeginDragging"]
 - ["So16NSObjectProtocolP", "scrollViewWillBeginZooming"]
 - ["So16NSObjectProtocolP", "scrollViewWillEndDragging"]
-- !private ["So16NSObjectProtocolP", "selectItem"]
 - !private ["So16NSObjectProtocolP", "setValue"]
 - ["So16NSObjectProtocolP", "shapeColor"]
 - !private ["So16NSObjectProtocolP", "shared"]
@@ -1603,6 +1648,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "cyan"]
 - ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "lightGray"]
+- !private ["So14NSSecureCodingP", "magenta"]
 - ["So8NSStringC", "init"]
 - !private ["s7NumericP", "init"]
 - !private ["7YouFood8NutrientC", "quantity"]
@@ -1615,7 +1661,6 @@ depends-member:
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s22RandomAccessCollectionP", "author"]
 - !private ["s22RandomAccessCollectionP", "count"]
-- ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "item"]
 - !private ["s22RandomAccessCollectionP", "percentage"]
 - !private ["s22RandomAccessCollectionP", "quantity"]
@@ -1657,6 +1702,7 @@ depends-member:
 - !private ["s8SequenceP", "row"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s8SequenceP", "title"]
+- !private ["s13SignedIntegerP", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["s12StaticStringV", "init"]
 - !private ["s10StrideableP", "init"]
@@ -1668,7 +1714,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "addButton"]
 - !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
 - !private ["So29UIAccessibilityIdentificationP", "addSubview"]
-- !private ["So29UIAccessibilityIdentificationP", "allowsMultipleSelection"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "cellForItem"]
 - !private ["So29UIAccessibilityIdentificationP", "collectionViewLayout"]
@@ -1683,7 +1728,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "register"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "scrollIndicatorInsets"]
-- !private ["So29UIAccessibilityIdentificationP", "selectItem"]
 - !private ["So29UIAccessibilityIdentificationP", "show"]
 - !private ["So29UIAccessibilityIdentificationP", "tag"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
@@ -1698,7 +1742,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "addButton"]
 - !private ["So12UIAppearanceP", "addGestureRecognizer"]
 - !private ["So12UIAppearanceP", "addSubview"]
-- !private ["So12UIAppearanceP", "allowsMultipleSelection"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "cellForItem"]
 - !private ["So12UIAppearanceP", "collectionViewLayout"]
@@ -1713,7 +1756,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "register"]
 - !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "scrollIndicatorInsets"]
-- !private ["So12UIAppearanceP", "selectItem"]
 - !private ["So12UIAppearanceP", "show"]
 - !private ["So12UIAppearanceP", "tag"]
 - !private ["So12UIAppearanceP", "text"]
@@ -1724,13 +1766,13 @@ depends-member:
 - ["So21UIAppearanceContainerP", "Calendar"]
 - !private ["So21UIAppearanceContainerP", "CircularProgressView"]
 - ["So21UIAppearanceContainerP", "Date"]
-- ["So21UIAppearanceContainerP", "DateCollectionViewCell"]
+- !private ["So21UIAppearanceContainerP", "DateCollectionViewCell"]
 - !private ["So21UIAppearanceContainerP", "DateComponents"]
 - !private ["So21UIAppearanceContainerP", "DateLabel"]
 - !private ["So21UIAppearanceContainerP", "DaysInMonths"]
 - !private ["So21UIAppearanceContainerP", "Direction"]
 - !private ["So21UIAppearanceContainerP", "Float"]
-- !private ["So21UIAppearanceContainerP", "IndexPath"]
+- !private ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "LeapYearCounter"]
 - !private ["So21UIAppearanceContainerP", "MealPlanMainViewController"]
 - !private ["So21UIAppearanceContainerP", "MonthLabel"]
@@ -1748,7 +1790,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "addButton"]
 - !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addSubview"]
-- !private ["So21UIAppearanceContainerP", "allowsMultipleSelection"]
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "breakfastSelection"]
 - !private ["So21UIAppearanceContainerP", "calendarCollectionView"]
@@ -1756,6 +1797,9 @@ depends-member:
 - ["So21UIAppearanceContainerP", "collectionView"]
 - !private ["So21UIAppearanceContainerP", "collectionViewLayout"]
 - !private ["So21UIAppearanceContainerP", "contentInset"]
+- !private ["So21UIAppearanceContainerP", "coreDataDay"]
+- !private ["So21UIAppearanceContainerP", "coreDataMonth"]
+- !private ["So21UIAppearanceContainerP", "coreDataYear"]
 - !private ["So21UIAppearanceContainerP", "counter"]
 - !private ["So21UIAppearanceContainerP", "currentMonth"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
@@ -1765,7 +1809,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "dinnerSelection"]
 - !private ["So21UIAppearanceContainerP", "fatalError"]
+- !private ["So21UIAppearanceContainerP", "firstLoad"]
 - !private ["So21UIAppearanceContainerP", "foodNutrientLabels"]
+- !private ["So21UIAppearanceContainerP", "getMealsForDate"]
 - !private ["So21UIAppearanceContainerP", "getNutrientsFromTodaysMealPlan"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1802,7 +1848,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "scrollViewWillBeginDragging"]
 - ["So21UIAppearanceContainerP", "scrollViewWillBeginZooming"]
 - ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
-- !private ["So21UIAppearanceContainerP", "selectItem"]
 - !private ["So21UIAppearanceContainerP", "show"]
 - !private ["So21UIAppearanceContainerP", "tag"]
 - !private ["So21UIAppearanceContainerP", "tapBreakfast"]
@@ -1828,7 +1873,6 @@ depends-member:
 - !private ["So24UICollectionReusableViewC", "DateLabel"]
 - !private ["So24UICollectionReusableViewC", "backgroundColor"]
 - !private ["So24UICollectionReusableViewC", "nutrition"]
-- !private ["So16UICollectionViewC", "allowsMultipleSelection"]
 - !private ["So16UICollectionViewC", "cellForItem"]
 - !private ["So16UICollectionViewC", "collectionViewLayout"]
 - !private ["So16UICollectionViewC", "contentInset"]
@@ -1838,7 +1882,6 @@ depends-member:
 - !private ["So16UICollectionViewC", "register"]
 - !private ["So16UICollectionViewC", "reloadData"]
 - !private ["So16UICollectionViewC", "scrollIndicatorInsets"]
-- !private ["So16UICollectionViewC", "selectItem"]
 - !private ["So16UICollectionViewC", "tag"]
 - !private ["So20UICollectionViewCellC", "DateLabel"]
 - !private ["So20UICollectionViewCellC", "backgroundColor"]
@@ -1848,12 +1891,12 @@ depends-member:
 - ["So26UICollectionViewDataSourceP", "Calendar"]
 - !private ["So26UICollectionViewDataSourceP", "CircularProgressView"]
 - ["So26UICollectionViewDataSourceP", "Date"]
-- ["So26UICollectionViewDataSourceP", "DateCollectionViewCell"]
+- !private ["So26UICollectionViewDataSourceP", "DateCollectionViewCell"]
 - !private ["So26UICollectionViewDataSourceP", "DateComponents"]
 - !private ["So26UICollectionViewDataSourceP", "DaysInMonths"]
 - !private ["So26UICollectionViewDataSourceP", "Direction"]
 - !private ["So26UICollectionViewDataSourceP", "Float"]
-- !private ["So26UICollectionViewDataSourceP", "IndexPath"]
+- !private ["So26UICollectionViewDataSourceP", "Int"]
 - !private ["So26UICollectionViewDataSourceP", "LeapYearCounter"]
 - !private ["So26UICollectionViewDataSourceP", "MealPlanMainViewController"]
 - !private ["So26UICollectionViewDataSourceP", "MonthLabel"]
@@ -1871,13 +1914,18 @@ depends-member:
 - !private ["So26UICollectionViewDataSourceP", "breakfastSelection"]
 - !private ["So26UICollectionViewDataSourceP", "calendarCollectionView"]
 - ["So26UICollectionViewDataSourceP", "collectionView"]
+- !private ["So26UICollectionViewDataSourceP", "coreDataDay"]
+- !private ["So26UICollectionViewDataSourceP", "coreDataMonth"]
+- !private ["So26UICollectionViewDataSourceP", "coreDataYear"]
 - !private ["So26UICollectionViewDataSourceP", "counter"]
 - !private ["So26UICollectionViewDataSourceP", "currentMonth"]
 - !private ["So26UICollectionViewDataSourceP", "day"]
 - !private ["So26UICollectionViewDataSourceP", "deleteFromCoreData"]
 - !private ["So26UICollectionViewDataSourceP", "dinnerSelection"]
 - !private ["So26UICollectionViewDataSourceP", "fatalError"]
+- !private ["So26UICollectionViewDataSourceP", "firstLoad"]
 - !private ["So26UICollectionViewDataSourceP", "foodNutrientLabels"]
+- !private ["So26UICollectionViewDataSourceP", "getMealsForDate"]
 - !private ["So26UICollectionViewDataSourceP", "getNutrientsFromTodaysMealPlan"]
 - ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1922,12 +1970,12 @@ depends-member:
 - ["So24UICollectionViewDelegateP", "Calendar"]
 - !private ["So24UICollectionViewDelegateP", "CircularProgressView"]
 - ["So24UICollectionViewDelegateP", "Date"]
-- ["So24UICollectionViewDelegateP", "DateCollectionViewCell"]
+- !private ["So24UICollectionViewDelegateP", "DateCollectionViewCell"]
 - !private ["So24UICollectionViewDelegateP", "DateComponents"]
 - !private ["So24UICollectionViewDelegateP", "DaysInMonths"]
 - !private ["So24UICollectionViewDelegateP", "Direction"]
 - !private ["So24UICollectionViewDelegateP", "Float"]
-- !private ["So24UICollectionViewDelegateP", "IndexPath"]
+- !private ["So24UICollectionViewDelegateP", "Int"]
 - !private ["So24UICollectionViewDelegateP", "LeapYearCounter"]
 - !private ["So24UICollectionViewDelegateP", "MealPlanMainViewController"]
 - !private ["So24UICollectionViewDelegateP", "MonthLabel"]
@@ -1945,13 +1993,18 @@ depends-member:
 - !private ["So24UICollectionViewDelegateP", "breakfastSelection"]
 - !private ["So24UICollectionViewDelegateP", "calendarCollectionView"]
 - ["So24UICollectionViewDelegateP", "collectionView"]
+- !private ["So24UICollectionViewDelegateP", "coreDataDay"]
+- !private ["So24UICollectionViewDelegateP", "coreDataMonth"]
+- !private ["So24UICollectionViewDelegateP", "coreDataYear"]
 - !private ["So24UICollectionViewDelegateP", "counter"]
 - !private ["So24UICollectionViewDelegateP", "currentMonth"]
 - !private ["So24UICollectionViewDelegateP", "day"]
 - !private ["So24UICollectionViewDelegateP", "deleteFromCoreData"]
 - !private ["So24UICollectionViewDelegateP", "dinnerSelection"]
 - !private ["So24UICollectionViewDelegateP", "fatalError"]
+- !private ["So24UICollectionViewDelegateP", "firstLoad"]
 - !private ["So24UICollectionViewDelegateP", "foodNutrientLabels"]
+- !private ["So24UICollectionViewDelegateP", "getMealsForDate"]
 - !private ["So24UICollectionViewDelegateP", "getNutrientsFromTodaysMealPlan"]
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1996,12 +2049,12 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "Calendar"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "CircularProgressView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "Date"]
-- ["So34UICollectionViewDelegateFlowLayoutP", "DateCollectionViewCell"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "DateCollectionViewCell"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "DateComponents"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "DaysInMonths"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "Direction"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "Float"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "IndexPath"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "Int"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "LeapYearCounter"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "MealPlanMainViewController"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "MonthLabel"]
@@ -2019,13 +2072,18 @@ depends-member:
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "breakfastSelection"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "calendarCollectionView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "collectionView"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "coreDataDay"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "coreDataMonth"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "coreDataYear"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "counter"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "currentMonth"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "day"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "deleteFromCoreData"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "dinnerSelection"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "fatalError"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "firstLoad"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "foodNutrientLabels"]
+- !private ["So34UICollectionViewDelegateFlowLayoutP", "getMealsForDate"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "getNutrientsFromTodaysMealPlan"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedView"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2076,17 +2134,18 @@ depends-member:
 - !private ["So7UIColorC", "cyan"]
 - ["So7UIColorC", "init"]
 - !private ["So7UIColorC", "lightGray"]
+- !private ["So7UIColorC", "magenta"]
 - !private ["So18UIContentContainerP", "CGFloat"]
 - !private ["So18UIContentContainerP", "CGSize"]
 - ["So18UIContentContainerP", "Calendar"]
 - !private ["So18UIContentContainerP", "CircularProgressView"]
 - ["So18UIContentContainerP", "Date"]
-- ["So18UIContentContainerP", "DateCollectionViewCell"]
+- !private ["So18UIContentContainerP", "DateCollectionViewCell"]
 - !private ["So18UIContentContainerP", "DateComponents"]
 - !private ["So18UIContentContainerP", "DaysInMonths"]
 - !private ["So18UIContentContainerP", "Direction"]
 - !private ["So18UIContentContainerP", "Float"]
-- !private ["So18UIContentContainerP", "IndexPath"]
+- !private ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "LeapYearCounter"]
 - !private ["So18UIContentContainerP", "MealPlanMainViewController"]
 - !private ["So18UIContentContainerP", "MonthLabel"]
@@ -2104,6 +2163,9 @@ depends-member:
 - !private ["So18UIContentContainerP", "breakfastSelection"]
 - !private ["So18UIContentContainerP", "calendarCollectionView"]
 - ["So18UIContentContainerP", "collectionView"]
+- !private ["So18UIContentContainerP", "coreDataDay"]
+- !private ["So18UIContentContainerP", "coreDataMonth"]
+- !private ["So18UIContentContainerP", "coreDataYear"]
 - !private ["So18UIContentContainerP", "counter"]
 - !private ["So18UIContentContainerP", "currentMonth"]
 - !private ["So18UIContentContainerP", "day"]
@@ -2111,7 +2173,9 @@ depends-member:
 - !private ["So18UIContentContainerP", "deleteFromCoreData"]
 - !private ["So18UIContentContainerP", "dinnerSelection"]
 - !private ["So18UIContentContainerP", "fatalError"]
+- !private ["So18UIContentContainerP", "firstLoad"]
 - !private ["So18UIContentContainerP", "foodNutrientLabels"]
+- !private ["So18UIContentContainerP", "getMealsForDate"]
 - !private ["So18UIContentContainerP", "getNutrientsFromTodaysMealPlan"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2163,7 +2227,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "addButton"]
 - !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
 - !private ["So17UICoordinateSpaceP", "addSubview"]
-- !private ["So17UICoordinateSpaceP", "allowsMultipleSelection"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "cellForItem"]
 - !private ["So17UICoordinateSpaceP", "collectionViewLayout"]
@@ -2178,13 +2241,11 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "register"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
 - !private ["So17UICoordinateSpaceP", "scrollIndicatorInsets"]
-- !private ["So17UICoordinateSpaceP", "selectItem"]
 - !private ["So17UICoordinateSpaceP", "show"]
 - !private ["So17UICoordinateSpaceP", "tag"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "textColor"]
 - !private ["So17UICoordinateSpaceP", "title"]
-- !private ["So23UIDataSourceTranslatingP", "allowsMultipleSelection"]
 - !private ["So23UIDataSourceTranslatingP", "cellForItem"]
 - !private ["So23UIDataSourceTranslatingP", "collectionViewLayout"]
 - !private ["So23UIDataSourceTranslatingP", "contentInset"]
@@ -2194,13 +2255,11 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "register"]
 - !private ["So23UIDataSourceTranslatingP", "reloadData"]
 - !private ["So23UIDataSourceTranslatingP", "scrollIndicatorInsets"]
-- !private ["So23UIDataSourceTranslatingP", "selectItem"]
 - !private ["So23UIDataSourceTranslatingP", "tag"]
 - !private ["So13UIDynamicItemP", "DateLabel"]
 - !private ["So13UIDynamicItemP", "addButton"]
 - !private ["So13UIDynamicItemP", "addGestureRecognizer"]
 - !private ["So13UIDynamicItemP", "addSubview"]
-- !private ["So13UIDynamicItemP", "allowsMultipleSelection"]
 - !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "cellForItem"]
 - !private ["So13UIDynamicItemP", "collectionViewLayout"]
@@ -2215,7 +2274,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "register"]
 - !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So13UIDynamicItemP", "scrollIndicatorInsets"]
-- !private ["So13UIDynamicItemP", "selectItem"]
 - !private ["So13UIDynamicItemP", "show"]
 - !private ["So13UIDynamicItemP", "tag"]
 - !private ["So13UIDynamicItemP", "text"]
@@ -2226,13 +2284,13 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "Calendar"]
 - !private ["So18UIFocusEnvironmentP", "CircularProgressView"]
 - ["So18UIFocusEnvironmentP", "Date"]
-- ["So18UIFocusEnvironmentP", "DateCollectionViewCell"]
+- !private ["So18UIFocusEnvironmentP", "DateCollectionViewCell"]
 - !private ["So18UIFocusEnvironmentP", "DateComponents"]
 - !private ["So18UIFocusEnvironmentP", "DateLabel"]
 - !private ["So18UIFocusEnvironmentP", "DaysInMonths"]
 - !private ["So18UIFocusEnvironmentP", "Direction"]
 - !private ["So18UIFocusEnvironmentP", "Float"]
-- !private ["So18UIFocusEnvironmentP", "IndexPath"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "LeapYearCounter"]
 - !private ["So18UIFocusEnvironmentP", "MealPlanMainViewController"]
 - !private ["So18UIFocusEnvironmentP", "MonthLabel"]
@@ -2250,7 +2308,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "addButton"]
 - !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addSubview"]
-- !private ["So18UIFocusEnvironmentP", "allowsMultipleSelection"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "breakfastSelection"]
 - !private ["So18UIFocusEnvironmentP", "calendarCollectionView"]
@@ -2258,6 +2315,9 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "collectionView"]
 - !private ["So18UIFocusEnvironmentP", "collectionViewLayout"]
 - !private ["So18UIFocusEnvironmentP", "contentInset"]
+- !private ["So18UIFocusEnvironmentP", "coreDataDay"]
+- !private ["So18UIFocusEnvironmentP", "coreDataMonth"]
+- !private ["So18UIFocusEnvironmentP", "coreDataYear"]
 - !private ["So18UIFocusEnvironmentP", "counter"]
 - !private ["So18UIFocusEnvironmentP", "currentMonth"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
@@ -2267,7 +2327,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "dinnerSelection"]
 - !private ["So18UIFocusEnvironmentP", "fatalError"]
+- !private ["So18UIFocusEnvironmentP", "firstLoad"]
 - !private ["So18UIFocusEnvironmentP", "foodNutrientLabels"]
+- !private ["So18UIFocusEnvironmentP", "getMealsForDate"]
 - !private ["So18UIFocusEnvironmentP", "getNutrientsFromTodaysMealPlan"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2304,7 +2366,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "scrollViewWillBeginDragging"]
 - ["So18UIFocusEnvironmentP", "scrollViewWillBeginZooming"]
 - ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
-- !private ["So18UIFocusEnvironmentP", "selectItem"]
 - !private ["So18UIFocusEnvironmentP", "show"]
 - !private ["So18UIFocusEnvironmentP", "tag"]
 - !private ["So18UIFocusEnvironmentP", "tapBreakfast"]
@@ -2327,7 +2388,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "addButton"]
 - !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "addSubview"]
-- !private ["So11UIFocusItemP", "allowsMultipleSelection"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "cellForItem"]
 - !private ["So11UIFocusItemP", "collectionViewLayout"]
@@ -2342,7 +2402,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "register"]
 - !private ["So11UIFocusItemP", "reloadData"]
 - !private ["So11UIFocusItemP", "scrollIndicatorInsets"]
-- !private ["So11UIFocusItemP", "selectItem"]
 - !private ["So11UIFocusItemP", "show"]
 - !private ["So11UIFocusItemP", "tag"]
 - !private ["So11UIFocusItemP", "text"]
@@ -2359,13 +2418,13 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "Calendar"]
 - !private ["So30UIPasteConfigurationSupportingP", "CircularProgressView"]
 - ["So30UIPasteConfigurationSupportingP", "Date"]
-- ["So30UIPasteConfigurationSupportingP", "DateCollectionViewCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "DateCollectionViewCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateComponents"]
 - !private ["So30UIPasteConfigurationSupportingP", "DateLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "DaysInMonths"]
 - !private ["So30UIPasteConfigurationSupportingP", "Direction"]
 - !private ["So30UIPasteConfigurationSupportingP", "Float"]
-- !private ["So30UIPasteConfigurationSupportingP", "IndexPath"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "LeapYearCounter"]
 - !private ["So30UIPasteConfigurationSupportingP", "MealPlanMainViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "MonthLabel"]
@@ -2383,7 +2442,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "addButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
-- !private ["So30UIPasteConfigurationSupportingP", "allowsMultipleSelection"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "breakfastSelection"]
 - !private ["So30UIPasteConfigurationSupportingP", "calendarCollectionView"]
@@ -2391,6 +2449,9 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "collectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "collectionViewLayout"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentInset"]
+- !private ["So30UIPasteConfigurationSupportingP", "coreDataDay"]
+- !private ["So30UIPasteConfigurationSupportingP", "coreDataMonth"]
+- !private ["So30UIPasteConfigurationSupportingP", "coreDataYear"]
 - !private ["So30UIPasteConfigurationSupportingP", "counter"]
 - !private ["So30UIPasteConfigurationSupportingP", "currentMonth"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
@@ -2400,7 +2461,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "dinnerSelection"]
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
+- !private ["So30UIPasteConfigurationSupportingP", "firstLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "foodNutrientLabels"]
+- !private ["So30UIPasteConfigurationSupportingP", "getMealsForDate"]
 - !private ["So30UIPasteConfigurationSupportingP", "getNutrientsFromTodaysMealPlan"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2438,7 +2501,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDragging"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginZooming"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
-- !private ["So30UIPasteConfigurationSupportingP", "selectItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - !private ["So30UIPasteConfigurationSupportingP", "show"]
 - !private ["So30UIPasteConfigurationSupportingP", "tag"]
@@ -2468,7 +2530,7 @@ depends-member:
 - ["So11UIResponderC", "Calendar"]
 - !private ["So11UIResponderC", "CircularProgressView"]
 - ["So11UIResponderC", "Date"]
-- ["So11UIResponderC", "DateCollectionViewCell"]
+- !private ["So11UIResponderC", "DateCollectionViewCell"]
 - !private ["So11UIResponderC", "DateComponents"]
 - !private ["So11UIResponderC", "DateLabel"]
 - ["So11UIResponderC", "DaysInMonths"]
@@ -2506,7 +2568,6 @@ depends-member:
 - !private ["So11UIResponderC", "addButton"]
 - !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "addSubview"]
-- !private ["So11UIResponderC", "allowsMultipleSelection"]
 - !private ["So11UIResponderC", "backgroundColor"]
 - ["So11UIResponderC", "breakfastSelection"]
 - ["So11UIResponderC", "calendarCollectionView"]
@@ -2514,6 +2575,9 @@ depends-member:
 - ["So11UIResponderC", "collectionView"]
 - !private ["So11UIResponderC", "collectionViewLayout"]
 - !private ["So11UIResponderC", "contentInset"]
+- ["So11UIResponderC", "coreDataDay"]
+- ["So11UIResponderC", "coreDataMonth"]
+- ["So11UIResponderC", "coreDataYear"]
 - !private ["So11UIResponderC", "counter"]
 - ["So11UIResponderC", "currentMonth"]
 - !private ["So11UIResponderC", "dataSource"]
@@ -2527,7 +2591,9 @@ depends-member:
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - ["So11UIResponderC", "dinnerSelection"]
 - !private ["So11UIResponderC", "fatalError"]
+- ["So11UIResponderC", "firstLoad"]
 - !private ["So11UIResponderC", "foodNutrientLabels"]
+- ["So11UIResponderC", "getMealsForDate"]
 - ["So11UIResponderC", "getNutrientsFromTodaysMealPlan"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2566,13 +2632,10 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillBeginDragging"]
 - ["So11UIResponderC", "scrollViewWillBeginZooming"]
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
-- ["So11UIResponderC", "searches"]
-- !private ["So11UIResponderC", "selectItem"]
 - !private ["So11UIResponderC", "shared"]
 - !private ["So11UIResponderC", "show"]
 - !private ["So11UIResponderC", "tag"]
 - ["So11UIResponderC", "tapBreakfast"]
-- ["So11UIResponderC", "tapDate"]
 - ["So11UIResponderC", "tapDinner"]
 - ["So11UIResponderC", "tapLunch"]
 - !private ["So11UIResponderC", "testRecipes"]
@@ -2593,13 +2656,13 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "Calendar"]
 - !private ["So30UIResponderStandardEditActionsP", "CircularProgressView"]
 - ["So30UIResponderStandardEditActionsP", "Date"]
-- ["So30UIResponderStandardEditActionsP", "DateCollectionViewCell"]
+- !private ["So30UIResponderStandardEditActionsP", "DateCollectionViewCell"]
 - !private ["So30UIResponderStandardEditActionsP", "DateComponents"]
 - !private ["So30UIResponderStandardEditActionsP", "DateLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "DaysInMonths"]
 - !private ["So30UIResponderStandardEditActionsP", "Direction"]
 - !private ["So30UIResponderStandardEditActionsP", "Float"]
-- !private ["So30UIResponderStandardEditActionsP", "IndexPath"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "LeapYearCounter"]
 - !private ["So30UIResponderStandardEditActionsP", "MealPlanMainViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "MonthLabel"]
@@ -2617,7 +2680,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "addButton"]
 - !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addSubview"]
-- !private ["So30UIResponderStandardEditActionsP", "allowsMultipleSelection"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "breakfastSelection"]
 - !private ["So30UIResponderStandardEditActionsP", "calendarCollectionView"]
@@ -2625,6 +2687,9 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "collectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "collectionViewLayout"]
 - !private ["So30UIResponderStandardEditActionsP", "contentInset"]
+- !private ["So30UIResponderStandardEditActionsP", "coreDataDay"]
+- !private ["So30UIResponderStandardEditActionsP", "coreDataMonth"]
+- !private ["So30UIResponderStandardEditActionsP", "coreDataYear"]
 - !private ["So30UIResponderStandardEditActionsP", "counter"]
 - !private ["So30UIResponderStandardEditActionsP", "currentMonth"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
@@ -2634,7 +2699,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "dinnerSelection"]
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
+- !private ["So30UIResponderStandardEditActionsP", "firstLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "foodNutrientLabels"]
+- !private ["So30UIResponderStandardEditActionsP", "getMealsForDate"]
 - !private ["So30UIResponderStandardEditActionsP", "getNutrientsFromTodaysMealPlan"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2672,7 +2739,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDragging"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginZooming"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
-- !private ["So30UIResponderStandardEditActionsP", "selectItem"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "show"]
 - !private ["So30UIResponderStandardEditActionsP", "tag"]
@@ -2692,7 +2758,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - !private ["So30UIResponderStandardEditActionsP", "year"]
 - ["So30UIResponderStandardEditActionsP", ""]
-- !private ["So12UIScrollViewC", "allowsMultipleSelection"]
 - !private ["So12UIScrollViewC", "cellForItem"]
 - !private ["So12UIScrollViewC", "collectionViewLayout"]
 - !private ["So12UIScrollViewC", "contentInset"]
@@ -2702,19 +2767,18 @@ depends-member:
 - !private ["So12UIScrollViewC", "register"]
 - !private ["So12UIScrollViewC", "reloadData"]
 - !private ["So12UIScrollViewC", "scrollIndicatorInsets"]
-- !private ["So12UIScrollViewC", "selectItem"]
 - !private ["So12UIScrollViewC", "tag"]
 - !private ["So20UIScrollViewDelegateP", "CGFloat"]
 - !private ["So20UIScrollViewDelegateP", "CGSize"]
 - ["So20UIScrollViewDelegateP", "Calendar"]
 - !private ["So20UIScrollViewDelegateP", "CircularProgressView"]
 - ["So20UIScrollViewDelegateP", "Date"]
-- ["So20UIScrollViewDelegateP", "DateCollectionViewCell"]
+- !private ["So20UIScrollViewDelegateP", "DateCollectionViewCell"]
 - !private ["So20UIScrollViewDelegateP", "DateComponents"]
 - !private ["So20UIScrollViewDelegateP", "DaysInMonths"]
 - !private ["So20UIScrollViewDelegateP", "Direction"]
 - !private ["So20UIScrollViewDelegateP", "Float"]
-- !private ["So20UIScrollViewDelegateP", "IndexPath"]
+- !private ["So20UIScrollViewDelegateP", "Int"]
 - !private ["So20UIScrollViewDelegateP", "LeapYearCounter"]
 - !private ["So20UIScrollViewDelegateP", "MealPlanMainViewController"]
 - !private ["So20UIScrollViewDelegateP", "MonthLabel"]
@@ -2732,6 +2796,9 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "breakfastSelection"]
 - !private ["So20UIScrollViewDelegateP", "calendarCollectionView"]
 - ["So20UIScrollViewDelegateP", "collectionView"]
+- !private ["So20UIScrollViewDelegateP", "coreDataDay"]
+- !private ["So20UIScrollViewDelegateP", "coreDataMonth"]
+- !private ["So20UIScrollViewDelegateP", "coreDataYear"]
 - !private ["So20UIScrollViewDelegateP", "counter"]
 - !private ["So20UIScrollViewDelegateP", "currentMonth"]
 - !private ["So20UIScrollViewDelegateP", "day"]
@@ -2739,7 +2806,9 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "deleteFromCoreData"]
 - !private ["So20UIScrollViewDelegateP", "dinnerSelection"]
 - !private ["So20UIScrollViewDelegateP", "fatalError"]
+- !private ["So20UIScrollViewDelegateP", "firstLoad"]
 - !private ["So20UIScrollViewDelegateP", "foodNutrientLabels"]
+- !private ["So20UIScrollViewDelegateP", "getMealsForDate"]
 - !private ["So20UIScrollViewDelegateP", "getNutrientsFromTodaysMealPlan"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2781,7 +2850,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So19UISearchBarDelegateP", "delegate"]
 - !private ["So23UISearchResultsUpdatingP", "delegate"]
-- !private ["So35UISpringLoadedInteractionSupportingP", "allowsMultipleSelection"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "cellForItem"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "collectionViewLayout"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "contentInset"]
@@ -2791,19 +2859,18 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "register"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "scrollIndicatorInsets"]
-- !private ["So35UISpringLoadedInteractionSupportingP", "selectItem"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "tag"]
 - !private ["So16UIStateRestoringP", "CGFloat"]
 - !private ["So16UIStateRestoringP", "CGSize"]
 - ["So16UIStateRestoringP", "Calendar"]
 - !private ["So16UIStateRestoringP", "CircularProgressView"]
 - ["So16UIStateRestoringP", "Date"]
-- ["So16UIStateRestoringP", "DateCollectionViewCell"]
+- !private ["So16UIStateRestoringP", "DateCollectionViewCell"]
 - !private ["So16UIStateRestoringP", "DateComponents"]
 - !private ["So16UIStateRestoringP", "DaysInMonths"]
 - !private ["So16UIStateRestoringP", "Direction"]
 - !private ["So16UIStateRestoringP", "Float"]
-- !private ["So16UIStateRestoringP", "IndexPath"]
+- !private ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "LeapYearCounter"]
 - !private ["So16UIStateRestoringP", "MealPlanMainViewController"]
 - !private ["So16UIStateRestoringP", "MonthLabel"]
@@ -2821,6 +2888,9 @@ depends-member:
 - !private ["So16UIStateRestoringP", "breakfastSelection"]
 - !private ["So16UIStateRestoringP", "calendarCollectionView"]
 - ["So16UIStateRestoringP", "collectionView"]
+- !private ["So16UIStateRestoringP", "coreDataDay"]
+- !private ["So16UIStateRestoringP", "coreDataMonth"]
+- !private ["So16UIStateRestoringP", "coreDataYear"]
 - !private ["So16UIStateRestoringP", "counter"]
 - !private ["So16UIStateRestoringP", "currentMonth"]
 - !private ["So16UIStateRestoringP", "day"]
@@ -2828,7 +2898,9 @@ depends-member:
 - !private ["So16UIStateRestoringP", "deleteFromCoreData"]
 - !private ["So16UIStateRestoringP", "dinnerSelection"]
 - !private ["So16UIStateRestoringP", "fatalError"]
+- !private ["So16UIStateRestoringP", "firstLoad"]
 - !private ["So16UIStateRestoringP", "foodNutrientLabels"]
+- !private ["So16UIStateRestoringP", "getMealsForDate"]
 - !private ["So16UIStateRestoringP", "getNutrientsFromTodaysMealPlan"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2883,13 +2955,13 @@ depends-member:
 - ["So18UITraitEnvironmentP", "Calendar"]
 - !private ["So18UITraitEnvironmentP", "CircularProgressView"]
 - ["So18UITraitEnvironmentP", "Date"]
-- ["So18UITraitEnvironmentP", "DateCollectionViewCell"]
+- !private ["So18UITraitEnvironmentP", "DateCollectionViewCell"]
 - !private ["So18UITraitEnvironmentP", "DateComponents"]
 - !private ["So18UITraitEnvironmentP", "DateLabel"]
 - !private ["So18UITraitEnvironmentP", "DaysInMonths"]
 - !private ["So18UITraitEnvironmentP", "Direction"]
 - !private ["So18UITraitEnvironmentP", "Float"]
-- !private ["So18UITraitEnvironmentP", "IndexPath"]
+- !private ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "LeapYearCounter"]
 - !private ["So18UITraitEnvironmentP", "MealPlanMainViewController"]
 - !private ["So18UITraitEnvironmentP", "MonthLabel"]
@@ -2907,7 +2979,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "addButton"]
 - !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addSubview"]
-- !private ["So18UITraitEnvironmentP", "allowsMultipleSelection"]
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "breakfastSelection"]
 - !private ["So18UITraitEnvironmentP", "calendarCollectionView"]
@@ -2915,6 +2986,9 @@ depends-member:
 - ["So18UITraitEnvironmentP", "collectionView"]
 - !private ["So18UITraitEnvironmentP", "collectionViewLayout"]
 - !private ["So18UITraitEnvironmentP", "contentInset"]
+- !private ["So18UITraitEnvironmentP", "coreDataDay"]
+- !private ["So18UITraitEnvironmentP", "coreDataMonth"]
+- !private ["So18UITraitEnvironmentP", "coreDataYear"]
 - !private ["So18UITraitEnvironmentP", "counter"]
 - !private ["So18UITraitEnvironmentP", "currentMonth"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
@@ -2924,7 +2998,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "dinnerSelection"]
 - !private ["So18UITraitEnvironmentP", "fatalError"]
+- !private ["So18UITraitEnvironmentP", "firstLoad"]
 - !private ["So18UITraitEnvironmentP", "foodNutrientLabels"]
+- !private ["So18UITraitEnvironmentP", "getMealsForDate"]
 - !private ["So18UITraitEnvironmentP", "getNutrientsFromTodaysMealPlan"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -2961,7 +3037,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "scrollViewWillBeginDragging"]
 - ["So18UITraitEnvironmentP", "scrollViewWillBeginZooming"]
 - ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
-- !private ["So18UITraitEnvironmentP", "selectItem"]
 - !private ["So18UITraitEnvironmentP", "show"]
 - !private ["So18UITraitEnvironmentP", "tag"]
 - !private ["So18UITraitEnvironmentP", "tapBreakfast"]
@@ -2984,7 +3059,6 @@ depends-member:
 - !private ["So6UIViewC", "addButton"]
 - !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "addSubview"]
-- !private ["So6UIViewC", "allowsMultipleSelection"]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "cellForItem"]
 - !private ["So6UIViewC", "collectionViewLayout"]
@@ -2998,7 +3072,6 @@ depends-member:
 - !private ["So6UIViewC", "register"]
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "scrollIndicatorInsets"]
-- !private ["So6UIViewC", "selectItem"]
 - !private ["So6UIViewC", "show"]
 - !private ["So6UIViewC", "tag"]
 - !private ["So6UIViewC", "text"]
@@ -3014,7 +3087,7 @@ depends-member:
 - ["So16UIViewControllerC", "Calendar"]
 - !private ["So16UIViewControllerC", "CircularProgressView"]
 - ["So16UIViewControllerC", "Date"]
-- ["So16UIViewControllerC", "DateCollectionViewCell"]
+- !private ["So16UIViewControllerC", "DateCollectionViewCell"]
 - !private ["So16UIViewControllerC", "DateComponents"]
 - ["So16UIViewControllerC", "DaysInMonths"]
 - !private ["So16UIViewControllerC", "DetailedRecipeViewController"]
@@ -3051,6 +3124,9 @@ depends-member:
 - ["So16UIViewControllerC", "breakfastSelection"]
 - ["So16UIViewControllerC", "calendarCollectionView"]
 - ["So16UIViewControllerC", "collectionView"]
+- ["So16UIViewControllerC", "coreDataDay"]
+- ["So16UIViewControllerC", "coreDataMonth"]
+- ["So16UIViewControllerC", "coreDataYear"]
 - !private ["So16UIViewControllerC", "counter"]
 - ["So16UIViewControllerC", "currentMonth"]
 - ["So16UIViewControllerC", "day"]
@@ -3062,7 +3138,9 @@ depends-member:
 - ["So16UIViewControllerC", "deleteLunch"]
 - ["So16UIViewControllerC", "dinnerSelection"]
 - !private ["So16UIViewControllerC", "fatalError"]
+- ["So16UIViewControllerC", "firstLoad"]
 - !private ["So16UIViewControllerC", "foodNutrientLabels"]
+- ["So16UIViewControllerC", "getMealsForDate"]
 - ["So16UIViewControllerC", "getNutrientsFromTodaysMealPlan"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -3094,9 +3172,7 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillBeginDragging"]
 - ["So16UIViewControllerC", "scrollViewWillBeginZooming"]
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
-- ["So16UIViewControllerC", "searches"]
 - ["So16UIViewControllerC", "tapBreakfast"]
-- ["So16UIViewControllerC", "tapDate"]
 - ["So16UIViewControllerC", "tapDinner"]
 - ["So16UIViewControllerC", "tapLunch"]
 - !private ["So16UIViewControllerC", "testRecipes"]
@@ -3113,7 +3189,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "author"]
 - !private ["s14_ArrayProtocolP", "count"]
-- ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "percentage"]
 - !private ["s14_ArrayProtocolP", "quantity"]
 - !private ["s14_ArrayProtocolP", "recommendedDailyAmount"]
@@ -3130,13 +3205,13 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "row"]
 - !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "title"]
+- !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "DateLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addButton"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "allowsMultipleSelection"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "cellForItem"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "collectionViewLayout"]
@@ -3151,7 +3226,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "register"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "scrollIndicatorInsets"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "selectItem"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "show"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tag"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -3160,7 +3234,6 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "author"]
 - !private ["s24_DestructorSafeContainerP", "count"]
-- ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "percentage"]
 - !private ["s24_DestructorSafeContainerP", "quantity"]
 - !private ["s24_DestructorSafeContainerP", "recommendedDailyAmount"]
@@ -3178,6 +3251,7 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "cyan"]
 - ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
+- !private ["s26_ExpressibleByColorLiteralP", "magenta"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "append"]
@@ -3207,13 +3281,13 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CircularProgressView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "DateCollectionViewCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DateCollectionViewCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateComponents"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DaysInMonths"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Direction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Float"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LeapYearCounter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "MealPlanMainViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "MonthLabel"]
@@ -3231,7 +3305,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "allowsMultipleSelection"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "breakfastSelection"]
@@ -3241,6 +3314,9 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "collectionViewLayout"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentInset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "coreDataDay"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "coreDataMonth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "coreDataYear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "counter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentMonth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cyan"]
@@ -3256,7 +3332,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "estimatedItemSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fetch"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "foodNutrientLabels"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getMealsForDate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "getNutrientsFromTodaysMealPlan"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "identifier"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
@@ -3267,6 +3345,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lightGray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lunchSelection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "magenta"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "message"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "minimumInteritemSpacing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "minimumLineSpacing"]
@@ -3302,7 +3381,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDragging"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "shapeColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
@@ -3335,7 +3413,6 @@ depends-member:
 - !private ["s17_MutableIndexableP", "append"]
 - !private ["s17_MutableIndexableP", "author"]
 - !private ["s17_MutableIndexableP", "count"]
-- ["s17_MutableIndexableP", "init"]
 - !private ["s17_MutableIndexableP", "item"]
 - !private ["s17_MutableIndexableP", "percentage"]
 - !private ["s17_MutableIndexableP", "quantity"]
@@ -3357,7 +3434,6 @@ depends-member:
 - !private ["s22_RandomAccessIndexableP", "append"]
 - !private ["s22_RandomAccessIndexableP", "author"]
 - !private ["s22_RandomAccessIndexableP", "count"]
-- ["s22_RandomAccessIndexableP", "init"]
 - !private ["s22_RandomAccessIndexableP", "item"]
 - !private ["s22_RandomAccessIndexableP", "percentage"]
 - !private ["s22_RandomAccessIndexableP", "quantity"]
@@ -3383,10 +3459,11 @@ depends-member:
 - !private ["7YouFood14oneDayMealPlanC", "totalNutrients"]
 depends-nominal:
 - !private "7YouFood11AppDelegateC"
-- "Sa"
+- !private "Sa"
 - !private "s10ArraySliceV"
 - "s23BidirectionalCollectionP"
 - !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
 - !private "12CoreGraphics7CGFloatV"
@@ -3409,21 +3486,24 @@ depends-nominal:
 - !private "7YouFood28DetailedRecipeViewControllerC"
 - "s9EncodableP"
 - "s9EquatableP"
-- "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - !private "Sf"
 - !private "s13FloatingPointP"
+- !private "So17GIDSignInDelegateP"
 - "s8HashableP"
 - !private "10Foundation9IndexPathV"
+- !private "Si"
 - "s25LosslessStringConvertibleP"
 - "7YouFood26MealPlanMainViewControllerC"
 - "s10MirrorPathP"
-- "s17MutableCollectionP"
+- !private "s17MutableCollectionP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - !private "So19NSEntityDescriptionC"
@@ -3446,7 +3526,7 @@ depends-nominal:
 - !private "s7NumericP"
 - !private "7YouFood8NutrientC"
 - "7YouFood9NutritionC"
-- "s22RandomAccessCollectionP"
+- !private "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
 - !private "7YouFood6RecipeC"
 - !private "7YouFood26RecipeNavigationControllerC"
@@ -3454,6 +3534,7 @@ depends-nominal:
 - !private "7YouFood36SelectRecipeNavigationViewControllerC"
 - !private "7YouFood31SelectRecipeTableViewControllerC"
 - "s8SequenceP"
+- !private "s13SignedIntegerP"
 - !private "s13SignedNumericP"
 - !private "s12StaticStringV"
 - !private "s10StrideableP"
@@ -3504,12 +3585,13 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
-- "s14_ArrayProtocolP"
+- !private "s14_ArrayProtocolP"
 - "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
-- "s24_DestructorSafeContainerP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
@@ -3524,9 +3606,9 @@ depends-nominal:
 - "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation14_MutableBoxingP"
-- "s17_MutableIndexableP"
+- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
+- !private "s22_RandomAccessIndexableP"
 - "s26_RangeReplaceableIndexableP"
 - !private "s11_StrideableP"
 - "s16_SwiftStringViewP"
@@ -3555,83 +3637,90 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRMutableData.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageMetadata.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRSnapshotMetadata.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageReference.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseReference.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRCollectionReference.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentReference.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSource.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorage.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FirebaseStorage.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentChange.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataEventType.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestore.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabase.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/Firebase.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldValue.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRServerValue.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRWriteBatch.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldPath.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageDownloadTask.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageUploadTask.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTask.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageObservableTask.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRListenerRegistration.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRAnalyticsConfiguration.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTransaction.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTimestamp.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRApp.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSettings.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIROptions.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreErrors.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageConstants.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRTransactionResult.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRGeoPoint.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataSnapshot.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTaskSnapshot.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentSnapshot.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuerySnapshot.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuery.h"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseQuery.h"
-- "/Users/skwon2345/Downloads/YouFood-master_sk_1/Pods/Firebase/CoreOnly/Sources/module.modulemap"
-- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
-interface-hash: "e0aa7097fbae9da491705038397e4747"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRMutableData.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRSnapshotMetadata.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageReference.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRCollectionReference.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentReference.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSource.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorage.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FirebaseStorage.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentChange.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestore.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabase.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldValue.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRServerValue.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRWriteBatch.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldPath.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTask.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRListenerRegistration.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRAnalyticsConfiguration.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTransaction.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTimestamp.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSettings.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreErrors.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRGeoPoint.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentSnapshot.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuerySnapshot.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuery.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Desktop/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+interface-hash: "2537d05882d9f7bf1e6eca548b4a03bf"

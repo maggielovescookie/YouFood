@@ -17,12 +17,12 @@ var counter = 0
 
 class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,DataEnteredDelegate{
     
-    var searches = [DateCollectionViewCell]()
-	
+    var firstLoad = true
+    
     @IBOutlet var nutritionCollectionView: UICollectionView?
-	@IBOutlet var calendarCollectionView: UICollectionView?
-	@IBOutlet var MonthLabel: UILabel?
-	
+    @IBOutlet var calendarCollectionView: UICollectionView?
+    @IBOutlet var MonthLabel: UILabel?
+    
     @IBAction func AddBreakfast(_ sender: UIButton) {
         counter = 1
     }
@@ -32,7 +32,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
     @IBAction func AddDinner(_ sender: UIButton) {
         counter = 3
     }
-
+    
     @IBAction func deleteBreakfast(_ sender: UIButton) {
         if todaysMealPlan.breakfast == nil{
             let alert = UIAlertView()
@@ -108,7 +108,9 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         
         deleteFromCoreData(entityName: entityName)
         
-        saveToCoreData(entityName: entityName, mealPlanRecipe: mealPlanRecipe)
+        saveToCoreData(todaysMealPlan: todaysMealPlan, entityName: entityName)
+        
+        getMealsForDate(day: coreDataDay, month: coreDataMonth, year: coreDataYear)
         
         getNutrientsFromTodaysMealPlan(todaysMealPlan: todaysMealPlan)
     }
@@ -117,12 +119,17 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
     func deleteFromCoreData(entityName: String){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlan")
         request.returnsObjectsAsFaults = false
         do {
-            let result = try context.fetch(request)
-            for data in result as! [NSManagedObject] {
-                context.delete(data)
+            let resultDate = try context.fetch(request)
+            for dates in resultDate as! [NSManagedObject]{
+                let searchYear = dates.value(forKey: "dateYear") as! String
+                let searchDay = dates.value(forKey: "dateDay") as! String
+                let searchMonth = dates.value(forKey: "dateMonth") as! String
+                if (searchYear == String(coreDataYear) && searchDay == String(coreDataDay) && searchMonth == String(coreDataMonth)){
+                    context.delete(dates)
+                }
             }
         } catch {
             print("Failed")
@@ -134,13 +141,28 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         }
     }
     
-    func saveToCoreData(entityName: String, mealPlanRecipe: Recipe){
+    func saveToCoreData(todaysMealPlan: oneDayMealPlan, entityName: String){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: entityName, in: context)
-        let newRecipe = NSManagedObject(entity: entity!, insertInto: context)
-        newRecipe.setValue("\(mealPlanRecipe.title)", forKey: "title")
-        newRecipe.setValue("\(mealPlanRecipe.author)", forKey: "author")
+        
+        let entity = NSEntityDescription.entity(forEntityName: "MealPlan", in: context)
+        let newMealPlan = NSManagedObject(entity: entity!, insertInto: context)
+        if todaysMealPlan.breakfast != nil{
+            newMealPlan.setValue("\(todaysMealPlan.breakfast?.title ?? "")", forKey: "breakfastTitle")
+            newMealPlan.setValue("\(todaysMealPlan.breakfast?.author ?? "")", forKey: "breakfastAuthor")
+        }
+        if todaysMealPlan.lunch != nil{
+            newMealPlan.setValue("\(todaysMealPlan.lunch?.title ?? "")", forKey: "lunchTitle")
+            newMealPlan.setValue("\(todaysMealPlan.lunch?.author ?? "")", forKey: "lunchAuthor")
+        }
+        if todaysMealPlan.dinner != nil{
+            newMealPlan.setValue("\(todaysMealPlan.dinner?.title ?? "")", forKey: "dinnerTitle")
+            newMealPlan.setValue("\(todaysMealPlan.dinner?.author ?? "")", forKey: "dinnerAuthor")
+        }
+        
+        newMealPlan.setValue("\(coreDataDay)", forKey: "dateDay")
+        newMealPlan.setValue("\(coreDataMonth)", forKey: "dateMonth")
+        newMealPlan.setValue("\(coreDataYear)", forKey: "dateYear")
         
         do {
             try context.save()
@@ -155,17 +177,17 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             todaysMealPlan.totalNutrients.append(0)
         }
         
-        if (self.breakfastSelection.text != "Nothing Selected"){
+        if (todaysMealPlan.breakfast != nil){
             for i in 0 ..< todaysMealPlan.totalNutrients.count{
                 todaysMealPlan.totalNutrients[i] += todaysMealPlan.breakfast!.nutrients[i].quantity/Float(todaysMealPlan.breakfast!.servings)
             }
         }
-        if (self.lunchSelection.text != "Nothing Selected"){
+        if (todaysMealPlan.lunch != nil){
             for i in 0 ..< todaysMealPlan.totalNutrients.count{
                 todaysMealPlan.totalNutrients[i] += todaysMealPlan.lunch!.nutrients[i].quantity/Float(todaysMealPlan.lunch!.servings)
             }
         }
-        if (self.dinnerSelection.text != "Nothing Selected"){
+        if (todaysMealPlan.dinner != nil){
             for i in 0 ..< todaysMealPlan.totalNutrients.count{
                 todaysMealPlan.totalNutrients[i] += todaysMealPlan.dinner!.nutrients[i].quantity/Float(todaysMealPlan.dinner!.servings)
             }
@@ -176,8 +198,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         }
         nutritionCollectionView?.reloadData()
     }
-	
-	
+    
+    
     var nutritions:[Nutrition] = {
         var protein = Nutrition()
         protein.title = "Protein"
@@ -320,221 +342,272 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         filler.trackColor = UIColor(white: 255/255, alpha: 0.2)
         filler.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
         filler.percentage = 0
-
+        
         return [protein, fat, Carbs, calories, fiber, sugar, calcium, iron, magnesium, potassium, sodium, vitaminC, vitaminD, vitaminK, vitaminB6, vitaminB12, saturatedFat, filler, filler, filler]
         
     }()
     
-	
-	let Months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-	
-	var DaysInMonths = [31,28,31,30,31,30,31,31,30,31,30,31]
-	
-	var currentMonth = String()
-	
-	var Direction = 0
-	
-	var LeapYearCounter = 2
-	
-	var dayCounter = 0
-	
-	var day = Calendar.current.component(.day , from: Date())
-	var weekday = Calendar.current.component(.weekday, from: Date())
-	var month = Calendar.current.component(.month, from: Date())
-	var year = Calendar.current.component(.year, from: Date())
-	
-	
-	
-	
-	
-	
-	//---------------------------------------------(Next and back buttons)---------------------------------------
-	@IBAction func Next(_ sender: Any) {
-		switch currentMonth {
-		case "December":
-			Direction = 1
-			
-			month = 0
-			year += 1
-			
-			if LeapYearCounter  < 5 {
-				LeapYearCounter += 1
-			}
-			
-			if LeapYearCounter == 4 {
-				DaysInMonths[1] = 29
-			}
-			
-			if LeapYearCounter == 5{
-				LeapYearCounter = 1
-				DaysInMonths[1] = 28
-			}
-			
-			currentMonth = Months[month - 1]
-			MonthLabel?.text = "\(currentMonth) \(year)"
-			calendarCollectionView?.reloadData()
-		default:
-			Direction = 1
-			month += 1
-			
-			currentMonth = Months[month - 1]
-			MonthLabel?.text = "\(currentMonth) \(year)"
-			calendarCollectionView?.reloadData()
-		}
-	}
-	
-	@IBAction func Back(_ sender: Any) {
-		switch currentMonth {
-		case "January":
-			Direction = -1
-			
-			month = 11
-			year -= 1
-			
-			if LeapYearCounter > 0{
-				LeapYearCounter -= 1
-			}
-			if LeapYearCounter == 0{
-				DaysInMonths[1] = 29
-				LeapYearCounter = 4
-			}else{
-				DaysInMonths[1] = 28
-			}
-			
-			currentMonth = Months[month - 1]
-			MonthLabel?.text = "\(currentMonth) \(year)"
-			calendarCollectionView?.reloadData()
-			
-		default:
-			Direction = -1
-			
-			month -= 1
-			
-			currentMonth = Months[month - 1]
-			MonthLabel?.text = "\(currentMonth) \(year)"
-			calendarCollectionView?.reloadData()
-		}
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		switch collectionView.tag {
-		case 0:
-			//print(nutritions.count)
-			return nutritions.count
-			
-			
-		case 1:
-			print(DaysInMonths[month - 1])
-			print(day)
-			
-			return DaysInMonths[month - 1]
-			
-		default:
-			fatalError()
-		}
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		switch collectionView.tag {
-		case 0:
-			let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "CircularProgressView", for: indexPath) as! CircularProgressView
-			
-			cellA.nutrition = nutritions[indexPath.item]
-			
-			return cellA
-			
-		case 1:
-			let cellB = collectionView.dequeueReusableCell(withReuseIdentifier: "DateCollectionViewCell", for: indexPath) as! DateCollectionViewCell
-			cellB.backgroundColor = UIColor.clear
-			
-			cellB.DateLabel.text = "\(indexPath.item + 1)"
-			
-			let components = DateComponents(year: year, month: month, day: indexPath.item + 1)
-			let theDay = Calendar.current.date(from: components)
-			
-			if Calendar.current.isDateInWeekend(theDay!){
-				cellB.DateLabel.textColor = UIColor.lightGray
-				print("weekend")
-			}else{
-				cellB.DateLabel.textColor = UIColor.black
-				print("weekday")
-			}
-			print("\(indexPath.item + 1)")
-			print(cellB.DateLabel.text)
+    
+    let Months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    
+    var DaysInMonths = [31,28,31,30,31,30,31,31,30,31,30,31]
+    
+    var currentMonth = String()
+    
+    var Direction = 0
+    
+    var LeapYearCounter = 2
+    
+    var dayCounter = 0
+    
+    var day = Calendar.current.component(.day , from: Date())
+    var weekday = Calendar.current.component(.weekday, from: Date())
+    var month = Calendar.current.component(.month, from: Date())
+    var year = Calendar.current.component(.year, from: Date())
+    
+    // ALL STORED AS INTS
+    var coreDataDay = Calendar.current.component(.day , from: Date())
+    var coreDataMonth = Calendar.current.component(.month, from: Date())
+    var coreDataYear = Calendar.current.component(.year, from: Date())
+    
+    
+    
+    
+    //---------------------------------------------(Next and back buttons)---------------------------------------
+    @IBAction func Next(_ sender: Any) {
+        switch currentMonth {
+        case "December":
+            Direction = 1
             
-            /*
-            let tapOnDate = UITapGestureRecognizer(target: self, action: #selector(MealPlanMainViewController.tapDate))
-            cellB.isUserInteractionEnabled = true
-            cellB.addGestureRecognizer(tapOnDate)
-            */
-			
-			//if currentMonth == Months[Calendar.current.component(.month, from: Date()) - 1] && syear == Calendar.current.component(.year, from: Date()) && indexPath.item + 1 == day {
-            print("!\(indexPath.row) \(day)")
-			if indexPath.row+1 == day{
-                print("!ON THE SAME DAY")
-				collectionView.selectItem(at: IndexPath(row: indexPath.row+1, section: 0), animated: false, scrollPosition: [])
-                 calendarCollectionView?.cellForItem(at: IndexPath(row: indexPath.row+1, section: 0))?.backgroundColor = UIColor.cyan
-			}
-			return cellB
-			
-		default:
-			fatalError()
-		}
-		
-	}
-    override func viewDidLoad() {
+            month = 0
+            year += 1
+            
+            if LeapYearCounter  < 5 {
+                LeapYearCounter += 1
+            }
+            
+            if LeapYearCounter == 4 {
+                DaysInMonths[1] = 29
+            }
+            
+            if LeapYearCounter == 5{
+                LeapYearCounter = 1
+                DaysInMonths[1] = 28
+            }
+            
+            currentMonth = Months[0]
+            MonthLabel?.text = "\(currentMonth) \(year)"
+            calendarCollectionView?.reloadData()
+            
+            coreDataYear += 1
+            coreDataMonth = 1
+            
+        default:
+            Direction = 1
+            month += 1
+            
+            currentMonth = Months[month]
+            MonthLabel?.text = "\(currentMonth) \(year)"
+            calendarCollectionView?.reloadData()
+            
+            coreDataMonth += 1
+        }
+    }
+    
+    @IBAction func Back(_ sender: Any) {
+        switch currentMonth {
+        case "January":
+            Direction = -1
+            
+            month = 12
+            year -= 1
+            
+            if LeapYearCounter > 0{
+                LeapYearCounter -= 1
+            }
+            if LeapYearCounter == 0{
+                DaysInMonths[1] = 29
+                LeapYearCounter = 4
+            }else{
+                DaysInMonths[1] = 28
+            }
+            
+            currentMonth = Months[month - 1]
+            MonthLabel?.text = "\(currentMonth) \(year)"
+            calendarCollectionView?.reloadData()
+            coreDataMonth = 12
+            coreDataYear -= 1
+            
+        default:
+            Direction = -1
+            
+            month -= 1
+            
+            currentMonth = Months[month - 1]
+            MonthLabel?.text = "\(currentMonth) \(year)"
+            calendarCollectionView?.reloadData()
+            
+            coreDataMonth -= 1
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        switch collectionView.tag {
+        case 0:
+            //print(nutritions.count)
+            return nutritions.count
+            
+            
+        case 1:
+            if month == 0{
+                return DaysInMonths[0]
+            }
+            print(DaysInMonths[month - 1])
+            print(day)
+            
+            return DaysInMonths[month - 1]
+            
+        default:
+            fatalError()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch collectionView.tag {
+        case 0:
+            let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "CircularProgressView", for: indexPath) as! CircularProgressView
+            
+            cellA.nutrition = nutritions[indexPath.item]
+            
+            return cellA
+            
+        case 1:
+            let cellB = collectionView.dequeueReusableCell(withReuseIdentifier: "DateCollectionViewCell", for: indexPath) as! DateCollectionViewCell
+            cellB.backgroundColor = UIColor.clear
+            
+            cellB.DateLabel.text = "\(indexPath.item + 1)"
+            
+            let components = DateComponents(year: year, month: month, day: indexPath.item + 1)
+            let theDay = Calendar.current.date(from: components)
+            
+            if Calendar.current.isDateInWeekend(theDay!){
+                cellB.DateLabel.textColor = UIColor.lightGray
+                
+            }else{
+                cellB.DateLabel.textColor = UIColor.black
+                
+            }
+            if indexPath.row == day-1 && self.firstLoad{
+                cellB.backgroundColor = UIColor.magenta
+            }
+            return cellB
+            
+        default:
+            fatalError()
+        }
         
-		super.viewDidLoad()
-		
-        // Set up coredata
+    }
+    
+    func getMealsForDate (day: Int, month: Int, year: Int){
+        print("?IN GET MALS FOR DATE/MONTH/YEAR : \(day), \(month), \(year)")
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
-        // Load data from core data if there is anything there
-        let requestBreakfast = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlanBreakfast")
-        requestBreakfast.returnsObjectsAsFaults = false
-        let requestLunch = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlanLunch")
-        requestLunch.returnsObjectsAsFaults = false
-        let requestDinner = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlanDinner")
-        requestDinner.returnsObjectsAsFaults = false
-        do {
-            let resultBreakfast = try context.fetch(requestBreakfast)
-            let resultLunch = try context.fetch(requestLunch)
-            let resultDinner = try context.fetch(requestDinner)
-            for data in resultBreakfast as! [NSManagedObject] {
-                let searchTitle = data.value(forKey: "title") as! String
-                let searchAuthor = data.value(forKey: "author") as! String
-                for i in 0 ..< testRecipes.count{
-                    if (testRecipes[i].title == searchTitle && testRecipes[i].author == searchAuthor){
-                        todaysMealPlan.breakfast = testRecipes[i]
-                        self.breakfastSelection.text = todaysMealPlan.breakfast?.title
+        let requestMealPlan = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlan")
+        requestMealPlan.returnsObjectsAsFaults = false
+        
+        do{
+            var foundDate = false
+            let results = try context.fetch(requestMealPlan)
+            if results.count == 0{
+                todaysMealPlan.breakfast = nil
+                todaysMealPlan.lunch = nil
+                todaysMealPlan.dinner = nil
+                self.dinnerSelection.text = "Nothing Selected"
+                self.lunchSelection.text = "Nothing Selected"
+                self.breakfastSelection.text = "Nothing Selected"
+                getNutrientsFromTodaysMealPlan(todaysMealPlan: todaysMealPlan)
+                return
+            }
+            for data in results as! [NSManagedObject]{
+                let searchYear = data.value(forKey: "dateYear") as! String
+                let searchDay = data.value(forKey: "dateDay") as! String
+                let searchMonth = data.value(forKey: "dateMonth") as! String
+                
+                let searchBTitle = data.value(forKey: "breakfastTitle") as? String ?? ""
+                let searchBAuthor = data.value(forKey: "breakfastAuthor") as? String ?? ""
+                
+                let searchLTitle = data.value(forKey: "lunchTitle") as? String ?? ""
+                let searchLAuthor = data.value(forKey: "lunchAuthor") as? String ?? ""
+                
+                let searchDTitle = data.value(forKey: "dinnerTitle") as? String ?? ""
+                let searchDAuthor = data.value(forKey: "dinnerAuthor") as? String ?? ""
+                
+                if (searchYear == String(coreDataYear) && searchDay == String(coreDataDay) && searchMonth == String(coreDataMonth)){
+                    foundDate = true
+                    
+                    if searchBTitle != ""{
+                        for i in 0 ..< testRecipes.count{
+                            if (testRecipes[i].title == searchBTitle && testRecipes[i].author == searchBAuthor){
+                                print("? Found \(testRecipes[i].title) for breakfast")
+                                todaysMealPlan.breakfast = testRecipes[i]
+                                self.breakfastSelection.text = todaysMealPlan.breakfast?.title
+                            }
+                        }
+                    } else{
+                        print("?Nothin selected or breakfast")
+                        self.breakfastSelection.text = "Nothing Selected"
+                        todaysMealPlan.breakfast = nil
+                    }
+                    if searchLTitle != ""{
+                        for i in 0 ..< testRecipes.count{
+                            if (testRecipes[i].title == searchLTitle && testRecipes[i].author == searchLAuthor){
+                                print("? Found \(testRecipes[i].title) for lunch")
+                                todaysMealPlan.lunch = testRecipes[i]
+                                self.lunchSelection.text = todaysMealPlan.lunch?.title
+                            }
+                        }
+                    } else{
+                        print("?Nothin selected or lunch")
+                        self.lunchSelection.text = "Nothing Selected"
+                        todaysMealPlan.lunch = nil
+                    }
+                    if searchDTitle != ""{
+                        for i in 0 ..< testRecipes.count{
+                            if (testRecipes[i].title == searchDTitle && testRecipes[i].author == searchDAuthor){
+                                print("? Found \(testRecipes[i].title) for dinner")
+                                todaysMealPlan.dinner = testRecipes[i]
+                                self.dinnerSelection.text = todaysMealPlan.dinner?.title
+                            }
+                        }
+                    } else{
+                        print("?Nothin selected or dinner")
+                        self.dinnerSelection.text = "Nothing Selected"
+                        todaysMealPlan.dinner = nil
                     }
                 }
             }
-            for data in resultLunch as! [NSManagedObject] {
-                let searchTitle = data.value(forKey: "title") as! String
-                let searchAuthor = data.value(forKey: "author") as! String
-                for i in 0 ..< testRecipes.count{
-                    if (testRecipes[i].title == searchTitle && testRecipes[i].author == searchAuthor){
-                        todaysMealPlan.lunch = testRecipes[i]
-                        self.lunchSelection.text = todaysMealPlan.lunch?.title
-                    }
-                }
-            }
-            for data in resultDinner as! [NSManagedObject] {
-                let searchTitle = data.value(forKey: "title") as! String
-                let searchAuthor = data.value(forKey: "author") as! String
-                for i in 0 ..< testRecipes.count{
-                    if (testRecipes[i].title == searchTitle && testRecipes[i].author == searchAuthor){
-                        todaysMealPlan.dinner = testRecipes[i]
-                        self.dinnerSelection.text = todaysMealPlan.dinner?.title
-                    }
-                }
+            if !foundDate{
+                print("?Nothin selected for today")
+                todaysMealPlan.breakfast = nil
+                todaysMealPlan.lunch = nil
+                todaysMealPlan.dinner = nil
+                self.dinnerSelection.text = "Nothing Selected"
+                self.lunchSelection.text = "Nothing Selected"
+                self.breakfastSelection.text = "Nothing Selected"
             }
             getNutrientsFromTodaysMealPlan(todaysMealPlan: todaysMealPlan)
-        } catch {
-            print("Error")
+        } catch{
+            fatalError()
         }
+    }
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        getMealsForDate(day: coreDataDay, month: coreDataMonth, year: coreDataYear)
+        
         let tapOnBreakfast = UITapGestureRecognizer(target: self, action: #selector(MealPlanMainViewController.tapBreakfast))
         breakfastSelection.isUserInteractionEnabled = true
         breakfastSelection.addGestureRecognizer(tapOnBreakfast)
@@ -547,61 +620,60 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         dinnerSelection.isUserInteractionEnabled = true
         dinnerSelection.addGestureRecognizer(tapOnDinner)
         
-		nutritionCollectionView?.register(CircularProgressView.self, forCellWithReuseIdentifier: "CircularProgressView")
-		calendarCollectionView?.register(DateCollectionViewCell.self, forCellWithReuseIdentifier: "DateCollectionViewCell")
-		
-		(nutritionCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout).estimatedItemSize = CGSize(width: 100, height: 100)
-		(nutritionCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout).minimumInteritemSpacing = 5
-		
-		(nutritionCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout).minimumLineSpacing = 20
-		
-		
-		nutritionCollectionView?.contentInset = UIEdgeInsetsMake(10, 10, 10, 10)
-		nutritionCollectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(10, 10, 10, 10)
-    
-		nutritionCollectionView?.dataSource = self
-		nutritionCollectionView?.delegate = self
-		
-		nutritionCollectionView?.tag = 0
-		calendarCollectionView?.tag = 1
-		
-		calendarCollectionView?.dataSource = self
-		calendarCollectionView?.delegate = self
-
-		self.view.addSubview(nutritionCollectionView!)
-		self.view.addSubview(calendarCollectionView!)
-		
-		if (calendarCollectionView == nil){
-			print("calendar nil")
-		}
+        nutritionCollectionView?.register(CircularProgressView.self, forCellWithReuseIdentifier: "CircularProgressView")
+        calendarCollectionView?.register(DateCollectionViewCell.self, forCellWithReuseIdentifier: "DateCollectionViewCell")
         
-		currentMonth = Months[month - 1]
-		MonthLabel?.text = "\(currentMonth) \(year)"
+        (nutritionCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout).estimatedItemSize = CGSize(width: 100, height: 100)
+        (nutritionCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout).minimumInteritemSpacing = 5
         
-        print(day)
-        calendarCollectionView?.allowsMultipleSelection = false
-        calendarCollectionView?.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: [])
-        calendarCollectionView?.cellForItem(at: IndexPath(row: 0, section: 0))?.backgroundColor = UIColor.cyan
+        (nutritionCollectionView?.collectionViewLayout as! UICollectionViewFlowLayout).minimumLineSpacing = 20
+        
+        
+        nutritionCollectionView?.contentInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        nutritionCollectionView?.scrollIndicatorInsets = UIEdgeInsetsMake(10, 10, 10, 10)
+        
+        nutritionCollectionView?.dataSource = self
+        nutritionCollectionView?.delegate = self
+        
+        nutritionCollectionView?.tag = 0
+        calendarCollectionView?.tag = 1
+        
+        calendarCollectionView?.dataSource = self
+        calendarCollectionView?.delegate = self
+        
+        self.view.addSubview(nutritionCollectionView!)
+        self.view.addSubview(calendarCollectionView!)
+        
+        if (calendarCollectionView == nil){
+            print("calendar nil")
+        }
+        
+        currentMonth = Months[month - 1]
+        MonthLabel?.text = "\(currentMonth) \(year)"
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == nutritionCollectionView {
             return
         }
-        print(indexPath)
         collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.cyan
         let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! DateCollectionViewCell
-        print(cell.DateLabel.text)
+        coreDataDay = Int(cell.DateLabel.text!)!
+        getMealsForDate(day: coreDataDay, month: coreDataMonth, year: coreDataYear)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         if collectionView == nutritionCollectionView {
             return
         }
-        collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.clear
+        if indexPath.row == day-1{
+            collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.magenta
+        } else{
+            collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.clear
+        }
     }
     
-	
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -669,12 +741,4 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             return
         }
     }
-    
-    @objc func tapDate(cell:DateCollectionViewCell, sender:UITapGestureRecognizer){
-        print ("Hello")
-        print(cell.DateLabel.text)
-    }
 }
-
-
-

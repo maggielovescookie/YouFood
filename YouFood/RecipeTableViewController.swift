@@ -17,6 +17,7 @@ import os.log
 
 var testRecipes = [Recipe]()
 var filteredRecipes = [Recipe]()
+var recipesLoaded = false
 
 var fiveStar: UIImage = UIImage(named: "5starImage.png")!
 var fourStar: UIImage = UIImage(named: "4starImage.png")!
@@ -38,8 +39,9 @@ class RecipeTableViewController: UITableViewController {
          self.tableView.reloadData()
          */
         self.tableView.reloadData()
-        if testRecipes.count == 0{
+        if !recipesLoaded {
             loadTestRecipes()
+            recipesLoaded = true
         }
     }
     override func viewDidLoad() {
