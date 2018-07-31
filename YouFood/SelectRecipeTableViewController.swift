@@ -5,8 +5,9 @@
 //  Created by ckanou on 7/24/18.
 //  Copyright © 2018 Novus. All rights reserved.
 //
-// Contributers: Syou (Cloud) Kanou, Ryan Thompson
+//  Contributers: Syou (Cloud) Kanou, Ryan Thompson
 //
+//  Just a basic implementation of a list to show all the recipes ou can select for your meal plan
 
 import UIKit
 

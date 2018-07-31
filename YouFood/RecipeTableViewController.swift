@@ -7,8 +7,7 @@
 //
 //  Contributors to this file: Cloud (Syou) Kanou, Sukkwon On, Maggie Xu, Ryan Thompson
 //
-//  Changes required: Add a way to favorite and report recipes
-//
+
 
 import UIKit
 import CoreData
@@ -32,13 +31,9 @@ class RecipeTableViewController: UITableViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        // On initial load, retrieve recipes from firebase
-        /*
-         testRecipes.removeAll()
-         filteredRecipes.removeAll()
-         self.tableView.reloadData()
-         */
-        self.tableView.reloadData()
+        // On initial load, retrieve recipes from firebase.
+        // Do not call this multiple times, or else the observer will show two recipes added whenever
+        // one recipe is added
         if !recipesLoaded {
             loadTestRecipes()
             recipesLoaded = true
@@ -47,10 +42,7 @@ class RecipeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //=============================
-        
-        //==============================
-        //Setting up parameters for searchController
+        //Setting up parameters for searchController (the search bar)
         navigationItem.searchController = searchController
         definesPresentationContext = true
         searchController.searchResultsUpdater = self
@@ -60,6 +52,7 @@ class RecipeTableViewController: UITableViewController {
         searchController.searchBar.delegate = self
         searchController.searchBar.tintColor = UIColor(red: 0/255, green: 202/255, blue: 157/255, alpha: 1.00)
         
+        //Add the button and set up the function that allows a user to upload a recipe
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRecipe))
         addButton.tintColor = UIColor(red: 0/255, green: 202/255, blue: 157/255, alpha: 1.00)
         self.navigationItem.leftBarButtonItem = addButton
@@ -82,10 +75,13 @@ class RecipeTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     
+    // Only one section in each table view cell
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    // Number of table view rows change depending on whether
+    // the user is using the search bar and scope bar
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering(){
             return filteredRecipes.count
@@ -117,6 +113,7 @@ class RecipeTableViewController: UITableViewController {
         
         let imageUrlString = recipe.recipeImageUrl
         
+        // If this recipe has a valid image, load it and save it to the recipe itself
         if (recipe.recipeImageUrl != "" && recipe.actualImage == nil){
             cell.tag = indexPath.row
             
@@ -132,17 +129,16 @@ class RecipeTableViewController: UITableViewController {
                             DispatchQueue.main.async {
                                 // create UIImage
                                 let imageToCache = UIImage(data: data!)
-                                // add image to cache THIS IS WHERE THE IMAGE IS STORED!!!
+                                // add this image to the recipe class instantiation itself
                                 recipe.actualImage = imageToCache
                                 cell.recipeImageView.image = recipe.actualImage
-                                //cell.recipeImageView.image = imageToCache
-                                
                             }
                         }
-                }
+                    }
                 )
             }
         } else if recipe.actualImage != nil{
+            // if the recipe image is available, load it from here to save bandwidth
             cell.recipeImageView.image = recipe.actualImage
         }
         return cell
@@ -220,7 +216,7 @@ class RecipeTableViewController: UITableViewController {
                 }
             }
         }
-            // Else, user wants to upload a recipe
+        // Else, user wants to upload a recipe
         else if segue.identifier == "AddViewController"{
         }
     }
@@ -228,12 +224,8 @@ class RecipeTableViewController: UITableViewController {
     //MARK: Private Methods
     
     private func loadTestRecipes(){
-        //let group = DispatchGroup()
         var ref: DatabaseReference!
         ref = Database.database().reference().child("mainstream")
-        
-        //group.enter()
-        //DispatchQueue.global(qos: .background).async{
         ref.observe(.childAdded, with: {(snapshot) -> Void in
             
             // If there are no recipes
@@ -274,7 +266,9 @@ class RecipeTableViewController: UITableViewController {
             servings = value?["servings"] as? Int ?? -1
             numLikes = value?["numLikes"] as? Int ?? -1
             
-            
+            // Getting array values from Firebase
+            // Must tokenize first with proper delimiter, then
+            // index correctly to store in the array
             let directionsString = value?["directions"] as? String ?? ""
             var directionsArray = [String]()
             directionsArray = directionsString.components(separatedBy: "^")
@@ -325,12 +319,15 @@ class RecipeTableViewController: UITableViewController {
     
     func filterContentForSearchText(_ searchText: String, scope: String){
         //The main search function. Includes query matching and scope matching
+        
         filteredRecipes = testRecipes.filter({( recipe : Recipe) -> Bool in
             let doesScopeMatch = scope == "All" || recipe.mealType.contains(scope)
             
+            // if search bar is empty, make sure recipe satsifies just scope bar
             if searchBarIsEmpty(){
                 return doesScopeMatch
             } else {
+                // otherwise make sure recipe satsifies both search bar text and scope bar
                 return (doesScopeMatch && recipe.title.lowercased().contains(searchText.lowercased())) || (doesScopeMatch && recipe.author.lowercased().contains(searchText.lowercased()))
             }
         })
@@ -338,6 +335,7 @@ class RecipeTableViewController: UITableViewController {
     }
     
     func isFiltering() -> Bool {
+        // function that decides if a user is filtering recipes or not
         let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
         return searchController.isActive && (!searchBarIsEmpty() || searchBarScopeIsFiltering)
     }

@@ -5,6 +5,9 @@
 //  Created by Sukkwon On on 2018-07-29.
 //  Copyright © 2018 Novus. All rights reserved.
 //
+//  Contributers: Sukkwon On
+//
+//  Another table view cell to display a users favorite recipes
 
 import UIKit
 

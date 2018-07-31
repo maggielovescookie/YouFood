@@ -5,10 +5,11 @@
 //  Created by ckanou on 7/24/18.
 //  Copyright © 2018 Novus. All rights reserved.
 //
-// Contributers: Syou (Cloud) Kanou, Ryan Thompson
+//  Contributers: Syou (Cloud) Kanou, Ryan Thompson
 
 import Foundation
 
+// A class that holds the 3 recipes and total nutrients of any given meal plan
 class oneDayMealPlan{
     
     var breakfast: Recipe?

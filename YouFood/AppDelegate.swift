@@ -5,7 +5,9 @@
 //  Created by ckanou on 6/27/18.
 //  Copyright © 2018 Novus. All rights reserved.
 //
-// Contributers: Sukkwon On
+//  Contributers: Sukkwon On
+//
+//  All custom code written here is to implement Google sign in for YouFood
 
 import UIKit
 import CoreData
@@ -24,10 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-        /*
-         let reference = Database.database().reference().child("mainstream")
-         reference.setValue(nil)
-         */
         
         return true
     }

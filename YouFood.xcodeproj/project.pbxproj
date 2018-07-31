@@ -19,7 +19,6 @@
 		0D26FF0E20E42D2200C13ECD /* YouFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26FF0D20E42D2200C13ECD /* YouFoodUITests.swift */; };
 		0D26FF1E20E44AEE00C13ECD /* RecipeClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26FF1D20E44AEE00C13ECD /* RecipeClasses.swift */; };
 		0D4D3FE620E723AE0098CBDA /* YouFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D3FE420E723AE0098CBDA /* YouFood.xcdatamodeld */; };
-		0D4D402520E726B30098CBDA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4D402420E726B30098CBDA /* SettingsViewController.swift */; };
 		0D5FC2D920FACE8D0094DA8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D5FC2D820FACE8D0094DA8E /* GoogleService-Info.plist */; };
 		0D5FC2EE20FAD05E0094DA8E /* FoodNutrientFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5FC2ED20FAD05E0094DA8E /* FoodNutrientFile.swift */; };
 		0D87908720E5E11400CC639A /* RecipeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D87908620E5E11400CC639A /* RecipeNavigationController.swift */; };
@@ -217,7 +216,6 @@
 		0D26FF0F20E42D2200C13ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D26FF1D20E44AEE00C13ECD /* RecipeClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeClasses.swift; sourceTree = "<group>"; };
 		0D4D3FE520E723AE0098CBDA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		0D4D402420E726B30098CBDA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0D5FC2D820FACE8D0094DA8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0D5FC2ED20FAD05E0094DA8E /* FoodNutrientFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutrientFile.swift; sourceTree = "<group>"; };
 		0D87908620E5E11400CC639A /* RecipeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNavigationController.swift; sourceTree = "<group>"; };
@@ -313,7 +311,6 @@
 				0D87908620E5E11400CC639A /* RecipeNavigationController.swift */,
 				0D26FEEF20E42D2200C13ECD /* DetailedRecipeViewController.swift */,
 				EA58A3CB20F470AB00527CBA /* RatingController.swift */,
-				0D4D402420E726B30098CBDA /* SettingsViewController.swift */,
 				0D5FC2ED20FAD05E0094DA8E /* FoodNutrientFile.swift */,
 				497C5DA7210FE1E50071F788 /* LogInViewController.swift */,
 				EA66048420F714E300747745 /* CircularProgressView.swift */,
@@ -791,7 +788,6 @@
 				0DF66C3220E5B0B50026DA2E /* RecipeTableViewController.swift in Sources */,
 				497C5DA8210FE1E50071F788 /* LogInViewController.swift in Sources */,
 				EA66048520F714E300747745 /* CircularProgressView.swift in Sources */,
-				0D4D402520E726B30098CBDA /* SettingsViewController.swift in Sources */,
 				497C5DA5210FE1B60071F788 /* FavoriteTableViewController.swift in Sources */,
 				497C5DA6210FE1B60071F788 /* FavoriteTableViewCell.swift in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 //  Contributers: Ryan Thompson, Syou (Cloud) Kanou
 //
+//  This file holds all the nutrient data per gram of ingredients
+//  This file will be updated when new ingredients need to be added
 
 import Foundation
 

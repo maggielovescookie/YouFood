@@ -5,7 +5,7 @@
 //  Created by ckanou on 6/28/18.
 //  Copyright © 2018 Novus. All rights reserved.
 //
-//  Contributer: Cloud (Syou) Kanou, Maggie Xu
+//  Contributer: Cloud (Syou) Kanou, Maggie Xu, Sukkwon On
 //
 
 import UIKit
@@ -16,7 +16,6 @@ class RecipeTableViewCell: UITableViewCell {
     //MARK: Properties
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-    //@IBOutlet weak var starRating: UIImage!
     
     override func awakeFromNib() {
         super.awakeFromNib()

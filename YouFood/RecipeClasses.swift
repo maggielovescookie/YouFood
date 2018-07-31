@@ -5,8 +5,9 @@
 //  Created by ckanou on 2018-07-02.
 //  Copyright © 2018 Novus. All rights reserved.
 //
-//  Contributors to this file: Cloud (Syou) Kanou, Maggie Xu
+//  Contributors to this file: Cloud Kanou, Maggie Xu, Sukkwon On, Ryan Thompson
 //
+//  Custom classes to hold information for recipes
 
 import Foundation
 import UIKit
@@ -27,6 +28,8 @@ class Ingredient{
     var name: String = ""
     var quantity: String = ""
     var unit: String = ""
+    
+    //tags is unused. Original purpose was to filter allergies and dietary styles
     var tags: [String] = []
     
     init(name: String, quantity: String, unit: String, tags: [String]){
@@ -46,10 +49,18 @@ class Ingredient{
 }
 
 class Recipe{
+    //key is the reference key in firebase
     var key: String
+    
+    //imageID is the actual ID of the image stored in firebase
     var imageID: String
+    
+    //recipeImageUrl holds the URL that downloadss the image
     var recipeImageUrl: String
+    
+    //actualImage holds the UIImage once downloaded from the database
     var actualImage: UIImage?
+    
     var title: String
     var author: String
     var ingredients: [Ingredient]
@@ -60,7 +71,7 @@ class Recipe{
     var directions: [(Int, String)]
     var nutrients: [Nutrient] = []
     var numLikes: Int
-    //var starRating: Double
+
     
     init(key: String, imageID: String, recipeImageUrl: String,title: String, author: String, ingredients: [Ingredient], cuisine: String, mealType: [String], timeToCook: Int, servings: Int, directions: [(Int, String)], nutrients: [Nutrient], numLikes: Int){
         self.key = key

@@ -2,38 +2,45 @@
 //
 //  MealPlanMainViewController.swift
 //  YouFood
-////  Created by XuMaggie on /07/1218.
+//  Created by XuMaggie on /07/1218.
 //  Copyright © 2018年 Novus. All rights reserved.
 //
-// Contributers: Maggie Xu, Syou (Cloud) Kanou, Ryan Thompson
+//  Contributers: Maggie Xu, Syou (Cloud) Kanou, Ryan Thompson
 //
 
 import UIKit
 import Foundation
 import CoreData
 
-//global counter
+// global counter
+// Instead of getting the ID of the segue called 2 viewcontrollers ago, we just set
+// a global variable and figure out which type of meal just got added using that
 var counter = 0
 
 class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,DataEnteredDelegate{
     
-    var firstLoad = true
-    
+    // Reference for the circles that display nutrients
     @IBOutlet var nutritionCollectionView: UICollectionView?
+    
+    // Reference for the collection that shows which day of the meal plan you have selected
     @IBOutlet var calendarCollectionView: UICollectionView?
     @IBOutlet var MonthLabel: UILabel?
     
+    // If we select AddBreakfast, we know the recipe we are getting from the table view is for breakfast
     @IBAction func AddBreakfast(_ sender: UIButton) {
         counter = 1
     }
+    // If we select AddLunch, we know the recipe we are getting from the table view is for lunch
     @IBAction func AddLunch(_ sender: UIButton) {
         counter = 2
     }
+    // If we select AddDinner, we know the recipe we are getting from the table view is for dinner
     @IBAction func AddDinner(_ sender: UIButton) {
         counter = 3
     }
     
     @IBAction func deleteBreakfast(_ sender: UIButton) {
+        // If you try to delete a non-existent meal, throw a message
         if todaysMealPlan.breakfast == nil{
             let alert = UIAlertView()
             alert.title = "Alert"
@@ -42,6 +49,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             alert.show()
             return
         } else{
+            // otherwise, delete the meal from core data, set the breakfast to nil, and recalculate nutrients
             deleteFromCoreData(entityName: "MealPlanBreakfast")
             todaysMealPlan.breakfast = nil
             breakfastSelection.text = "Nothing Selected"
@@ -50,6 +58,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
     }
     
     @IBAction func deleteLunch(_ sender: Any) {
+        // If you try to delete a non-existent meal, throw a message
         if todaysMealPlan.lunch == nil{
             let alert = UIAlertView()
             alert.title = "Alert"
@@ -58,6 +67,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             alert.show()
             return
         } else{
+            // otherwise, delete the meal from core data, set the lunch to nil, and recalculate nutrients
             deleteFromCoreData(entityName: "MealPlanLunch")
             todaysMealPlan.lunch = nil
             lunchSelection.text = "Nothing Selected"
@@ -65,6 +75,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         }
     }
     @IBAction func deleteDinner(_ sender: Any) {
+        // If you try to delete a non-existent meal, throw a message
         if todaysMealPlan.dinner == nil{
             let alert = UIAlertView()
             alert.title = "Alert"
@@ -73,6 +84,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             alert.show()
             return
         } else{
+            // otherwise, delete the meal from core data, set the dinner to nil, and recalculate nutrients
             deleteFromCoreData(entityName: "MealPlanDinner")
             todaysMealPlan.dinner = nil
             dinnerSelection.text = "Nothing Selected"
@@ -80,18 +92,17 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         }
     }
     
-    
-    
     @IBOutlet weak var breakfastSelection: UILabel!
     @IBOutlet weak var lunchSelection: UILabel!
     @IBOutlet weak var dinnerSelection: UILabel!
     
-    
+    // The main variable that holds the meal plan recipes and nutrients
     var todaysMealPlan = oneDayMealPlan()
     
+    // if the user selected a recipe for the next view controller, check the counter and
+    // add the recipe to the corresponding category
     func userDidEnterInformation(mealPlanRecipe: Recipe) {
         var entityName: String
-        //print(counter)
         if counter == 1{
             self.breakfastSelection.text = mealPlanRecipe.title
             todaysMealPlan.breakfast = mealPlanRecipe
@@ -106,6 +117,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             entityName = "MealPlanDinner"
         }
         
+        // delete then save to core data because it's much easier than updating
         deleteFromCoreData(entityName: entityName)
         
         saveToCoreData(todaysMealPlan: todaysMealPlan, entityName: entityName)
@@ -115,7 +127,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         getNutrientsFromTodaysMealPlan(todaysMealPlan: todaysMealPlan)
     }
     
-    
+    // Delete data from coredata
     func deleteFromCoreData(entityName: String){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -124,6 +136,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         do {
             let resultDate = try context.fetch(request)
             for dates in resultDate as! [NSManagedObject]{
+                // if the dates match the current selected date, remove everything related to it,
+                // including the date itself
                 let searchYear = dates.value(forKey: "dateYear") as! String
                 let searchDay = dates.value(forKey: "dateDay") as! String
                 let searchMonth = dates.value(forKey: "dateMonth") as! String
@@ -135,16 +149,20 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             print("Failed")
         }
         do {
+            // make sure to save the deletion
             try context.save()
         } catch {
             print("Save Error")
         }
     }
     
+    // save to core data
     func saveToCoreData(todaysMealPlan: oneDayMealPlan, entityName: String){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
+        // simply set values for the new NSManagedObject.
+        // If a type of meal is nil, just set it as an empty string
         let entity = NSEntityDescription.entity(forEntityName: "MealPlan", in: context)
         let newMealPlan = NSManagedObject(entity: entity!, insertInto: context)
         if todaysMealPlan.breakfast != nil{
@@ -165,12 +183,14 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         newMealPlan.setValue("\(coreDataYear)", forKey: "dateYear")
         
         do {
+            // make sure to save the addition
             try context.save()
         } catch {
             print("Failed saving")
         }
     }
     
+    // just go through each recipe in the todaysMealPlan class and add to the array
     func getNutrientsFromTodaysMealPlan(todaysMealPlan: oneDayMealPlan) {
         todaysMealPlan.totalNutrients = []
         for i in 0 ..< foodNutrientLabels.count{
@@ -199,14 +219,13 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         nutritionCollectionView?.reloadData()
     }
     
-    
+    // Setting up ALL THE DATA for the circle nutrition view visualizer things
     var nutritions:[Nutrition] = {
         var protein = Nutrition()
         protein.title = "Protein"
         protein.recommendedDailyAmount = 51
         protein.trackColor = UIColor(white: 255/255, alpha: 0.2)
         protein.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //protein.percentage = proteinPC
         protein.percentage = 0
         
         var fat = Nutrition()
@@ -214,7 +233,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         fat.recommendedDailyAmount = 66
         fat.trackColor = UIColor(white: 255/255, alpha: 0.2)
         fat.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //fat.percentage = fatPC
         fat.percentage = 0
         
         var Carbs = Nutrition()
@@ -222,7 +240,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         Carbs.recommendedDailyAmount = 275
         Carbs.trackColor = UIColor(white: 255/255, alpha: 0.2)
         Carbs.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //Carbs.percentage = carbonhydratePC
         Carbs.percentage = 0
         
         var calories = Nutrition()
@@ -230,7 +247,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         calories.recommendedDailyAmount = 2000
         calories.trackColor = UIColor(white: 255/255, alpha: 0.2)
         calories.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //calories.percentage = caloriesPC
         calories.percentage = 0
         
         var fiber = Nutrition()
@@ -238,7 +254,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         fiber.recommendedDailyAmount = 26.5
         fiber.trackColor = UIColor(white: 255/255, alpha: 0.2)
         fiber.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //fiber.percentage = fiberPC
         fiber.percentage = 0
         
         var sugar = Nutrition()
@@ -246,7 +261,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         sugar.recommendedDailyAmount = 25
         sugar.trackColor = UIColor(white: 255/255, alpha: 0.2)
         sugar.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //sugar.percentage = sugarPC
         sugar.percentage = 0
         
         var calcium = Nutrition()
@@ -254,7 +268,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         calcium.recommendedDailyAmount = 780
         calcium.trackColor = UIColor(white: 255/255, alpha: 0.2)
         calcium.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //calcium.percentage = calciumPC
         calcium.percentage = 0
         
         var iron = Nutrition()
@@ -262,7 +275,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         iron.recommendedDailyAmount = 10
         iron.trackColor = UIColor(white: 255/255, alpha: 0.2)
         iron.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //iron.percentage = ironPC
         iron.percentage = 0
         
         var magnesium = Nutrition()
@@ -270,7 +282,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         magnesium.recommendedDailyAmount = 210
         magnesium.trackColor = UIColor(white: 255/255, alpha: 0.2)
         magnesium.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //magnesium.percentage = magnesiumPC
         magnesium.percentage = 0
         
         var potassium = Nutrition()
@@ -278,7 +289,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         potassium.recommendedDailyAmount = 4500
         potassium.trackColor = UIColor(white: 255/255, alpha: 0.2)
         potassium.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //potassium.percentage = potassiumPC
         potassium.percentage = 0
         
         var sodium = Nutrition()
@@ -286,7 +296,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         sodium.recommendedDailyAmount = 1500
         sodium.trackColor = UIColor(white: 255/255, alpha: 0.2)
         sodium.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //sodium.percentage = sodiumPC
         sodium.percentage = 0
         
         var vitaminC = Nutrition()
@@ -294,7 +303,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         vitaminC.recommendedDailyAmount = 34
         vitaminC.trackColor = UIColor(white: 255/255, alpha: 0.2)
         vitaminC.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //vitaminC.percentage = vitaminCPC
         vitaminC.percentage = 0
         
         var vitaminD = Nutrition()
@@ -302,7 +310,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         vitaminD.recommendedDailyAmount = 120
         vitaminD.trackColor = UIColor(white: 255/255, alpha: 0.2)
         vitaminD.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //vitaminD.percentage = vitaminDPC
         vitaminD.percentage = 0
         
         var vitaminK = Nutrition()
@@ -310,7 +317,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         vitaminK.recommendedDailyAmount = 105
         vitaminK.trackColor = UIColor(white: 255/255, alpha: 0.2)
         vitaminK.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //vitamink.percentage = vitaminkPC
         vitaminK.percentage = 0
         
         var vitaminB6 = Nutrition()
@@ -318,7 +324,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         vitaminB6.recommendedDailyAmount = 1
         vitaminB6.trackColor = UIColor(white: 255/255, alpha: 0.2)
         vitaminB6.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //vitaminB6.percentage = vitaminB6PC
         vitaminB6.percentage = 0
         
         var vitaminB12 = Nutrition()
@@ -326,7 +331,6 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         vitaminB12.recommendedDailyAmount = 1
         vitaminB12.trackColor = UIColor(white: 255/255, alpha: 0.2)
         vitaminB12.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //vitaminB12.percentage = vitaminB12PC
         vitaminB12.percentage = 0
         
         var saturatedFat = Nutrition()
@@ -334,9 +338,9 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         saturatedFat.recommendedDailyAmount = 22.4
         saturatedFat.trackColor = UIColor(white: 255/255, alpha: 0.2)
         saturatedFat.shapeColor = UIColor(red: 252.0/255.0, green: 141.0/255.0, blue: 165.0/255.0, alpha: 1.0)
-        //saturatedFat.percentage = saturatedFatPC
         saturatedFat.percentage = 0
         
+        // Need filler so all the important circles actually show up
         var filler = Nutrition()
         filler.title = ""
         filler.trackColor = UIColor(white: 255/255, alpha: 0.2)
@@ -347,7 +351,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         
     }()
     
-    
+    // Set up for the calender collection view
     let Months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
     
     var DaysInMonths = [31,28,31,30,31,30,31,31,30,31,30,31]
@@ -362,10 +366,11 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
     
     var day = Calendar.current.component(.day , from: Date())
     var weekday = Calendar.current.component(.weekday, from: Date())
-    var month = Calendar.current.component(.month, from: Date())
+    var month = Calendar.current.component(.month, from: Date()) - 1
     var year = Calendar.current.component(.year, from: Date())
     
     // ALL STORED AS INTS
+    // core data vars to actually reference to when loading data from care data
     var coreDataDay = Calendar.current.component(.day , from: Date())
     var coreDataMonth = Calendar.current.component(.month, from: Date())
     var coreDataYear = Calendar.current.component(.year, from: Date())
@@ -419,7 +424,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         case "January":
             Direction = -1
             
-            month = 12
+            month = 11
             year -= 1
             
             if LeapYearCounter > 0{
@@ -432,7 +437,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                 DaysInMonths[1] = 28
             }
             
-            currentMonth = Months[month - 1]
+            currentMonth = Months[month]
             MonthLabel?.text = "\(currentMonth) \(year)"
             calendarCollectionView?.reloadData()
             coreDataMonth = 12
@@ -443,7 +448,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             
             month -= 1
             
-            currentMonth = Months[month - 1]
+            currentMonth = Months[month]
             MonthLabel?.text = "\(currentMonth) \(year)"
             calendarCollectionView?.reloadData()
             
@@ -452,20 +457,13 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // since we have two collection views on this page, we have to make sure we change the right ones
         switch collectionView.tag {
         case 0:
-            //print(nutritions.count)
             return nutritions.count
-            
-            
+
         case 1:
-            if month == 0{
-                return DaysInMonths[0]
-            }
-            print(DaysInMonths[month - 1])
-            print(day)
-            
-            return DaysInMonths[month - 1]
+            return DaysInMonths[month]
             
         default:
             fatalError()
@@ -476,9 +474,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         switch collectionView.tag {
         case 0:
             let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "CircularProgressView", for: indexPath) as! CircularProgressView
-            
             cellA.nutrition = nutritions[indexPath.item]
-            
             return cellA
             
         case 1:
@@ -487,7 +483,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             
             cellB.DateLabel.text = "\(indexPath.item + 1)"
             
-            let components = DateComponents(year: year, month: month, day: indexPath.item + 1)
+            // days in the weekend have a light gray colour
+            let components = DateComponents(year: year, month: month+1 , day: indexPath.item + 1)
             let theDay = Calendar.current.date(from: components)
             
             if Calendar.current.isDateInWeekend(theDay!){
@@ -497,7 +494,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                 cellB.DateLabel.textColor = UIColor.black
                 
             }
-            if indexPath.row == day-1 && self.firstLoad{
+            // the current day has a magenta colour
+            if indexPath.row == day-1 {
                 cellB.backgroundColor = UIColor.magenta
             }
             return cellB
@@ -508,8 +506,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         
     }
     
+    // function to load todaysMealPlan class and change the labels on the page
     func getMealsForDate (day: Int, month: Int, year: Int){
-        print("?IN GET MALS FOR DATE/MONTH/YEAR : \(day), \(month), \(year)")
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         
@@ -519,6 +517,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         do{
             var foundDate = false
             let results = try context.fetch(requestMealPlan)
+            // if the array of dates doesn't even contain anything, set everything to the default
             if results.count == 0{
                 todaysMealPlan.breakfast = nil
                 todaysMealPlan.lunch = nil
@@ -530,6 +529,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                 return
             }
             for data in results as! [NSManagedObject]{
+                // simply retrieve data from core data
                 let searchYear = data.value(forKey: "dateYear") as! String
                 let searchDay = data.value(forKey: "dateDay") as! String
                 let searchMonth = data.value(forKey: "dateMonth") as! String
@@ -543,52 +543,53 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                 let searchDTitle = data.value(forKey: "dinnerTitle") as? String ?? ""
                 let searchDAuthor = data.value(forKey: "dinnerAuthor") as? String ?? ""
                 
+                // if we find the correct day, load the data
                 if (searchYear == String(coreDataYear) && searchDay == String(coreDataDay) && searchMonth == String(coreDataMonth)){
                     foundDate = true
                     
+                    // if a title is not empty, put in the title of the recipe in the label and put it into todaysMealPlan
                     if searchBTitle != ""{
                         for i in 0 ..< testRecipes.count{
                             if (testRecipes[i].title == searchBTitle && testRecipes[i].author == searchBAuthor){
-                                print("? Found \(testRecipes[i].title) for breakfast")
                                 todaysMealPlan.breakfast = testRecipes[i]
                                 self.breakfastSelection.text = todaysMealPlan.breakfast?.title
                             }
                         }
                     } else{
-                        print("?Nothin selected or breakfast")
+                        // else, make the label nothing selected and nil the todaysMealPlan.breakfast
                         self.breakfastSelection.text = "Nothing Selected"
                         todaysMealPlan.breakfast = nil
                     }
+                    // if a title is not empty, put in the title of the recipe in the label and put it into todaysMealPlan
                     if searchLTitle != ""{
                         for i in 0 ..< testRecipes.count{
                             if (testRecipes[i].title == searchLTitle && testRecipes[i].author == searchLAuthor){
-                                print("? Found \(testRecipes[i].title) for lunch")
                                 todaysMealPlan.lunch = testRecipes[i]
                                 self.lunchSelection.text = todaysMealPlan.lunch?.title
                             }
                         }
                     } else{
-                        print("?Nothin selected or lunch")
+                        // else, make the label nothing selected and nil the todaysMealPlan.lunch
                         self.lunchSelection.text = "Nothing Selected"
                         todaysMealPlan.lunch = nil
                     }
+                    // if a title is not empty, put in the title of the recipe in the label and put it into todaysMealPlan
                     if searchDTitle != ""{
                         for i in 0 ..< testRecipes.count{
                             if (testRecipes[i].title == searchDTitle && testRecipes[i].author == searchDAuthor){
-                                print("? Found \(testRecipes[i].title) for dinner")
                                 todaysMealPlan.dinner = testRecipes[i]
                                 self.dinnerSelection.text = todaysMealPlan.dinner?.title
                             }
                         }
                     } else{
+                        // else, make the label nothing selected and nil the todaysMealPlan.lunch
                         print("?Nothin selected or dinner")
-                        self.dinnerSelection.text = "Nothing Selected"
                         todaysMealPlan.dinner = nil
                     }
                 }
             }
             if !foundDate{
-                print("?Nothin selected for today")
+                // if the date is not found, set everything to the default
                 todaysMealPlan.breakfast = nil
                 todaysMealPlan.lunch = nil
                 todaysMealPlan.dinner = nil
@@ -608,6 +609,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         
         getMealsForDate(day: coreDataDay, month: coreDataMonth, year: coreDataYear)
         
+        // tapping on the title of the recipe takes you to the detailed view of it
         let tapOnBreakfast = UITapGestureRecognizer(target: self, action: #selector(MealPlanMainViewController.tapBreakfast))
         breakfastSelection.isUserInteractionEnabled = true
         breakfastSelection.addGestureRecognizer(tapOnBreakfast)
@@ -620,6 +622,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         dinnerSelection.isUserInteractionEnabled = true
         dinnerSelection.addGestureRecognizer(tapOnDinner)
         
+        // setting properties, delegates, and data sources of all collection views
         nutritionCollectionView?.register(CircularProgressView.self, forCellWithReuseIdentifier: "CircularProgressView")
         calendarCollectionView?.register(DateCollectionViewCell.self, forCellWithReuseIdentifier: "DateCollectionViewCell")
         
@@ -641,17 +644,15 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         calendarCollectionView?.dataSource = self
         calendarCollectionView?.delegate = self
         
+        // instantiate the views
         self.view.addSubview(nutritionCollectionView!)
         self.view.addSubview(calendarCollectionView!)
         
-        if (calendarCollectionView == nil){
-            print("calendar nil")
-        }
-        
-        currentMonth = Months[month - 1]
+        currentMonth = Months[month]
         MonthLabel?.text = "\(currentMonth) \(year)"
     }
     
+    // registers selections on the calender view
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == nutritionCollectionView {
             return
@@ -659,6 +660,9 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.cyan
         let cell = collectionView.cellForItem(at: indexPath as IndexPath) as! DateCollectionViewCell
         coreDataDay = Int(cell.DateLabel.text!)!
+        
+        // whenever you click on a day, attempt to load the meals for that day
+        // also, makes the calender date cyan
         getMealsForDate(day: coreDataDay, month: coreDataMonth, year: coreDataYear)
     }
     
@@ -666,6 +670,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         if collectionView == nutritionCollectionView {
             return
         }
+        // whenever a cell is deselected, get rid of the cyan colour
+        // however, if it's the current datem turn it back to magenta
         if indexPath.row == day-1{
             collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.magenta
         } else{
@@ -705,6 +711,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         }
     }
     
+    // if you attempt to bring up the detailed view of a recipe without having one selected, throw and alert
     @objc func tapBreakfast(sender:UITapGestureRecognizer) {
         if todaysMealPlan.breakfast != nil{
             self.performSegue(withIdentifier: "mealPlanBreakfastDetail", sender: self)
@@ -717,6 +724,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             return
         }
     }
+    // if you attempt to bring up the detailed view of a recipe without having one selected, throw and alert
     @objc func tapLunch(sender:UITapGestureRecognizer) {
         if todaysMealPlan.lunch != nil{
             self.performSegue(withIdentifier: "mealPlanLunchDetail", sender: self)
@@ -729,6 +737,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             return
         }
     }
+    // if you attempt to bring up the detailed view of a recipe without having one selected, throw and alert
     @objc func tapDinner(sender:UITapGestureRecognizer) {
         if todaysMealPlan.dinner != nil{
             self.performSegue(withIdentifier: "mealPlanDinnerDetail", sender: self)

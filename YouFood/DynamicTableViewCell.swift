@@ -7,6 +7,7 @@
 //
 //  Contributer: Syou (Cloud) Kanou
 //
+//  This file is only here to enable dynamic table view cells for the directions table view in AddViewController.swift
 
 import UIKit
 

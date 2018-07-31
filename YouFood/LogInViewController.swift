@@ -5,6 +5,9 @@
 //  Created by Sukkwon On on 2018-07-28.
 //  Copyright © 2018 Novus. All rights reserved.
 //
+//  Contributers: Sukkwon On
+//
+//  This view controller is used solely for the purpose of logging in
 
 import UIKit
 import Firebase

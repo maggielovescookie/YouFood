@@ -5,19 +5,16 @@
 //  Created by XuMaggie on /07/2518.
 //  Copyright © 2018年 Novus. All rights reserved.
 //
+//  Contributers: Maggie Xu
+//
+//  Properties and functions for the calender cells
 
 import UIKit
 import Foundation
 
 
 class DateCollectionViewCell: UICollectionViewCell {
-	
-	//@IBOutlet var DateLabel: UILabel?
-	
-	//@IBOutlet var Circle: UIView?
-	
-	
-	
+
 	let Circle: UIView = {
 		let view = UIView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
 		

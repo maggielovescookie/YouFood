@@ -5,6 +5,9 @@
 //  Created by rwthomps on 7/25/18.
 //  Copyright © 2018 Novus. All rights reserved.
 //
+//  Contributers: Ryan Thompson
+//
+//  Again, not much to say. Set up for the button on the navigation bar to go back
 
 import UIKit
 

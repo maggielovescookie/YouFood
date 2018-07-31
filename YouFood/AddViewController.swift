@@ -7,7 +7,7 @@
 //
 //  Contributers: Sukkwon On, Ryan Thompson, Syou (Cloud) Kanou, Maggie Xu
 //
-//  Known Issues: - Text entries too large for a single tableViewCell gets cut off
+//  
 
 
 import UIKit
@@ -18,7 +18,7 @@ import Firebase
 var ingredientNames: [String] = []
 
 class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDataSource, UITableViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
-    //Preparing data for the picker wheels
+    //Preparing data for the picker wheels and providing default values
     
     let cuisines = ["Chinese", "Japanese", "American", "Thai", "Italian", "Greek", "Indian", "Mexican", "Vietnamese", "Mediterranean", "Other"]
     var selectedCuisine: String = "Chinese"
@@ -87,6 +87,7 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         dismiss(animated: true, completion: nil)
     }
     
+    //Resize image so firebase storage doesn't complain that we're taking up too much bandwidth
     func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
         
         let scale = newWidth / image.size.width
@@ -144,6 +145,8 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
             newRecipe.ingredients.append(Ingredient(name: ingredientData[k], quantity: quantityData[k], unit: unitData[k], tags: []))
         }
         
+        //Storing direction, meal type, ingredient, and nutrient data as a string in firebase rather than
+        //a child with nodes. Storing as a child with nodes created problems with the .childAdded observer
         var storedDirections: String = ""
         
         for i in 0 ..< newRecipe.directions.count{
@@ -188,7 +191,7 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
             }
         }
         
-        
+        // If there is an image, resize it and store it in firebase storage
         if (userImageInput.image != nil){
             
             let imageInput:UIImage = resizeImage(image: userImageInput.image!, newWidth: CGFloat(380.0))
@@ -222,7 +225,7 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
                         
                         // -------- FIREBASE UPLOADING --------
                         
-                        // Upload single value data such as imageID, imageURL, title, author, cuisine, timeToCook, and servings
+                        // Upload all information
                         if let recipeImageUrl = url?.absoluteString {
                             let storyDictionary = [
                                 "key" : "\(reference.key)",
@@ -245,6 +248,7 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
                 })
             }
         } else{
+            // No picture, upload all information without anything related to images
             let storyDictionary = [
                 "key" : "\(reference.key)",
                 "imageID" : "",
@@ -293,7 +297,7 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         self.dismiss(animated: true, completion: nil)
     }
     
-    
+    // Camera functions are implemented, but no one we know has an iPhone they were willing to let us borrow
     func requestCameraPermission() {
         print("dd")
         AVCaptureDevice.requestAccess(for: .video, completionHandler: {accessGranted in
@@ -332,15 +336,10 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*
-         nameInput.returnKeyType = .done
-         authorInput.returnKeyType = .done
-         directionsInput.returnKeyType = .done
-         ingredientInput.returnKeyType = .done
-         */
-        
+        // If user scrolls, remove keyboard
         scrollView.keyboardDismissMode = .onDrag
         
+        // Allows direction cells to have dynamic height for longer directions
         directionsTable.estimatedRowHeight = 44
         directionsTable.rowHeight = UITableViewAutomaticDimension
         
@@ -391,7 +390,6 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         ingredientInput.maxNumberOfResults = 10
         
         //Setting up relationships of buttons to functions
-        
         addTypeOfMealButton.setTitle("+add", for: UIControlState.normal)
         addTypeOfMealButton.addTarget(self, action: #selector(addTypeOfMealButtonAction(_:)), for: .touchUpInside)
         
@@ -404,7 +402,6 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         addImageButton.setTitle("+add", for: UIControlState.normal)
         
         //Setting delegate and data source for ALL pickers and tableviews
-        
         foodCuisinePicker.delegate = self
         foodCuisinePicker.dataSource = self
         
@@ -432,7 +429,9 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         ingredientTable.delegate = self
     }
     
+    // Add a type of meal to the recipe
     @objc func addTypeOfMealButtonAction(_ sender: UIButton?){
+        // If user is in the middle of removing cells, don't add anything to the table
         if addTypeOfMealTable.isEditing{
             return
         }
@@ -454,7 +453,9 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         addTypeOfMealTable.selectRow(at: indexPath, animated: true, scrollPosition: .none)
     }
     
+    // Add ingredients to the recipe
     @objc func addIngredientButtonAction(_ sender: UIButton?){
+        // If user is in the middle of removing cells, don't add anything to the table
         if ingredientTable.isEditing{
             return
         }
@@ -567,20 +568,16 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
                 break
             }
         }
-        /* Uncomment to make sure nutrients are correct values when excel has been updated
-         for k in 0 ..< nutrientData.count {
-         print(nutrientData[k].name)
-         print(nutrientData[k].quantity)
-         print(nutrientData[k].unit)
-         }
-         */
         self.ingredientInput.text = ""
     }
     
+    //Add directions to the recipe
     @objc func addDirectionsButtonAction(_ sender: UIButton?){
+        // If user is in the middle of removing cells, don't add anything to the table
         if directionsTable.isEditing{
             return
         }
+        // If input is empty, throw an error
         if self.directionsInput.text?.isEmpty ?? true {
             let alert = UIAlertView()
             alert.title = "Alert"
@@ -590,6 +587,7 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
             return
         }
         
+        // Add direction to the end of the table view, rather than the front (makes more sense for directions)
         let indexPath:IndexPath = IndexPath(row: directionsData.count, section: 0)
         directionsData.append((0, self.directionsInput.text!))
         directionsTable.insertRows(at: [indexPath], with: .automatic)

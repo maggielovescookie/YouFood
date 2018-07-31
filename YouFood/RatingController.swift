@@ -7,6 +7,9 @@
 //
 //  Contributers: Maggie Xu
 //
+//  Unfortunately, this code is unimplemented as we have decided to opt for favorites and
+//  counting the number of favorites for a recipe
+
 
 import UIKit
 

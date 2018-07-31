@@ -7,8 +7,6 @@
 //
 //  Contributors to this file: Cloud (Syou) Kanou, Maggie Xu, Sukkwon On
 //
-//  Changes required: Finish displaying nutrients to user
-//                    Add a way to favorite and report
 
 import UIKit
 import CoreData
@@ -28,6 +26,7 @@ class DetailedRecipeViewController: UIViewController {
     @IBOutlet weak var ratingStackView: RatingController!
     @IBOutlet weak var ingredientDirectionNutritionInformation: UITextView!
     
+    // If a user favorites this recipe, upload the whole recipe under the users unique ID
     @IBAction func buttonIsTapped(_ sender: UIButton) {
         if let recipe = recipe{
             let key:String = recipe.key
@@ -35,8 +34,6 @@ class DetailedRecipeViewController: UIViewController {
             let reference = Database.database().reference().child("mainstream").child(key).child("author")
             if favoriteButton.isSelected == false {
                 favoriteButton.isSelected = true
-                //favoriteButton.setImage(UIImage(named : "heart_on"), for: .default)
-                print("onononononon")
                 let user = Auth.auth().currentUser
                 if let user = user
                 {
@@ -121,8 +118,6 @@ class DetailedRecipeViewController: UIViewController {
             }
             else {
                 favoriteButton.isSelected = false
-                //favoriteButton.setImage(UIImage(named : "heart_off"), for: .selected)
-                print("offoffoffoff")
                 let user = Auth.auth().currentUser
                 if let user = user
                 {
@@ -262,6 +257,7 @@ class DetailedRecipeViewController: UIViewController {
         }
     }
     
+    // Unused code
     @IBAction func rateIt(_ sender: Any){
         print(ratingStackView.starRating)
     }

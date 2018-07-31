@@ -4,6 +4,10 @@
 //
 //  Created by ckanou on 7/24/18.
 //
+//  Contributers: Cloud Kanou
+//
+//  Not much to say here. Just setting up the label outlets so they reflect the title and author
+//  of the recipes in the select recipe table view controller
 
 import UIKit
 

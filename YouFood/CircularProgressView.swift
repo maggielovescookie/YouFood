@@ -5,10 +5,11 @@
 //  Created by XuMaggie on /07/1118.
 //  Copyright © 2018年 Novus. All rights reserved.
 //
-// Contributers: Maggie Xu, Syou (Cloud) Kanou, Ryan Thompson
+//  Contributers: Maggie Xu, Syou (Cloud) Kanou, Ryan Thompson
 //
 import UIKit
 
+// This class helps the circles visualize the amount of nutrients in a days meal plan
 class Nutrition: NSObject {
     
     var title: String?
@@ -31,6 +32,7 @@ class CircularProgressView: UICollectionViewCell {
                 percentageLabel.text = "\(Int((nutrition?.percentage)! * 100))%"
             }
             
+            // Setting the looks, animations, and behaviours of the circles
             self.backgroundColor = UIColor.clear
             self.layer.cornerRadius = self.frame.size.width/2
             let circlePath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width/2, y: frame.size.height/2), radius: (frame.size.width - 1.5)/2, startAngle: CGFloat(-0.5 * .pi), endAngle: CGFloat(1.5 * .pi), clockwise: true)
@@ -68,6 +70,7 @@ class CircularProgressView: UICollectionViewCell {
     let shapeLayer = CAShapeLayer()
     let trackLayer = CAShapeLayer()
     
+    // Setting properties of the label that displays the nutrient
     let titleLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: -12, width: 100, height: 100))
         label.lineBreakMode = .byWordWrapping
@@ -78,7 +81,7 @@ class CircularProgressView: UICollectionViewCell {
         return label
     }()
 
-    
+    // Setting properties of the label that displays the percentage of the nutrient
     let percentageLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 7, width: 100, height: 100))
         label.lineBreakMode = .byWordWrapping
@@ -89,13 +92,7 @@ class CircularProgressView: UICollectionViewCell {
         return label
     }()
     
-    /*
-    func setupViews(frame: CGRect) {
-        addSubview(titleLabel)
-        addSubview(percentageLabel)
-      
-    }
- */
+    // Instantiate the views we just finished setting up
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(self.titleLabel)
