@@ -1,0 +1,1315 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DetailedRecipeViewController"
+provides-nominal:
+- "7YouFood28DetailedRecipeViewControllerC"
+provides-member:
+- ["7YouFood28DetailedRecipeViewControllerC", ""]
+provides-dynamic-lookup:
+- "authorLabel2"
+- "buttonIsTapped"
+- "didReceiveMemoryWarning"
+- "favoriteButton"
+- "ingredientDirectionNutritionInformation"
+- "minutesLabel"
+- "numLikesLabel"
+- "rateIt"
+- "ratingStackView"
+- "recipeImage"
+- "return"
+- "servingsLabel"
+- "titleLabel2"
+- "viewDidLoad"
+depends-top-level:
+- !private "!="
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "-="
+- !private "..<"
+- !private "<"
+- !private "=="
+- !private "??"
+- !private "AnyObject"
+- "AssignmentPrecedence"
+- !private "Auth"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "Database"
+- !private "DatabaseReference"
+- "DetailedRecipeViewController"
+- !private "Dictionary"
+- !private "Int"
+- !private "NSAttributedStringKey"
+- !private "NSDictionary"
+- !private "NSMutableAttributedString"
+- !private "Nutrient"
+- "RatingController"
+- "Recipe"
+- !private "String"
+- !private "StringLiteralType"
+- "UIBarButtonItem"
+- "UIButton"
+- !private "UIFont"
+- "UIImageView"
+- "UILabel"
+- "UITextView"
+- "UIViewController"
+- !private "UnicodeScalarType"
+- !private "Void"
+- !private "print"
+depends-member:
+- !private ["Sa", "count"]
+- !private ["Sa", "sorted"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "0"]
+- !private ["s10ArraySliceV", "1"]
+- !private ["s10ArraySliceV", "name"]
+- !private ["s10ArraySliceV", "quantity"]
+- !private ["s10ArraySliceV", "unit"]
+- !private ["So4AuthC", "auth"]
+- !private ["So4AuthC", "currentUser"]
+- !private ["s23BidirectionalCollectionP", "0"]
+- !private ["s23BidirectionalCollectionP", "1"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "name"]
+- !private ["s23BidirectionalCollectionP", "quantity"]
+- !private ["s23BidirectionalCollectionP", "sorted"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s23BidirectionalCollectionP", "unit"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "attributedText"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "isSelected"]
+- !private ["So15CALayerDelegateP", "starRating"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Auth"]
+- !private ["s7CVarArgP", "Database"]
+- !private ["s7CVarArgP", "NSAttributedStringKey"]
+- !private ["s7CVarArgP", "NSMutableAttributedString"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "UIFont"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "attributedText"]
+- !private ["s7CVarArgP", "auth"]
+- !private ["s7CVarArgP", "authorLabel2"]
+- !private ["s7CVarArgP", "child"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "currentUser"]
+- !private ["s7CVarArgP", "database"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "favoriteButton"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "ingredientDirectionNutritionInformation"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isSelected"]
+- !private ["s7CVarArgP", "key"]
+- !private ["s7CVarArgP", "minutesLabel"]
+- !private ["s7CVarArgP", "numLikesLabel"]
+- !private ["s7CVarArgP", "observe"]
+- !private ["s7CVarArgP", "observeSingleEvent"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "ratingStackView"]
+- !private ["s7CVarArgP", "recipe"]
+- !private ["s7CVarArgP", "recipeImage"]
+- !private ["s7CVarArgP", "reference"]
+- !private ["s7CVarArgP", "servingsLabel"]
+- !private ["s7CVarArgP", "setValue"]
+- !private ["s7CVarArgP", "sorted"]
+- !private ["s7CVarArgP", "starRating"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "systemFont"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "titleLabel2"]
+- !private ["s7CVarArgP", "uid"]
+- !private ["s7CVarArgP", "value"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "0"]
+- !private ["s10CollectionP", "1"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "name"]
+- !private ["s10CollectionP", "quantity"]
+- !private ["s10CollectionP", "sorted"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "unit"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "0"]
+- !private ["s28CustomDebugStringConvertibleP", "1"]
+- !private ["s28CustomDebugStringConvertibleP", "Auth"]
+- !private ["s28CustomDebugStringConvertibleP", "Database"]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s28CustomDebugStringConvertibleP", "NSMutableAttributedString"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "UIFont"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "attributedText"]
+- !private ["s28CustomDebugStringConvertibleP", "auth"]
+- !private ["s28CustomDebugStringConvertibleP", "authorLabel2"]
+- !private ["s28CustomDebugStringConvertibleP", "child"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "currentUser"]
+- !private ["s28CustomDebugStringConvertibleP", "database"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "favoriteButton"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "ingredientDirectionNutritionInformation"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "key"]
+- !private ["s28CustomDebugStringConvertibleP", "minutesLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "numLikesLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "observe"]
+- !private ["s28CustomDebugStringConvertibleP", "observeSingleEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "quantity"]
+- !private ["s28CustomDebugStringConvertibleP", "ratingStackView"]
+- !private ["s28CustomDebugStringConvertibleP", "recipe"]
+- !private ["s28CustomDebugStringConvertibleP", "recipeImage"]
+- !private ["s28CustomDebugStringConvertibleP", "reference"]
+- !private ["s28CustomDebugStringConvertibleP", "servingsLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "setValue"]
+- !private ["s28CustomDebugStringConvertibleP", "sorted"]
+- !private ["s28CustomDebugStringConvertibleP", "starRating"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "systemFont"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "titleLabel2"]
+- !private ["s28CustomDebugStringConvertibleP", "uid"]
+- !private ["s28CustomDebugStringConvertibleP", "unit"]
+- !private ["s28CustomDebugStringConvertibleP", "value"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "0"]
+- !private ["s17CustomReflectableP", "1"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "name"]
+- !private ["s17CustomReflectableP", "quantity"]
+- !private ["s17CustomReflectableP", "sorted"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "unit"]
+- !private ["s23CustomStringConvertibleP", "0"]
+- !private ["s23CustomStringConvertibleP", "1"]
+- !private ["s23CustomStringConvertibleP", "Auth"]
+- !private ["s23CustomStringConvertibleP", "Database"]
+- !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s23CustomStringConvertibleP", "NSMutableAttributedString"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "UIFont"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "attributedText"]
+- !private ["s23CustomStringConvertibleP", "auth"]
+- !private ["s23CustomStringConvertibleP", "authorLabel2"]
+- !private ["s23CustomStringConvertibleP", "child"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "currentUser"]
+- !private ["s23CustomStringConvertibleP", "database"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "favoriteButton"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "ingredientDirectionNutritionInformation"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isSelected"]
+- !private ["s23CustomStringConvertibleP", "key"]
+- !private ["s23CustomStringConvertibleP", "minutesLabel"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "numLikesLabel"]
+- !private ["s23CustomStringConvertibleP", "observe"]
+- !private ["s23CustomStringConvertibleP", "observeSingleEvent"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "quantity"]
+- !private ["s23CustomStringConvertibleP", "ratingStackView"]
+- !private ["s23CustomStringConvertibleP", "recipe"]
+- !private ["s23CustomStringConvertibleP", "recipeImage"]
+- !private ["s23CustomStringConvertibleP", "reference"]
+- !private ["s23CustomStringConvertibleP", "servingsLabel"]
+- !private ["s23CustomStringConvertibleP", "setValue"]
+- !private ["s23CustomStringConvertibleP", "sorted"]
+- !private ["s23CustomStringConvertibleP", "starRating"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "systemFont"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "titleLabel2"]
+- !private ["s23CustomStringConvertibleP", "uid"]
+- !private ["s23CustomStringConvertibleP", "unit"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["SC13DataEventTypeO", "childAdded"]
+- !private ["SC13DataEventTypeO", "value"]
+- !private ["So12DataSnapshotC", "key"]
+- !private ["So12DataSnapshotC", "value"]
+- !private ["So8DatabaseC", "database"]
+- !private ["So8DatabaseC", "reference"]
+- !private ["So13DatabaseQueryC", "child"]
+- !private ["So13DatabaseQueryC", "observe"]
+- !private ["So13DatabaseQueryC", "observeSingleEvent"]
+- !private ["So13DatabaseQueryC", "setValue"]
+- !private ["So17DatabaseReferenceC", "child"]
+- !private ["So17DatabaseReferenceC", "observe"]
+- !private ["So17DatabaseReferenceC", "observeSingleEvent"]
+- !private ["So17DatabaseReferenceC", "setValue"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "sorted"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "AnyObject"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "Auth"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "Database"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "DatabaseReference"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "Int"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "NSAttributedStringKey"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "NSDictionary"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "NSMutableAttributedString"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "Nutrient"]
+- ["7YouFood28DetailedRecipeViewControllerC", "RatingController"]
+- ["7YouFood28DetailedRecipeViewControllerC", "Recipe"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "String"]
+- ["7YouFood28DetailedRecipeViewControllerC", "UIBarButtonItem"]
+- ["7YouFood28DetailedRecipeViewControllerC", "UIButton"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "UIFont"]
+- ["7YouFood28DetailedRecipeViewControllerC", "UIImageView"]
+- ["7YouFood28DetailedRecipeViewControllerC", "UILabel"]
+- ["7YouFood28DetailedRecipeViewControllerC", "UITextView"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "Void"]
+- ["7YouFood28DetailedRecipeViewControllerC", "authorLabel2"]
+- ["7YouFood28DetailedRecipeViewControllerC", "buttonIsTapped"]
+- ["7YouFood28DetailedRecipeViewControllerC", "deinit"]
+- ["7YouFood28DetailedRecipeViewControllerC", "didReceiveMemoryWarning"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "dismiss"]
+- ["7YouFood28DetailedRecipeViewControllerC", "favoriteButton"]
+- ["7YouFood28DetailedRecipeViewControllerC", "ingredientDirectionNutritionInformation"]
+- ["7YouFood28DetailedRecipeViewControllerC", "init"]
+- ["7YouFood28DetailedRecipeViewControllerC", "minutesLabel"]
+- ["7YouFood28DetailedRecipeViewControllerC", "numLikesLabel"]
+- !private ["7YouFood28DetailedRecipeViewControllerC", "print"]
+- ["7YouFood28DetailedRecipeViewControllerC", "rateIt"]
+- ["7YouFood28DetailedRecipeViewControllerC", "ratingStackView"]
+- ["7YouFood28DetailedRecipeViewControllerC", "recipe"]
+- ["7YouFood28DetailedRecipeViewControllerC", "recipeImage"]
+- ["7YouFood28DetailedRecipeViewControllerC", "return"]
+- ["7YouFood28DetailedRecipeViewControllerC", "servingsLabel"]
+- ["7YouFood28DetailedRecipeViewControllerC", "titleLabel2"]
+- ["7YouFood28DetailedRecipeViewControllerC", "viewDidLoad"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "sorted"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Auth"]
+- !private ["s9EquatableP", "Database"]
+- !private ["s9EquatableP", "NSAttributedStringKey"]
+- !private ["s9EquatableP", "NSMutableAttributedString"]
+- !private ["s9EquatableP", "String"]
+- !private ["s9EquatableP", "UIFont"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "attributedText"]
+- !private ["s9EquatableP", "auth"]
+- !private ["s9EquatableP", "authorLabel2"]
+- !private ["s9EquatableP", "child"]
+- !private ["s9EquatableP", "childAdded"]
+- !private ["s9EquatableP", "currentUser"]
+- !private ["s9EquatableP", "database"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "dismiss"]
+- !private ["s9EquatableP", "favoriteButton"]
+- !private ["s9EquatableP", "font"]
+- !private ["s9EquatableP", "image"]
+- !private ["s9EquatableP", "ingredientDirectionNutritionInformation"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isSelected"]
+- !private ["s9EquatableP", "key"]
+- !private ["s9EquatableP", "minutesLabel"]
+- !private ["s9EquatableP", "numLikesLabel"]
+- !private ["s9EquatableP", "observe"]
+- !private ["s9EquatableP", "observeSingleEvent"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "ratingStackView"]
+- !private ["s9EquatableP", "recipe"]
+- !private ["s9EquatableP", "recipeImage"]
+- !private ["s9EquatableP", "reference"]
+- !private ["s9EquatableP", "servingsLabel"]
+- !private ["s9EquatableP", "setValue"]
+- !private ["s9EquatableP", "starRating"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "systemFont"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "titleLabel2"]
+- !private ["s9EquatableP", "uid"]
+- !private ["s9EquatableP", "value"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "0"]
+- !private ["s25ExpressibleByArrayLiteralP", "1"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "name"]
+- !private ["s25ExpressibleByArrayLiteralP", "quantity"]
+- !private ["s25ExpressibleByArrayLiteralP", "sorted"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "unit"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Auth"]
+- !private ["s8HashableP", "Database"]
+- !private ["s8HashableP", "NSAttributedStringKey"]
+- !private ["s8HashableP", "NSMutableAttributedString"]
+- !private ["s8HashableP", "String"]
+- !private ["s8HashableP", "UIFont"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "append"]
+- !private ["s8HashableP", "attributedText"]
+- !private ["s8HashableP", "auth"]
+- !private ["s8HashableP", "authorLabel2"]
+- !private ["s8HashableP", "child"]
+- !private ["s8HashableP", "childAdded"]
+- !private ["s8HashableP", "currentUser"]
+- !private ["s8HashableP", "database"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- !private ["s8HashableP", "dismiss"]
+- !private ["s8HashableP", "favoriteButton"]
+- !private ["s8HashableP", "font"]
+- !private ["s8HashableP", "image"]
+- !private ["s8HashableP", "ingredientDirectionNutritionInformation"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isSelected"]
+- !private ["s8HashableP", "key"]
+- !private ["s8HashableP", "minutesLabel"]
+- !private ["s8HashableP", "numLikesLabel"]
+- !private ["s8HashableP", "observe"]
+- !private ["s8HashableP", "observeSingleEvent"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "ratingStackView"]
+- !private ["s8HashableP", "recipe"]
+- !private ["s8HashableP", "recipeImage"]
+- !private ["s8HashableP", "reference"]
+- !private ["s8HashableP", "servingsLabel"]
+- !private ["s8HashableP", "setValue"]
+- !private ["s8HashableP", "starRating"]
+- !private ["s8HashableP", "subscript"]
+- !private ["s8HashableP", "systemFont"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "titleLabel2"]
+- !private ["s8HashableP", "uid"]
+- !private ["s8HashableP", "value"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["7YouFood10IngredientC", "name"]
+- !private ["7YouFood10IngredientC", "quantity"]
+- !private ["7YouFood10IngredientC", "unit"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "0"]
+- !private ["s17MutableCollectionP", "1"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "name"]
+- !private ["s17MutableCollectionP", "quantity"]
+- !private ["s17MutableCollectionP", "sorted"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["s17MutableCollectionP", "unit"]
+- !private ["So18NSAttributedStringC", "append"]
+- !private ["So18NSAttributedStringC", "init"]
+- !private ["SC21NSAttributedStringKeyV", "font"]
+- !private ["So8NSCodingP", "Auth"]
+- !private ["So8NSCodingP", "Database"]
+- !private ["So8NSCodingP", "NSAttributedStringKey"]
+- !private ["So8NSCodingP", "NSMutableAttributedString"]
+- !private ["So8NSCodingP", "String"]
+- !private ["So8NSCodingP", "UIFont"]
+- !private ["So8NSCodingP", "append"]
+- !private ["So8NSCodingP", "attributedText"]
+- !private ["So8NSCodingP", "authorLabel2"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "favoriteButton"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "ingredientDirectionNutritionInformation"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isSelected"]
+- !private ["So8NSCodingP", "minutesLabel"]
+- !private ["So8NSCodingP", "numLikesLabel"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "ratingStackView"]
+- !private ["So8NSCodingP", "recipe"]
+- !private ["So8NSCodingP", "recipeImage"]
+- !private ["So8NSCodingP", "servingsLabel"]
+- !private ["So8NSCodingP", "starRating"]
+- !private ["So8NSCodingP", "subscript"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "titleLabel2"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "append"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "subscript"]
+- !private ["So9NSCopyingP", "systemFont"]
+- !private ["So12NSDictionaryC", "subscript"]
+- !private ["So26NSExtensionRequestHandlingP", "Auth"]
+- !private ["So26NSExtensionRequestHandlingP", "Database"]
+- !private ["So26NSExtensionRequestHandlingP", "NSAttributedStringKey"]
+- !private ["So26NSExtensionRequestHandlingP", "NSMutableAttributedString"]
+- !private ["So26NSExtensionRequestHandlingP", "String"]
+- !private ["So26NSExtensionRequestHandlingP", "UIFont"]
+- !private ["So26NSExtensionRequestHandlingP", "authorLabel2"]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "favoriteButton"]
+- !private ["So26NSExtensionRequestHandlingP", "ingredientDirectionNutritionInformation"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "minutesLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "numLikesLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "ratingStackView"]
+- !private ["So26NSExtensionRequestHandlingP", "recipe"]
+- !private ["So26NSExtensionRequestHandlingP", "recipeImage"]
+- !private ["So26NSExtensionRequestHandlingP", "servingsLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "titleLabel2"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So17NSFastEnumerationP", "subscript"]
+- !private ["So20NSFetchRequestResultP", "subscript"]
+- !private ["So21NSItemProviderReadingP", "append"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "append"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So25NSMutableAttributedStringC", "append"]
+- !private ["So25NSMutableAttributedStringC", "init"]
+- !private ["So16NSMutableCopyingP", "append"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "subscript"]
+- !private ["So8NSObjectC", "AnyObject"]
+- !private ["So8NSObjectC", "Auth"]
+- !private ["So8NSObjectC", "Database"]
+- !private ["So8NSObjectC", "DatabaseReference"]
+- !private ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "NSAttributedStringKey"]
+- !private ["So8NSObjectC", "NSDictionary"]
+- !private ["So8NSObjectC", "NSMutableAttributedString"]
+- !private ["So8NSObjectC", "Nutrient"]
+- ["So8NSObjectC", "RatingController"]
+- ["So8NSObjectC", "Recipe"]
+- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIBarButtonItem"]
+- ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIFont"]
+- ["So8NSObjectC", "UIImageView"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UITextView"]
+- !private ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "append"]
+- !private ["So8NSObjectC", "attributedText"]
+- !private ["So8NSObjectC", "auth"]
+- ["So8NSObjectC", "authorLabel2"]
+- ["So8NSObjectC", "buttonIsTapped"]
+- !private ["So8NSObjectC", "child"]
+- !private ["So8NSObjectC", "currentUser"]
+- !private ["So8NSObjectC", "database"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "favoriteButton"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "ingredientDirectionNutritionInformation"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isSelected"]
+- !private ["So8NSObjectC", "key"]
+- ["So8NSObjectC", "minutesLabel"]
+- ["So8NSObjectC", "numLikesLabel"]
+- !private ["So8NSObjectC", "observe"]
+- !private ["So8NSObjectC", "observeSingleEvent"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "rateIt"]
+- ["So8NSObjectC", "ratingStackView"]
+- ["So8NSObjectC", "recipe"]
+- ["So8NSObjectC", "recipeImage"]
+- !private ["So8NSObjectC", "reference"]
+- ["So8NSObjectC", "return"]
+- ["So8NSObjectC", "servingsLabel"]
+- !private ["So8NSObjectC", "setValue"]
+- !private ["So8NSObjectC", "starRating"]
+- !private ["So8NSObjectC", "subscript"]
+- !private ["So8NSObjectC", "systemFont"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "titleLabel2"]
+- !private ["So8NSObjectC", "uid"]
+- !private ["So8NSObjectC", "value"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Auth"]
+- !private ["So16NSObjectProtocolP", "Database"]
+- !private ["So16NSObjectProtocolP", "NSAttributedStringKey"]
+- !private ["So16NSObjectProtocolP", "NSMutableAttributedString"]
+- !private ["So16NSObjectProtocolP", "String"]
+- !private ["So16NSObjectProtocolP", "UIFont"]
+- !private ["So16NSObjectProtocolP", "append"]
+- !private ["So16NSObjectProtocolP", "attributedText"]
+- !private ["So16NSObjectProtocolP", "auth"]
+- !private ["So16NSObjectProtocolP", "authorLabel2"]
+- !private ["So16NSObjectProtocolP", "child"]
+- !private ["So16NSObjectProtocolP", "currentUser"]
+- !private ["So16NSObjectProtocolP", "database"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- !private ["So16NSObjectProtocolP", "dismiss"]
+- !private ["So16NSObjectProtocolP", "favoriteButton"]
+- !private ["So16NSObjectProtocolP", "image"]
+- !private ["So16NSObjectProtocolP", "ingredientDirectionNutritionInformation"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isSelected"]
+- !private ["So16NSObjectProtocolP", "key"]
+- !private ["So16NSObjectProtocolP", "minutesLabel"]
+- !private ["So16NSObjectProtocolP", "numLikesLabel"]
+- !private ["So16NSObjectProtocolP", "observe"]
+- !private ["So16NSObjectProtocolP", "observeSingleEvent"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "ratingStackView"]
+- !private ["So16NSObjectProtocolP", "recipe"]
+- !private ["So16NSObjectProtocolP", "recipeImage"]
+- !private ["So16NSObjectProtocolP", "reference"]
+- !private ["So16NSObjectProtocolP", "servingsLabel"]
+- !private ["So16NSObjectProtocolP", "setValue"]
+- !private ["So16NSObjectProtocolP", "starRating"]
+- !private ["So16NSObjectProtocolP", "subscript"]
+- !private ["So16NSObjectProtocolP", "systemFont"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "titleLabel2"]
+- !private ["So16NSObjectProtocolP", "uid"]
+- !private ["So16NSObjectProtocolP", "value"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "append"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "subscript"]
+- !private ["So8NSStringC", "init"]
+- !private ["7YouFood8NutrientC", "name"]
+- !private ["7YouFood8NutrientC", "quantity"]
+- !private ["7YouFood8NutrientC", "unit"]
+- !private ["s22RandomAccessCollectionP", "0"]
+- !private ["s22RandomAccessCollectionP", "1"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "name"]
+- !private ["s22RandomAccessCollectionP", "quantity"]
+- !private ["s22RandomAccessCollectionP", "sorted"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s22RandomAccessCollectionP", "unit"]
+- !private ["s26RangeReplaceableCollectionP", "0"]
+- !private ["s26RangeReplaceableCollectionP", "1"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "name"]
+- !private ["s26RangeReplaceableCollectionP", "quantity"]
+- !private ["s26RangeReplaceableCollectionP", "sorted"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "unit"]
+- !private ["7YouFood16RatingControllerC", "starRating"]
+- !private ["s16RawRepresentableP", "childAdded"]
+- !private ["s16RawRepresentableP", "font"]
+- !private ["s16RawRepresentableP", "value"]
+- !private ["7YouFood6RecipeC", "actualImage"]
+- !private ["7YouFood6RecipeC", "author"]
+- !private ["7YouFood6RecipeC", "cuisine"]
+- !private ["7YouFood6RecipeC", "directions"]
+- !private ["7YouFood6RecipeC", "imageID"]
+- !private ["7YouFood6RecipeC", "ingredients"]
+- !private ["7YouFood6RecipeC", "key"]
+- !private ["7YouFood6RecipeC", "mealType"]
+- !private ["7YouFood6RecipeC", "numLikes"]
+- !private ["7YouFood6RecipeC", "nutrients"]
+- !private ["7YouFood6RecipeC", "recipeImageUrl"]
+- !private ["7YouFood6RecipeC", "servings"]
+- !private ["7YouFood6RecipeC", "timeToCook"]
+- !private ["7YouFood6RecipeC", "title"]
+- !private ["s8SequenceP", "0"]
+- !private ["s8SequenceP", "1"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "name"]
+- !private ["s8SequenceP", "quantity"]
+- !private ["s8SequenceP", "sorted"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "unit"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "attributedText"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "isSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "starRating"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "attributedText"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "isSelected"]
+- !private ["So12UIAppearanceP", "starRating"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Auth"]
+- !private ["So21UIAppearanceContainerP", "Database"]
+- !private ["So21UIAppearanceContainerP", "NSAttributedStringKey"]
+- !private ["So21UIAppearanceContainerP", "NSMutableAttributedString"]
+- !private ["So21UIAppearanceContainerP", "String"]
+- !private ["So21UIAppearanceContainerP", "UIFont"]
+- !private ["So21UIAppearanceContainerP", "attributedText"]
+- !private ["So21UIAppearanceContainerP", "authorLabel2"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "favoriteButton"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "ingredientDirectionNutritionInformation"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isSelected"]
+- !private ["So21UIAppearanceContainerP", "minutesLabel"]
+- !private ["So21UIAppearanceContainerP", "numLikesLabel"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "ratingStackView"]
+- !private ["So21UIAppearanceContainerP", "recipe"]
+- !private ["So21UIAppearanceContainerP", "recipeImage"]
+- !private ["So21UIAppearanceContainerP", "servingsLabel"]
+- !private ["So21UIAppearanceContainerP", "starRating"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "titleLabel2"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "isSelected"]
+- !private ["So18UIContentContainerP", "Auth"]
+- !private ["So18UIContentContainerP", "Database"]
+- !private ["So18UIContentContainerP", "NSAttributedStringKey"]
+- !private ["So18UIContentContainerP", "NSMutableAttributedString"]
+- !private ["So18UIContentContainerP", "String"]
+- !private ["So18UIContentContainerP", "UIFont"]
+- !private ["So18UIContentContainerP", "authorLabel2"]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "favoriteButton"]
+- !private ["So18UIContentContainerP", "ingredientDirectionNutritionInformation"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "minutesLabel"]
+- !private ["So18UIContentContainerP", "numLikesLabel"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "ratingStackView"]
+- !private ["So18UIContentContainerP", "recipe"]
+- !private ["So18UIContentContainerP", "recipeImage"]
+- !private ["So18UIContentContainerP", "servingsLabel"]
+- !private ["So18UIContentContainerP", "titleLabel2"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So30UIContentSizeCategoryAdjustingP", "attributedText"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "isSelected"]
+- !private ["So17UICoordinateSpaceP", "attributedText"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "isSelected"]
+- !private ["So17UICoordinateSpaceP", "starRating"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "attributedText"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "isSelected"]
+- !private ["So13UIDynamicItemP", "starRating"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Auth"]
+- !private ["So18UIFocusEnvironmentP", "Database"]
+- !private ["So18UIFocusEnvironmentP", "NSAttributedStringKey"]
+- !private ["So18UIFocusEnvironmentP", "NSMutableAttributedString"]
+- !private ["So18UIFocusEnvironmentP", "String"]
+- !private ["So18UIFocusEnvironmentP", "UIFont"]
+- !private ["So18UIFocusEnvironmentP", "attributedText"]
+- !private ["So18UIFocusEnvironmentP", "authorLabel2"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "favoriteButton"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "ingredientDirectionNutritionInformation"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isSelected"]
+- !private ["So18UIFocusEnvironmentP", "minutesLabel"]
+- !private ["So18UIFocusEnvironmentP", "numLikesLabel"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "ratingStackView"]
+- !private ["So18UIFocusEnvironmentP", "recipe"]
+- !private ["So18UIFocusEnvironmentP", "recipeImage"]
+- !private ["So18UIFocusEnvironmentP", "servingsLabel"]
+- !private ["So18UIFocusEnvironmentP", "starRating"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "titleLabel2"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "attributedText"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "isSelected"]
+- !private ["So11UIFocusItemP", "starRating"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So6UIFontC", "systemFont"]
+- !private ["So11UIImageViewC", "image"]
+- !private ["So10UIKeyInputP", "attributedText"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Auth"]
+- !private ["So30UIPasteConfigurationSupportingP", "Database"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSAttributedStringKey"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSMutableAttributedString"]
+- !private ["So30UIPasteConfigurationSupportingP", "String"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIFont"]
+- !private ["So30UIPasteConfigurationSupportingP", "attributedText"]
+- !private ["So30UIPasteConfigurationSupportingP", "authorLabel2"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "favoriteButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "ingredientDirectionNutritionInformation"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "minutesLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "numLikesLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "ratingStackView"]
+- !private ["So30UIPasteConfigurationSupportingP", "recipe"]
+- !private ["So30UIPasteConfigurationSupportingP", "recipeImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "servingsLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "starRating"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleLabel2"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "AnyObject"]
+- !private ["So11UIResponderC", "Auth"]
+- !private ["So11UIResponderC", "Database"]
+- !private ["So11UIResponderC", "DatabaseReference"]
+- !private ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "NSAttributedStringKey"]
+- !private ["So11UIResponderC", "NSDictionary"]
+- !private ["So11UIResponderC", "NSMutableAttributedString"]
+- !private ["So11UIResponderC", "Nutrient"]
+- ["So11UIResponderC", "RatingController"]
+- ["So11UIResponderC", "Recipe"]
+- !private ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIBarButtonItem"]
+- ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIFont"]
+- ["So11UIResponderC", "UIImageView"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UITextView"]
+- !private ["So11UIResponderC", "Void"]
+- !private ["So11UIResponderC", "attributedText"]
+- ["So11UIResponderC", "authorLabel2"]
+- ["So11UIResponderC", "buttonIsTapped"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "favoriteButton"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "ingredientDirectionNutritionInformation"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isSelected"]
+- ["So11UIResponderC", "minutesLabel"]
+- ["So11UIResponderC", "numLikesLabel"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "rateIt"]
+- ["So11UIResponderC", "ratingStackView"]
+- ["So11UIResponderC", "recipe"]
+- ["So11UIResponderC", "recipeImage"]
+- ["So11UIResponderC", "return"]
+- ["So11UIResponderC", "servingsLabel"]
+- !private ["So11UIResponderC", "starRating"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "titleLabel2"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Auth"]
+- !private ["So30UIResponderStandardEditActionsP", "Database"]
+- !private ["So30UIResponderStandardEditActionsP", "NSAttributedStringKey"]
+- !private ["So30UIResponderStandardEditActionsP", "NSMutableAttributedString"]
+- !private ["So30UIResponderStandardEditActionsP", "String"]
+- !private ["So30UIResponderStandardEditActionsP", "UIFont"]
+- !private ["So30UIResponderStandardEditActionsP", "attributedText"]
+- !private ["So30UIResponderStandardEditActionsP", "authorLabel2"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "favoriteButton"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "ingredientDirectionNutritionInformation"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "minutesLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "numLikesLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "ratingStackView"]
+- !private ["So30UIResponderStandardEditActionsP", "recipe"]
+- !private ["So30UIResponderStandardEditActionsP", "recipeImage"]
+- !private ["So30UIResponderStandardEditActionsP", "servingsLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "starRating"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "titleLabel2"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So12UIScrollViewC", "attributedText"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isSelected"]
+- !private ["So11UIStackViewC", "starRating"]
+- !private ["So16UIStateRestoringP", "Auth"]
+- !private ["So16UIStateRestoringP", "Database"]
+- !private ["So16UIStateRestoringP", "NSAttributedStringKey"]
+- !private ["So16UIStateRestoringP", "NSMutableAttributedString"]
+- !private ["So16UIStateRestoringP", "String"]
+- !private ["So16UIStateRestoringP", "UIFont"]
+- !private ["So16UIStateRestoringP", "authorLabel2"]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "favoriteButton"]
+- !private ["So16UIStateRestoringP", "ingredientDirectionNutritionInformation"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "minutesLabel"]
+- !private ["So16UIStateRestoringP", "numLikesLabel"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "ratingStackView"]
+- !private ["So16UIStateRestoringP", "recipe"]
+- !private ["So16UIStateRestoringP", "recipeImage"]
+- !private ["So16UIStateRestoringP", "servingsLabel"]
+- !private ["So16UIStateRestoringP", "titleLabel2"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So15UITextDraggableP", "attributedText"]
+- !private ["So15UITextDroppableP", "attributedText"]
+- !private ["So11UITextInputP", "attributedText"]
+- !private ["So17UITextInputTraitsP", "attributedText"]
+- !private ["So34UITextPasteConfigurationSupportingP", "attributedText"]
+- !private ["So10UITextViewC", "attributedText"]
+- !private ["So18UITraitEnvironmentP", "Auth"]
+- !private ["So18UITraitEnvironmentP", "Database"]
+- !private ["So18UITraitEnvironmentP", "NSAttributedStringKey"]
+- !private ["So18UITraitEnvironmentP", "NSMutableAttributedString"]
+- !private ["So18UITraitEnvironmentP", "String"]
+- !private ["So18UITraitEnvironmentP", "UIFont"]
+- !private ["So18UITraitEnvironmentP", "attributedText"]
+- !private ["So18UITraitEnvironmentP", "authorLabel2"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "favoriteButton"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "ingredientDirectionNutritionInformation"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isSelected"]
+- !private ["So18UITraitEnvironmentP", "minutesLabel"]
+- !private ["So18UITraitEnvironmentP", "numLikesLabel"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "ratingStackView"]
+- !private ["So18UITraitEnvironmentP", "recipe"]
+- !private ["So18UITraitEnvironmentP", "recipeImage"]
+- !private ["So18UITraitEnvironmentP", "servingsLabel"]
+- !private ["So18UITraitEnvironmentP", "starRating"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "titleLabel2"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "attributedText"]
+- !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "isSelected"]
+- !private ["So6UIViewC", "starRating"]
+- !private ["So6UIViewC", "text"]
+- !private ["So16UIViewControllerC", "AnyObject"]
+- !private ["So16UIViewControllerC", "Auth"]
+- !private ["So16UIViewControllerC", "Database"]
+- !private ["So16UIViewControllerC", "DatabaseReference"]
+- !private ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "NSAttributedStringKey"]
+- !private ["So16UIViewControllerC", "NSDictionary"]
+- !private ["So16UIViewControllerC", "NSMutableAttributedString"]
+- !private ["So16UIViewControllerC", "Nutrient"]
+- ["So16UIViewControllerC", "RatingController"]
+- ["So16UIViewControllerC", "Recipe"]
+- !private ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIBarButtonItem"]
+- ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIFont"]
+- ["So16UIViewControllerC", "UIImageView"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UITextView"]
+- !private ["So16UIViewControllerC", "Void"]
+- ["So16UIViewControllerC", "authorLabel2"]
+- ["So16UIViewControllerC", "buttonIsTapped"]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "favoriteButton"]
+- ["So16UIViewControllerC", "ingredientDirectionNutritionInformation"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "minutesLabel"]
+- ["So16UIViewControllerC", "numLikesLabel"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "rateIt"]
+- ["So16UIViewControllerC", "ratingStackView"]
+- ["So16UIViewControllerC", "recipe"]
+- ["So16UIViewControllerC", "recipeImage"]
+- ["So16UIViewControllerC", "return"]
+- ["So16UIViewControllerC", "servingsLabel"]
+- ["So16UIViewControllerC", "titleLabel2"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["So4UserC", "uid"]
+- !private ["So8UserInfoP", "uid"]
+- !private ["s14_ArrayProtocolP", "0"]
+- !private ["s14_ArrayProtocolP", "1"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "name"]
+- !private ["s14_ArrayProtocolP", "quantity"]
+- !private ["s14_ArrayProtocolP", "sorted"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s14_ArrayProtocolP", "unit"]
+- !private ["s23_BidirectionalIndexableP", "0"]
+- !private ["s23_BidirectionalIndexableP", "1"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "name"]
+- !private ["s23_BidirectionalIndexableP", "quantity"]
+- !private ["s23_BidirectionalIndexableP", "sorted"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "unit"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "attributedText"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isSelected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "starRating"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "0"]
+- !private ["s24_DestructorSafeContainerP", "1"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "name"]
+- !private ["s24_DestructorSafeContainerP", "quantity"]
+- !private ["s24_DestructorSafeContainerP", "sorted"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "unit"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "0"]
+- !private ["s10_IndexableP", "1"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "name"]
+- !private ["s10_IndexableP", "quantity"]
+- !private ["s10_IndexableP", "sorted"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s10_IndexableP", "unit"]
+- !private ["s14_IndexableBaseP", "0"]
+- !private ["s14_IndexableBaseP", "1"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "name"]
+- !private ["s14_IndexableBaseP", "quantity"]
+- !private ["s14_IndexableBaseP", "sorted"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s14_IndexableBaseP", "unit"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedStringKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSMutableAttributedString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "append"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "attributedText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "authorLabel2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "child"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "database"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "favoriteButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ingredientDirectionNutritionInformation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "key"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "minutesLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "numLikesLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "observeSingleEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ratingStackView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "recipe"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "recipeImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reference"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "servingsLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "starRating"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel2"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "uid"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "0"]
+- !private ["s17_MutableIndexableP", "1"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "name"]
+- !private ["s17_MutableIndexableP", "quantity"]
+- !private ["s17_MutableIndexableP", "sorted"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s17_MutableIndexableP", "unit"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "font"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "sorted"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "0"]
+- !private ["s22_RandomAccessIndexableP", "1"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "name"]
+- !private ["s22_RandomAccessIndexableP", "quantity"]
+- !private ["s22_RandomAccessIndexableP", "sorted"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "unit"]
+- !private ["s26_RangeReplaceableIndexableP", "0"]
+- !private ["s26_RangeReplaceableIndexableP", "1"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "name"]
+- !private ["s26_RangeReplaceableIndexableP", "quantity"]
+- !private ["s26_RangeReplaceableIndexableP", "sorted"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "unit"]
+- !private ["s20_SwiftNewtypeWrapperP", "font"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s10ArraySliceV"
+- !private "So4AuthC"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "SC13DataEventTypeO"
+- !private "So12DataSnapshotC"
+- !private "So8DatabaseC"
+- !private "So13DatabaseQueryC"
+- !private "So17DatabaseReferenceC"
+- !private "s9DecodableP"
+- "7YouFood28DetailedRecipeViewControllerC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "7YouFood10IngredientC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So18NSAttributedStringC"
+- !private "SC21NSAttributedStringKeyV"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So12NSDictionaryC"
+- "So26NSExtensionRequestHandlingP"
+- !private "So17NSFastEnumerationP"
+- !private "So20NSFetchRequestResultP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So25NSMutableAttributedStringC"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "7YouFood8NutrientC"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "7YouFood16RatingControllerC"
+- !private "s16RawRepresentableP"
+- !private "7YouFood6RecipeC"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So6UIFontC"
+- !private "So11UIImageViewC"
+- !private "So10UIKeyInputP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So11UIStackViewC"
+- "So16UIStateRestoringP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- !private "So10UITextViewC"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So4UserC"
+- !private "So8UserInfoP"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+- !private "allKeys"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRMutableData.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRSnapshotMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRCollectionReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSource.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FirebaseStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentChange.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRServerValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRWriteBatch.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldPath.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRListenerRegistration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRAnalyticsConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTransaction.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTimestamp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRGeoPoint.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuerySnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+interface-hash: "b1501f7b0906280b779cd2ebd4e00f0c"

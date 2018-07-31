@@ -1,0 +1,206 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "oneDayMealPlan"
+provides-nominal:
+- "7YouFood14oneDayMealPlanC"
+provides-member:
+- ["7YouFood14oneDayMealPlanC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "..<"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Float"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "Recipe"
+- !private "foodNutrientLabels"
+- "oneDayMealPlan"
+- !private "print"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "count"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- ["7YouFood14oneDayMealPlanC", "Float"]
+- ["7YouFood14oneDayMealPlanC", "Recipe"]
+- ["7YouFood14oneDayMealPlanC", "breakfast"]
+- ["7YouFood14oneDayMealPlanC", "deinit"]
+- ["7YouFood14oneDayMealPlanC", "dinner"]
+- !private ["7YouFood14oneDayMealPlanC", "foodNutrientLabels"]
+- ["7YouFood14oneDayMealPlanC", "init"]
+- ["7YouFood14oneDayMealPlanC", "lunch"]
+- !private ["7YouFood14oneDayMealPlanC", "print"]
+- ["7YouFood14oneDayMealPlanC", "totalNutrients"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s17MutableCollectionP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- "7YouFood14oneDayMealPlanC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRMutableData.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRSnapshotMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRCollectionReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSource.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FirebaseStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentChange.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRServerValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRWriteBatch.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldPath.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRListenerRegistration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRAnalyticsConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTransaction.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTimestamp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRGeoPoint.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuerySnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_sk_1/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.apinotes"
+interface-hash: "22ff52a2ef8db0c971963bc487a04210"

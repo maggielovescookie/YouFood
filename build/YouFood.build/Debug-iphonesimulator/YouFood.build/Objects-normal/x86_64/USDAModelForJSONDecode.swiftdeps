@@ -1,0 +1,868 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Json4Swift_Base"
+- "Foods"
+- "Food"
+- "Desc"
+- "Nutrients"
+- "Measures"
+- "getNutrientsWithAPICall"
+provides-nominal:
+- "7YouFood15Json4Swift_BaseV"
+- "7YouFood15Json4Swift_BaseV10CodingKeysO"
+- "7YouFood5FoodsV"
+- "7YouFood5FoodsV10CodingKeysO"
+- "7YouFood0B0V"
+- "7YouFood0B0V10CodingKeysO"
+- "7YouFood4DescV"
+- "7YouFood4DescV10CodingKeysO"
+- "7YouFood9NutrientsV"
+- "7YouFood9NutrientsV10CodingKeysO"
+- "7YouFood8MeasuresV"
+- "7YouFood8MeasuresV10CodingKeysO"
+provides-member:
+- ["7YouFood15Json4Swift_BaseV", ""]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", ""]
+- ["7YouFood5FoodsV", ""]
+- ["7YouFood5FoodsV10CodingKeysO", ""]
+- ["7YouFood0B0V", ""]
+- ["7YouFood0B0V10CodingKeysO", ""]
+- ["7YouFood4DescV", ""]
+- ["7YouFood4DescV10CodingKeysO", ""]
+- ["7YouFood9NutrientsV", ""]
+- ["7YouFood9NutrientsV10CodingKeysO", ""]
+- ["7YouFood8MeasuresV", ""]
+- ["7YouFood8MeasuresV10CodingKeysO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "+="
+- !private "..<"
+- "=="
+- "AssignmentPrecedence"
+- "Codable"
+- "CodingKey"
+- "Decoder"
+- "Desc"
+- "Double"
+- !private "Float"
+- "Food"
+- "Foods"
+- "Int"
+- !private "JSONDecoder"
+- "Json4Swift_Base"
+- "Measures"
+- "Nutrient"
+- "Nutrients"
+- "String"
+- "StringLiteralType"
+- !private "URL"
+- !private "URLSession"
+- !private "UnicodeScalarType"
+- !private "fatalError"
+- "getNutrientsWithAPICall"
+- !private "print"
+- !private "~="
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["s10ArraySliceV", "0"]
+- !private ["s10ArraySliceV", "food"]
+- !private ["s23BidirectionalCollectionP", "0"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "food"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "dataTask"]
+- !private ["s7CVarArgP", "hashValue"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "subscript"]
+- ["s9CodingKeyP", "RawValue"]
+- !private ["s9CodingKeyP", "api"]
+- !private ["s9CodingKeyP", "count"]
+- !private ["s9CodingKeyP", "derivation"]
+- !private ["s9CodingKeyP", "desc"]
+- !private ["s9CodingKeyP", "ds"]
+- !private ["s9CodingKeyP", "eqv"]
+- !private ["s9CodingKeyP", "eunit"]
+- !private ["s9CodingKeyP", "food"]
+- !private ["s9CodingKeyP", "foods"]
+- !private ["s9CodingKeyP", "footnotes"]
+- !private ["s9CodingKeyP", "group"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- !private ["s9CodingKeyP", "label"]
+- !private ["s9CodingKeyP", "manu"]
+- !private ["s9CodingKeyP", "measures"]
+- !private ["s9CodingKeyP", "name"]
+- !private ["s9CodingKeyP", "ndbno"]
+- !private ["s9CodingKeyP", "notfound"]
+- !private ["s9CodingKeyP", "nutrient_id"]
+- !private ["s9CodingKeyP", "nutrients"]
+- !private ["s9CodingKeyP", "qty"]
+- ["s9CodingKeyP", "rawValue"]
+- !private ["s9CodingKeyP", "ru"]
+- !private ["s9CodingKeyP", "sr"]
+- ["s9CodingKeyP", "stringValue"]
+- !private ["s9CodingKeyP", "type"]
+- !private ["s9CodingKeyP", "unit"]
+- !private ["s9CodingKeyP", "value"]
+- ["s9CodingKeyP", ""]
+- ["7YouFood0B0V10CodingKeysO", "RawValue"]
+- ["7YouFood0B0V10CodingKeysO", "deinit"]
+- ["7YouFood0B0V10CodingKeysO", "desc"]
+- ["7YouFood0B0V10CodingKeysO", "footnotes"]
+- ["7YouFood0B0V10CodingKeysO", "hashValue"]
+- ["7YouFood0B0V10CodingKeysO", "init"]
+- ["7YouFood0B0V10CodingKeysO", "intValue"]
+- ["7YouFood0B0V10CodingKeysO", "nutrients"]
+- ["7YouFood0B0V10CodingKeysO", "rawValue"]
+- ["7YouFood0B0V10CodingKeysO", "sr"]
+- ["7YouFood0B0V10CodingKeysO", "stringValue"]
+- ["7YouFood0B0V10CodingKeysO", "type"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "RawValue"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "api"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "count"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "deinit"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "foods"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "hashValue"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "init"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "intValue"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "notfound"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "rawValue"]
+- ["7YouFood15Json4Swift_BaseV10CodingKeysO", "stringValue"]
+- ["7YouFood4DescV10CodingKeysO", "RawValue"]
+- ["7YouFood4DescV10CodingKeysO", "deinit"]
+- ["7YouFood4DescV10CodingKeysO", "ds"]
+- ["7YouFood4DescV10CodingKeysO", "hashValue"]
+- ["7YouFood4DescV10CodingKeysO", "init"]
+- ["7YouFood4DescV10CodingKeysO", "intValue"]
+- ["7YouFood4DescV10CodingKeysO", "manu"]
+- ["7YouFood4DescV10CodingKeysO", "name"]
+- ["7YouFood4DescV10CodingKeysO", "ndbno"]
+- ["7YouFood4DescV10CodingKeysO", "rawValue"]
+- ["7YouFood4DescV10CodingKeysO", "ru"]
+- ["7YouFood4DescV10CodingKeysO", "stringValue"]
+- ["7YouFood5FoodsV10CodingKeysO", "RawValue"]
+- ["7YouFood5FoodsV10CodingKeysO", "deinit"]
+- ["7YouFood5FoodsV10CodingKeysO", "food"]
+- ["7YouFood5FoodsV10CodingKeysO", "hashValue"]
+- ["7YouFood5FoodsV10CodingKeysO", "init"]
+- ["7YouFood5FoodsV10CodingKeysO", "intValue"]
+- ["7YouFood5FoodsV10CodingKeysO", "rawValue"]
+- ["7YouFood5FoodsV10CodingKeysO", "stringValue"]
+- ["7YouFood8MeasuresV10CodingKeysO", "RawValue"]
+- ["7YouFood8MeasuresV10CodingKeysO", "deinit"]
+- ["7YouFood8MeasuresV10CodingKeysO", "eqv"]
+- ["7YouFood8MeasuresV10CodingKeysO", "eunit"]
+- ["7YouFood8MeasuresV10CodingKeysO", "hashValue"]
+- ["7YouFood8MeasuresV10CodingKeysO", "init"]
+- ["7YouFood8MeasuresV10CodingKeysO", "intValue"]
+- ["7YouFood8MeasuresV10CodingKeysO", "label"]
+- ["7YouFood8MeasuresV10CodingKeysO", "qty"]
+- ["7YouFood8MeasuresV10CodingKeysO", "rawValue"]
+- ["7YouFood8MeasuresV10CodingKeysO", "stringValue"]
+- ["7YouFood8MeasuresV10CodingKeysO", "value"]
+- ["7YouFood9NutrientsV10CodingKeysO", "RawValue"]
+- ["7YouFood9NutrientsV10CodingKeysO", "deinit"]
+- ["7YouFood9NutrientsV10CodingKeysO", "derivation"]
+- ["7YouFood9NutrientsV10CodingKeysO", "group"]
+- ["7YouFood9NutrientsV10CodingKeysO", "hashValue"]
+- ["7YouFood9NutrientsV10CodingKeysO", "init"]
+- ["7YouFood9NutrientsV10CodingKeysO", "intValue"]
+- ["7YouFood9NutrientsV10CodingKeysO", "measures"]
+- ["7YouFood9NutrientsV10CodingKeysO", "name"]
+- ["7YouFood9NutrientsV10CodingKeysO", "nutrient_id"]
+- ["7YouFood9NutrientsV10CodingKeysO", "rawValue"]
+- ["7YouFood9NutrientsV10CodingKeysO", "stringValue"]
+- ["7YouFood9NutrientsV10CodingKeysO", "unit"]
+- ["7YouFood9NutrientsV10CodingKeysO", "value"]
+- !private ["s10CollectionP", "0"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "food"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "hashValue"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "0"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "food"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "0"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "food"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "0"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "food"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "CodingKeys"]
+- !private ["s9DecodableP", "Desc"]
+- !private ["s9DecodableP", "Double"]
+- !private ["s9DecodableP", "Food"]
+- !private ["s9DecodableP", "Foods"]
+- !private ["s9DecodableP", "Int"]
+- !private ["s9DecodableP", "Measures"]
+- !private ["s9DecodableP", "Nutrients"]
+- !private ["s9DecodableP", "String"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "api"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "derivation"]
+- !private ["s9DecodableP", "desc"]
+- !private ["s9DecodableP", "ds"]
+- ["s9DecodableP", "encode"]
+- !private ["s9DecodableP", "eqv"]
+- !private ["s9DecodableP", "eunit"]
+- !private ["s9DecodableP", "food"]
+- !private ["s9DecodableP", "foods"]
+- !private ["s9DecodableP", "footnotes"]
+- !private ["s9DecodableP", "group"]
+- !private ["s9DecodableP", "hashValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "label"]
+- !private ["s9DecodableP", "manu"]
+- !private ["s9DecodableP", "measures"]
+- !private ["s9DecodableP", "name"]
+- !private ["s9DecodableP", "ndbno"]
+- !private ["s9DecodableP", "notfound"]
+- !private ["s9DecodableP", "nutrient_id"]
+- !private ["s9DecodableP", "nutrients"]
+- !private ["s9DecodableP", "qty"]
+- !private ["s9DecodableP", "ru"]
+- !private ["s9DecodableP", "sr"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "type"]
+- !private ["s9DecodableP", "unit"]
+- !private ["s9DecodableP", "value"]
+- ["s9DecodableP", ""]
+- !private ["s7DecoderP", "container"]
+- ["7YouFood4DescV", "CodingKey"]
+- ["7YouFood4DescV", "CodingKeys"]
+- ["7YouFood4DescV", "Decoder"]
+- ["7YouFood4DescV", "String"]
+- ["7YouFood4DescV", "deinit"]
+- ["7YouFood4DescV", "ds"]
+- ["7YouFood4DescV", "encode"]
+- ["7YouFood4DescV", "init"]
+- ["7YouFood4DescV", "manu"]
+- ["7YouFood4DescV", "name"]
+- ["7YouFood4DescV", "ndbno"]
+- ["7YouFood4DescV", "ru"]
+- !private ["s9EncodableP", "CodingKeys"]
+- !private ["s9EncodableP", "Desc"]
+- !private ["s9EncodableP", "Double"]
+- !private ["s9EncodableP", "Food"]
+- !private ["s9EncodableP", "Foods"]
+- !private ["s9EncodableP", "Int"]
+- !private ["s9EncodableP", "Measures"]
+- !private ["s9EncodableP", "Nutrients"]
+- !private ["s9EncodableP", "String"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "api"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "derivation"]
+- !private ["s9EncodableP", "desc"]
+- !private ["s9EncodableP", "ds"]
+- ["s9EncodableP", "encode"]
+- !private ["s9EncodableP", "eqv"]
+- !private ["s9EncodableP", "eunit"]
+- !private ["s9EncodableP", "food"]
+- !private ["s9EncodableP", "foods"]
+- !private ["s9EncodableP", "footnotes"]
+- !private ["s9EncodableP", "group"]
+- !private ["s9EncodableP", "hashValue"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "label"]
+- !private ["s9EncodableP", "manu"]
+- !private ["s9EncodableP", "measures"]
+- !private ["s9EncodableP", "name"]
+- !private ["s9EncodableP", "ndbno"]
+- !private ["s9EncodableP", "notfound"]
+- !private ["s9EncodableP", "nutrient_id"]
+- !private ["s9EncodableP", "nutrients"]
+- !private ["s9EncodableP", "qty"]
+- !private ["s9EncodableP", "ru"]
+- !private ["s9EncodableP", "sr"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "type"]
+- !private ["s9EncodableP", "unit"]
+- !private ["s9EncodableP", "value"]
+- ["s9EncodableP", ""]
+- !private ["s7EncoderP", "container"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "api"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "dataTask"]
+- !private ["s9EquatableP", "derivation"]
+- !private ["s9EquatableP", "desc"]
+- !private ["s9EquatableP", "ds"]
+- !private ["s9EquatableP", "eqv"]
+- !private ["s9EquatableP", "eunit"]
+- !private ["s9EquatableP", "food"]
+- !private ["s9EquatableP", "foods"]
+- !private ["s9EquatableP", "footnotes"]
+- !private ["s9EquatableP", "group"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "intValue"]
+- !private ["s9EquatableP", "label"]
+- !private ["s9EquatableP", "manu"]
+- !private ["s9EquatableP", "measures"]
+- !private ["s9EquatableP", "name"]
+- !private ["s9EquatableP", "ndbno"]
+- !private ["s9EquatableP", "notfound"]
+- !private ["s9EquatableP", "nutrient_id"]
+- !private ["s9EquatableP", "nutrients"]
+- !private ["s9EquatableP", "qty"]
+- ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "resume"]
+- !private ["s9EquatableP", "ru"]
+- !private ["s9EquatableP", "shared"]
+- !private ["s9EquatableP", "sr"]
+- ["s9EquatableP", "stringValue"]
+- !private ["s9EquatableP", "type"]
+- !private ["s9EquatableP", "unit"]
+- !private ["s9EquatableP", "value"]
+- ["s9EquatableP", ""]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "0"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "food"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- !private ["Sf", "init"]
+- !private ["s13FloatingPointP", "init"]
+- ["7YouFood0B0V", "CodingKey"]
+- ["7YouFood0B0V", "CodingKeys"]
+- ["7YouFood0B0V", "Decoder"]
+- ["7YouFood0B0V", "Desc"]
+- ["7YouFood0B0V", "Nutrients"]
+- ["7YouFood0B0V", "String"]
+- ["7YouFood0B0V", "deinit"]
+- ["7YouFood0B0V", "desc"]
+- ["7YouFood0B0V", "encode"]
+- ["7YouFood0B0V", "footnotes"]
+- ["7YouFood0B0V", "init"]
+- ["7YouFood0B0V", "nutrients"]
+- ["7YouFood0B0V", "sr"]
+- ["7YouFood0B0V", "type"]
+- ["7YouFood5FoodsV", "CodingKey"]
+- ["7YouFood5FoodsV", "CodingKeys"]
+- ["7YouFood5FoodsV", "Decoder"]
+- ["7YouFood5FoodsV", "Food"]
+- ["7YouFood5FoodsV", "String"]
+- ["7YouFood5FoodsV", "deinit"]
+- ["7YouFood5FoodsV", "encode"]
+- ["7YouFood5FoodsV", "food"]
+- ["7YouFood5FoodsV", "init"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "api"]
+- !private ["s8HashableP", "count"]
+- !private ["s8HashableP", "dataTask"]
+- !private ["s8HashableP", "derivation"]
+- !private ["s8HashableP", "desc"]
+- !private ["s8HashableP", "ds"]
+- !private ["s8HashableP", "eqv"]
+- !private ["s8HashableP", "eunit"]
+- !private ["s8HashableP", "food"]
+- !private ["s8HashableP", "foods"]
+- !private ["s8HashableP", "footnotes"]
+- !private ["s8HashableP", "group"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "intValue"]
+- !private ["s8HashableP", "label"]
+- !private ["s8HashableP", "manu"]
+- !private ["s8HashableP", "measures"]
+- !private ["s8HashableP", "name"]
+- !private ["s8HashableP", "ndbno"]
+- !private ["s8HashableP", "notfound"]
+- !private ["s8HashableP", "nutrient_id"]
+- !private ["s8HashableP", "nutrients"]
+- !private ["s8HashableP", "qty"]
+- ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "resume"]
+- !private ["s8HashableP", "ru"]
+- !private ["s8HashableP", "shared"]
+- !private ["s8HashableP", "sr"]
+- ["s8HashableP", "stringValue"]
+- !private ["s8HashableP", "type"]
+- !private ["s8HashableP", "unit"]
+- !private ["s8HashableP", "value"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- ["7YouFood15Json4Swift_BaseV", "CodingKey"]
+- ["7YouFood15Json4Swift_BaseV", "CodingKeys"]
+- ["7YouFood15Json4Swift_BaseV", "Decoder"]
+- ["7YouFood15Json4Swift_BaseV", "Double"]
+- ["7YouFood15Json4Swift_BaseV", "Foods"]
+- ["7YouFood15Json4Swift_BaseV", "Int"]
+- ["7YouFood15Json4Swift_BaseV", "String"]
+- ["7YouFood15Json4Swift_BaseV", "api"]
+- ["7YouFood15Json4Swift_BaseV", "count"]
+- ["7YouFood15Json4Swift_BaseV", "deinit"]
+- ["7YouFood15Json4Swift_BaseV", "encode"]
+- ["7YouFood15Json4Swift_BaseV", "foods"]
+- ["7YouFood15Json4Swift_BaseV", "init"]
+- ["7YouFood15Json4Swift_BaseV", "notfound"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- !private ["s22KeyedEncodingContainerV", "encodeIfPresent"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["7YouFood8MeasuresV", "CodingKey"]
+- ["7YouFood8MeasuresV", "CodingKeys"]
+- ["7YouFood8MeasuresV", "Decoder"]
+- ["7YouFood8MeasuresV", "Double"]
+- ["7YouFood8MeasuresV", "String"]
+- ["7YouFood8MeasuresV", "deinit"]
+- ["7YouFood8MeasuresV", "encode"]
+- ["7YouFood8MeasuresV", "eqv"]
+- ["7YouFood8MeasuresV", "eunit"]
+- ["7YouFood8MeasuresV", "init"]
+- ["7YouFood8MeasuresV", "label"]
+- ["7YouFood8MeasuresV", "qty"]
+- ["7YouFood8MeasuresV", "value"]
+- !private ["s10MirrorPathP", "hashValue"]
+- ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "0"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "food"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "subscript"]
+- ["So8NSCodingP", "init"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "resume"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So16NSObjectProtocolP", "dataTask"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "resume"]
+- !private ["So16NSObjectProtocolP", "shared"]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- !private ["s7NumericP", "hashValue"]
+- !private ["s7NumericP", "init"]
+- !private ["7YouFood8NutrientC", "init"]
+- ["7YouFood9NutrientsV", "CodingKey"]
+- ["7YouFood9NutrientsV", "CodingKeys"]
+- ["7YouFood9NutrientsV", "Decoder"]
+- ["7YouFood9NutrientsV", "Measures"]
+- ["7YouFood9NutrientsV", "String"]
+- ["7YouFood9NutrientsV", "deinit"]
+- ["7YouFood9NutrientsV", "derivation"]
+- ["7YouFood9NutrientsV", "encode"]
+- ["7YouFood9NutrientsV", "group"]
+- ["7YouFood9NutrientsV", "init"]
+- ["7YouFood9NutrientsV", "measures"]
+- ["7YouFood9NutrientsV", "name"]
+- ["7YouFood9NutrientsV", "nutrient_id"]
+- ["7YouFood9NutrientsV", "unit"]
+- ["7YouFood9NutrientsV", "value"]
+- !private ["So17ProgressReportingP", "resume"]
+- !private ["s22RandomAccessCollectionP", "0"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "food"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "0"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "food"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- ["s16RawRepresentableP", "RawValue"]
+- !private ["s16RawRepresentableP", "api"]
+- !private ["s16RawRepresentableP", "count"]
+- !private ["s16RawRepresentableP", "derivation"]
+- !private ["s16RawRepresentableP", "desc"]
+- !private ["s16RawRepresentableP", "ds"]
+- !private ["s16RawRepresentableP", "eqv"]
+- !private ["s16RawRepresentableP", "eunit"]
+- !private ["s16RawRepresentableP", "food"]
+- !private ["s16RawRepresentableP", "foods"]
+- !private ["s16RawRepresentableP", "footnotes"]
+- !private ["s16RawRepresentableP", "group"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "intValue"]
+- !private ["s16RawRepresentableP", "label"]
+- !private ["s16RawRepresentableP", "manu"]
+- !private ["s16RawRepresentableP", "measures"]
+- !private ["s16RawRepresentableP", "name"]
+- !private ["s16RawRepresentableP", "ndbno"]
+- !private ["s16RawRepresentableP", "notfound"]
+- !private ["s16RawRepresentableP", "nutrient_id"]
+- !private ["s16RawRepresentableP", "nutrients"]
+- !private ["s16RawRepresentableP", "qty"]
+- ["s16RawRepresentableP", "rawValue"]
+- !private ["s16RawRepresentableP", "ru"]
+- !private ["s16RawRepresentableP", "sr"]
+- ["s16RawRepresentableP", "stringValue"]
+- !private ["s16RawRepresentableP", "type"]
+- !private ["s16RawRepresentableP", "unit"]
+- !private ["s16RawRepresentableP", "value"]
+- ["s16RawRepresentableP", ""]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["s8SequenceP", "0"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "food"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "hashValue"]
+- !private ["s10StrideableP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["So10URLSessionC", "dataTask"]
+- !private ["So10URLSessionC", "shared"]
+- !private ["So18URLSessionDataTaskC", "resume"]
+- !private ["So14URLSessionTaskC", "resume"]
+- !private ["s14_ArrayProtocolP", "0"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "food"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "0"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "food"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s24_DestructorSafeContainerP", "0"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "food"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "0"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "food"]
+- ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "0"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "food"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["s17_MutableIndexableP", "0"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "food"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "0"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "food"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "0"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "food"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s11_StrideableP", "hashValue"]
+- !private ["s11_StrideableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s10ArraySliceV"
+- "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- "s7CVarArgP"
+- "s9CodingKeyP"
+- "7YouFood0B0V10CodingKeysO"
+- "7YouFood15Json4Swift_BaseV10CodingKeysO"
+- "7YouFood4DescV10CodingKeysO"
+- "7YouFood5FoodsV10CodingKeysO"
+- "7YouFood8MeasuresV10CodingKeysO"
+- "7YouFood9NutrientsV10CodingKeysO"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- !private "s7DecoderP"
+- "7YouFood4DescV"
+- "s9EncodableP"
+- !private "s7EncoderP"
+- "s9EquatableP"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "Sf"
+- !private "s13FloatingPointP"
+- "7YouFood0B0V"
+- "7YouFood5FoodsV"
+- "s8HashableP"
+- !private "Si"
+- !private "10Foundation11JSONDecoderC"
+- "7YouFood15Json4Swift_BaseV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "s25LosslessStringConvertibleP"
+- "7YouFood8MeasuresV"
+- "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- !private "s7NumericP"
+- !private "7YouFood8NutrientC"
+- "7YouFood9NutrientsV"
+- !private "So17ProgressReportingP"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "10Foundation3URLV"
+- !private "So10URLSessionC"
+- !private "So18URLSessionDataTaskC"
+- !private "So14URLSessionTaskC"
+- !private "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRMutableData.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRSnapshotMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageReference.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRCollectionReference.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRDocumentReference.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSource.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorage.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FirebaseStorage.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRDocumentChange.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRFieldValue.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRServerValue.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRWriteBatch.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRFieldPath.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageTask.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRListenerRegistration.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseCore/FIRAnalyticsConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRTransaction.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRTimestamp.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSettings.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreErrors.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRGeoPoint.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRDocumentSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRQuerySnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseFirestore/FIRQuery.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/skwon2345/Downloads/YouFood_sk/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+interface-hash: "5e68bd950cc786a9bfe28fa873230b60"

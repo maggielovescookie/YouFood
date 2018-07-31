@@ -1,0 +1,6 @@
+framework module Pods_YouFood {
+  umbrella header "Pods-YouFood-umbrella.h"
+
+  export *
+  module * { export * }
+}

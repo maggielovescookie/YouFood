@@ -1,0 +1,630 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RatingController"
+provides-nominal:
+- "7YouFood16RatingControllerC"
+provides-member:
+- ["7YouFood16RatingControllerC", ""]
+provides-dynamic-lookup:
+- "draw"
+- "pressed"
+depends-top-level:
+- !private "+"
+- !private ">"
+- "AssignmentPrecedence"
+- "CGRect"
+- "CastingPrecedence"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "RatingController"
+- "StringLiteralType"
+- "UIButton"
+- !private "UIImage"
+- "UIStackView"
+depends-member:
+- !private ["Sa", "filter"]
+- !private ["s23BidirectionalCollectionP", "filter"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "UIImage"]
+- !private ["So15CALayerDelegateP", "addTarget"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "one"]
+- !private ["So15CALayerDelegateP", "pressed"]
+- !private ["So15CALayerDelegateP", "setImage"]
+- !private ["So15CALayerDelegateP", "setStarRating"]
+- !private ["So15CALayerDelegateP", "starRating"]
+- !private ["So15CALayerDelegateP", "subviews"]
+- !private ["So15CALayerDelegateP", "tag"]
+- !private ["So15CALayerDelegateP", "zero"]
+- ["So15CALayerDelegateP", ""]
+- !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "addTarget"]
+- !private ["s7CVarArgP", "filter"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "one"]
+- !private ["s7CVarArgP", "pressed"]
+- !private ["s7CVarArgP", "setImage"]
+- !private ["s7CVarArgP", "setStarRating"]
+- !private ["s7CVarArgP", "starRating"]
+- !private ["s7CVarArgP", "subviews"]
+- !private ["s7CVarArgP", "tag"]
+- !private ["s7CVarArgP", "zero"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "filter"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "addTarget"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "one"]
+- !private ["s28CustomDebugStringConvertibleP", "pressed"]
+- !private ["s28CustomDebugStringConvertibleP", "setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "setStarRating"]
+- !private ["s28CustomDebugStringConvertibleP", "starRating"]
+- !private ["s28CustomDebugStringConvertibleP", "subviews"]
+- !private ["s28CustomDebugStringConvertibleP", "tag"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "filter"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addTarget"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "one"]
+- !private ["s23CustomStringConvertibleP", "pressed"]
+- !private ["s23CustomStringConvertibleP", "setImage"]
+- !private ["s23CustomStringConvertibleP", "setStarRating"]
+- !private ["s23CustomStringConvertibleP", "starRating"]
+- !private ["s23CustomStringConvertibleP", "subviews"]
+- !private ["s23CustomStringConvertibleP", "tag"]
+- !private ["s23CustomStringConvertibleP", "zero"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "filter"]
+- ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "filter"]
+- ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "UIImage"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addTarget"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "normal"]
+- !private ["s9EquatableP", "one"]
+- !private ["s9EquatableP", "pressed"]
+- !private ["s9EquatableP", "setImage"]
+- !private ["s9EquatableP", "setStarRating"]
+- !private ["s9EquatableP", "starRating"]
+- !private ["s9EquatableP", "subviews"]
+- !private ["s9EquatableP", "tag"]
+- !private ["s9EquatableP", "touchUpInside"]
+- !private ["s9EquatableP", "zero"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "normal"]
+- !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "UIImage"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addTarget"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "one"]
+- !private ["s8HashableP", "pressed"]
+- !private ["s8HashableP", "setImage"]
+- !private ["s8HashableP", "setStarRating"]
+- !private ["s8HashableP", "starRating"]
+- !private ["s8HashableP", "subviews"]
+- !private ["s8HashableP", "tag"]
+- !private ["s8HashableP", "zero"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "filter"]
+- !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "addTarget"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "one"]
+- !private ["So8NSCodingP", "pressed"]
+- !private ["So8NSCodingP", "setImage"]
+- !private ["So8NSCodingP", "setStarRating"]
+- !private ["So8NSCodingP", "starRating"]
+- !private ["So8NSCodingP", "subviews"]
+- !private ["So8NSCodingP", "tag"]
+- !private ["So8NSCodingP", "zero"]
+- ["So8NSCodingP", ""]
+- ["So9NSCopyingP", "init"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIImage"]
+- !private ["So8NSObjectC", "addTarget"]
+- ["So8NSObjectC", "draw"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "one"]
+- ["So8NSObjectC", "pressed"]
+- !private ["So8NSObjectC", "setImage"]
+- ["So8NSObjectC", "setStarRating"]
+- ["So8NSObjectC", "starRating"]
+- !private ["So8NSObjectC", "subviews"]
+- !private ["So8NSObjectC", "tag"]
+- ["So8NSObjectC", "zero"]
+- !private ["So16NSObjectProtocolP", "UIImage"]
+- !private ["So16NSObjectProtocolP", "addTarget"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "one"]
+- !private ["So16NSObjectProtocolP", "pressed"]
+- !private ["So16NSObjectProtocolP", "setImage"]
+- !private ["So16NSObjectProtocolP", "setStarRating"]
+- !private ["So16NSObjectProtocolP", "starRating"]
+- !private ["So16NSObjectProtocolP", "subviews"]
+- !private ["So16NSObjectProtocolP", "tag"]
+- !private ["So16NSObjectProtocolP", "zero"]
+- ["So16NSObjectProtocolP", ""]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- !private ["s9OptionSetP", "normal"]
+- !private ["s9OptionSetP", "touchUpInside"]
+- !private ["s22RandomAccessCollectionP", "filter"]
+- !private ["s26RangeReplaceableCollectionP", "filter"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["7YouFood16RatingControllerC", "CGRect"]
+- ["7YouFood16RatingControllerC", "Int"]
+- ["7YouFood16RatingControllerC", "UIButton"]
+- !private ["7YouFood16RatingControllerC", "UIImage"]
+- ["7YouFood16RatingControllerC", "deinit"]
+- ["7YouFood16RatingControllerC", "draw"]
+- ["7YouFood16RatingControllerC", "init"]
+- ["7YouFood16RatingControllerC", "one"]
+- ["7YouFood16RatingControllerC", "pressed"]
+- ["7YouFood16RatingControllerC", "setStarRating"]
+- ["7YouFood16RatingControllerC", "starRating"]
+- !private ["7YouFood16RatingControllerC", "subviews"]
+- ["7YouFood16RatingControllerC", "zero"]
+- !private ["s16RawRepresentableP", "normal"]
+- !private ["s16RawRepresentableP", "touchUpInside"]
+- !private ["s8SequenceP", "filter"]
+- ["s8SequenceP", "init"]
+- !private ["s10SetAlgebraP", "normal"]
+- !private ["s10SetAlgebraP", "touchUpInside"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setImage"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "tag"]
+- !private ["So29UIAccessibilityIdentificationP", "UIImage"]
+- !private ["So29UIAccessibilityIdentificationP", "addTarget"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "one"]
+- !private ["So29UIAccessibilityIdentificationP", "pressed"]
+- !private ["So29UIAccessibilityIdentificationP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "setStarRating"]
+- !private ["So29UIAccessibilityIdentificationP", "starRating"]
+- !private ["So29UIAccessibilityIdentificationP", "subviews"]
+- !private ["So29UIAccessibilityIdentificationP", "tag"]
+- !private ["So29UIAccessibilityIdentificationP", "zero"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "UIImage"]
+- !private ["So12UIAppearanceP", "addTarget"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "one"]
+- !private ["So12UIAppearanceP", "pressed"]
+- !private ["So12UIAppearanceP", "setImage"]
+- !private ["So12UIAppearanceP", "setStarRating"]
+- !private ["So12UIAppearanceP", "starRating"]
+- !private ["So12UIAppearanceP", "subviews"]
+- !private ["So12UIAppearanceP", "tag"]
+- !private ["So12UIAppearanceP", "zero"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "addTarget"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "one"]
+- !private ["So21UIAppearanceContainerP", "pressed"]
+- !private ["So21UIAppearanceContainerP", "setImage"]
+- !private ["So21UIAppearanceContainerP", "setStarRating"]
+- !private ["So21UIAppearanceContainerP", "starRating"]
+- !private ["So21UIAppearanceContainerP", "subviews"]
+- !private ["So21UIAppearanceContainerP", "tag"]
+- !private ["So21UIAppearanceContainerP", "zero"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "addTarget"]
+- !private ["So8UIButtonC", "setImage"]
+- !private ["So8UIButtonC", "tag"]
+- !private ["So9UIControlC", "addTarget"]
+- !private ["So9UIControlC", "setImage"]
+- !private ["So9UIControlC", "tag"]
+- !private ["SC15UIControlEventsV", "touchUpInside"]
+- !private ["SC14UIControlStateV", "normal"]
+- !private ["So17UICoordinateSpaceP", "UIImage"]
+- !private ["So17UICoordinateSpaceP", "addTarget"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "one"]
+- !private ["So17UICoordinateSpaceP", "pressed"]
+- !private ["So17UICoordinateSpaceP", "setImage"]
+- !private ["So17UICoordinateSpaceP", "setStarRating"]
+- !private ["So17UICoordinateSpaceP", "starRating"]
+- !private ["So17UICoordinateSpaceP", "subviews"]
+- !private ["So17UICoordinateSpaceP", "tag"]
+- !private ["So17UICoordinateSpaceP", "zero"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "UIImage"]
+- !private ["So13UIDynamicItemP", "addTarget"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "one"]
+- !private ["So13UIDynamicItemP", "pressed"]
+- !private ["So13UIDynamicItemP", "setImage"]
+- !private ["So13UIDynamicItemP", "setStarRating"]
+- !private ["So13UIDynamicItemP", "starRating"]
+- !private ["So13UIDynamicItemP", "subviews"]
+- !private ["So13UIDynamicItemP", "tag"]
+- !private ["So13UIDynamicItemP", "zero"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "addTarget"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "one"]
+- !private ["So18UIFocusEnvironmentP", "pressed"]
+- !private ["So18UIFocusEnvironmentP", "setImage"]
+- !private ["So18UIFocusEnvironmentP", "setStarRating"]
+- !private ["So18UIFocusEnvironmentP", "starRating"]
+- !private ["So18UIFocusEnvironmentP", "subviews"]
+- !private ["So18UIFocusEnvironmentP", "tag"]
+- !private ["So18UIFocusEnvironmentP", "zero"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "UIImage"]
+- !private ["So11UIFocusItemP", "addTarget"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "one"]
+- !private ["So11UIFocusItemP", "pressed"]
+- !private ["So11UIFocusItemP", "setImage"]
+- !private ["So11UIFocusItemP", "setStarRating"]
+- !private ["So11UIFocusItemP", "starRating"]
+- !private ["So11UIFocusItemP", "subviews"]
+- !private ["So11UIFocusItemP", "tag"]
+- !private ["So11UIFocusItemP", "zero"]
+- ["So11UIFocusItemP", ""]
+- !private ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "one"]
+- !private ["So30UIPasteConfigurationSupportingP", "pressed"]
+- !private ["So30UIPasteConfigurationSupportingP", "setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "setStarRating"]
+- !private ["So30UIPasteConfigurationSupportingP", "starRating"]
+- !private ["So30UIPasteConfigurationSupportingP", "subviews"]
+- !private ["So30UIPasteConfigurationSupportingP", "tag"]
+- !private ["So30UIPasteConfigurationSupportingP", "zero"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIImage"]
+- !private ["So11UIResponderC", "addTarget"]
+- ["So11UIResponderC", "draw"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "one"]
+- ["So11UIResponderC", "pressed"]
+- !private ["So11UIResponderC", "setImage"]
+- ["So11UIResponderC", "setStarRating"]
+- ["So11UIResponderC", "starRating"]
+- !private ["So11UIResponderC", "subviews"]
+- !private ["So11UIResponderC", "tag"]
+- ["So11UIResponderC", "zero"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "addTarget"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "one"]
+- !private ["So30UIResponderStandardEditActionsP", "pressed"]
+- !private ["So30UIResponderStandardEditActionsP", "setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "setStarRating"]
+- !private ["So30UIResponderStandardEditActionsP", "starRating"]
+- !private ["So30UIResponderStandardEditActionsP", "subviews"]
+- !private ["So30UIResponderStandardEditActionsP", "tag"]
+- !private ["So30UIResponderStandardEditActionsP", "zero"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "tag"]
+- ["So11UIStackViewC", "CGRect"]
+- ["So11UIStackViewC", "Int"]
+- ["So11UIStackViewC", "UIButton"]
+- !private ["So11UIStackViewC", "UIImage"]
+- ["So11UIStackViewC", "draw"]
+- ["So11UIStackViewC", "init"]
+- ["So11UIStackViewC", "one"]
+- ["So11UIStackViewC", "pressed"]
+- ["So11UIStackViewC", "setStarRating"]
+- ["So11UIStackViewC", "starRating"]
+- !private ["So11UIStackViewC", "subviews"]
+- ["So11UIStackViewC", "zero"]
+- ["So11UIStackViewC", ""]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "addTarget"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "one"]
+- !private ["So18UITraitEnvironmentP", "pressed"]
+- !private ["So18UITraitEnvironmentP", "setImage"]
+- !private ["So18UITraitEnvironmentP", "setStarRating"]
+- !private ["So18UITraitEnvironmentP", "starRating"]
+- !private ["So18UITraitEnvironmentP", "subviews"]
+- !private ["So18UITraitEnvironmentP", "tag"]
+- !private ["So18UITraitEnvironmentP", "zero"]
+- ["So18UITraitEnvironmentP", ""]
+- ["So6UIViewC", "CGRect"]
+- ["So6UIViewC", "Int"]
+- ["So6UIViewC", "UIButton"]
+- !private ["So6UIViewC", "UIImage"]
+- !private ["So6UIViewC", "addTarget"]
+- ["So6UIViewC", "draw"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "one"]
+- ["So6UIViewC", "pressed"]
+- !private ["So6UIViewC", "setImage"]
+- ["So6UIViewC", "setStarRating"]
+- ["So6UIViewC", "starRating"]
+- !private ["So6UIViewC", "subviews"]
+- !private ["So6UIViewC", "tag"]
+- ["So6UIViewC", "zero"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s23_BidirectionalIndexableP", "filter"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addTarget"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "one"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "pressed"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setStarRating"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "starRating"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "subviews"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tag"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "zero"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "filter"]
+- ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "filter"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "one"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pressed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setStarRating"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "starRating"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subviews"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tag"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "zero"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "filter"]
+- !private ["s26_RangeReplaceableIndexableP", "filter"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- !private "s9OptionSetP"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "7YouFood16RatingControllerC"
+- !private "s16RawRepresentableP"
+- "s8SequenceP"
+- !private "s10SetAlgebraP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- !private "So9UIControlC"
+- !private "SC15UIControlEventsV"
+- !private "SC14UIControlStateV"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So11UIStackViewC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRMutableData.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRSnapshotMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRCollectionReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSource.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FirebaseStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentChange.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRServerValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRWriteBatch.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldPath.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRListenerRegistration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRAnalyticsConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTransaction.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTimestamp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRGeoPoint.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuerySnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+interface-hash: "557e9e648b8f180bc9162812d3b258a6"

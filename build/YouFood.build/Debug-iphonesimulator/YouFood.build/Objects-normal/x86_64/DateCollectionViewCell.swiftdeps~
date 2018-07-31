@@ -1,0 +1,1123 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DateCollectionViewCell"
+provides-nominal:
+- "7YouFood22DateCollectionViewCellC"
+provides-member:
+- ["7YouFood22DateCollectionViewCellC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*"
+- !private "-"
+- !private "/"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "CABasicAnimation"
+- !private "CAShapeLayer"
+- !private "CGFloat"
+- "CGRect"
+- "DateCollectionViewCell"
+- "NSCoder"
+- "StringLiteralType"
+- !private "UIBezierPath"
+- "UICollectionViewCell"
+- !private "UIColor"
+- "UIFont"
+- "UILabel"
+- "UIView"
+- !private "kCAFillModeForwards"
+- !private "kCALineCapRound"
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s19BinaryFloatingPointP", "pi"]
+- !private ["So8CAActionP", "duration"]
+- !private ["So8CAActionP", "fillMode"]
+- !private ["So8CAActionP", "init"]
+- !private ["So8CAActionP", "isRemovedOnCompletion"]
+- !private ["So8CAActionP", "toValue"]
+- !private ["So11CAAnimationC", "duration"]
+- !private ["So11CAAnimationC", "fillMode"]
+- !private ["So11CAAnimationC", "init"]
+- !private ["So11CAAnimationC", "isRemovedOnCompletion"]
+- !private ["So11CAAnimationC", "toValue"]
+- !private ["So16CABasicAnimationC", "duration"]
+- !private ["So16CABasicAnimationC", "fillMode"]
+- !private ["So16CABasicAnimationC", "init"]
+- !private ["So16CABasicAnimationC", "isRemovedOnCompletion"]
+- !private ["So16CABasicAnimationC", "toValue"]
+- !private ["So7CALayerC", "add"]
+- !private ["So7CALayerC", "addSublayer"]
+- !private ["So7CALayerC", "backgroundColor"]
+- !private ["So7CALayerC", "fillColor"]
+- !private ["So7CALayerC", "init"]
+- !private ["So7CALayerC", "lineCap"]
+- !private ["So7CALayerC", "lineWidth"]
+- !private ["So7CALayerC", "path"]
+- !private ["So7CALayerC", "strokeColor"]
+- !private ["So7CALayerC", "strokeEnd"]
+- !private ["So15CALayerDelegateP", "CABasicAnimation"]
+- !private ["So15CALayerDelegateP", "CAShapeLayer"]
+- !private ["So15CALayerDelegateP", "CGFloat"]
+- ["So15CALayerDelegateP", "CGRect"]
+- !private ["So15CALayerDelegateP", "Circle"]
+- !private ["So15CALayerDelegateP", "DateLabel"]
+- !private ["So15CALayerDelegateP", "UIBezierPath"]
+- !private ["So15CALayerDelegateP", "UIColor"]
+- ["So15CALayerDelegateP", "UIFont"]
+- ["So15CALayerDelegateP", "UILabel"]
+- ["So15CALayerDelegateP", "UIView"]
+- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "center"]
+- ["So15CALayerDelegateP", "font"]
+- ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "kCAFillModeForwards"]
+- !private ["So15CALayerDelegateP", "kCALineCapRound"]
+- !private ["So15CALayerDelegateP", "layer"]
+- ["So15CALayerDelegateP", "lineBreakMode"]
+- ["So15CALayerDelegateP", "numberOfLines"]
+- ["So15CALayerDelegateP", "textAlignment"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So13CAMediaTimingP", "add"]
+- !private ["So13CAMediaTimingP", "addSublayer"]
+- !private ["So13CAMediaTimingP", "backgroundColor"]
+- !private ["So13CAMediaTimingP", "duration"]
+- !private ["So13CAMediaTimingP", "fillColor"]
+- !private ["So13CAMediaTimingP", "fillMode"]
+- !private ["So13CAMediaTimingP", "init"]
+- !private ["So13CAMediaTimingP", "isRemovedOnCompletion"]
+- !private ["So13CAMediaTimingP", "lineCap"]
+- !private ["So13CAMediaTimingP", "lineWidth"]
+- !private ["So13CAMediaTimingP", "path"]
+- !private ["So13CAMediaTimingP", "strokeColor"]
+- !private ["So13CAMediaTimingP", "strokeEnd"]
+- !private ["So13CAMediaTimingP", "toValue"]
+- !private ["So19CAPropertyAnimationC", "duration"]
+- !private ["So19CAPropertyAnimationC", "fillMode"]
+- !private ["So19CAPropertyAnimationC", "init"]
+- !private ["So19CAPropertyAnimationC", "isRemovedOnCompletion"]
+- !private ["So19CAPropertyAnimationC", "toValue"]
+- !private ["So12CAShapeLayerC", "add"]
+- !private ["So12CAShapeLayerC", "fillColor"]
+- !private ["So12CAShapeLayerC", "init"]
+- !private ["So12CAShapeLayerC", "lineCap"]
+- !private ["So12CAShapeLayerC", "lineWidth"]
+- !private ["So12CAShapeLayerC", "path"]
+- !private ["So12CAShapeLayerC", "strokeColor"]
+- !private ["So12CAShapeLayerC", "strokeEnd"]
+- !private ["12CoreGraphics7CGFloatV", "pi"]
+- ["SC6CGRectV", "init"]
+- !private ["SC6CGRectV", "width"]
+- !private ["s7CVarArgP", "CABasicAnimation"]
+- !private ["s7CVarArgP", "CAShapeLayer"]
+- !private ["s7CVarArgP", "CGFloat"]
+- ["s7CVarArgP", "CGRect"]
+- !private ["s7CVarArgP", "Circle"]
+- !private ["s7CVarArgP", "DateLabel"]
+- !private ["s7CVarArgP", "UIBezierPath"]
+- !private ["s7CVarArgP", "UIColor"]
+- ["s7CVarArgP", "UIFont"]
+- ["s7CVarArgP", "UILabel"]
+- ["s7CVarArgP", "UIView"]
+- !private ["s7CVarArgP", "add"]
+- !private ["s7CVarArgP", "addSublayer"]
+- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "center"]
+- !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "cgPath"]
+- !private ["s7CVarArgP", "clear"]
+- !private ["s7CVarArgP", "duration"]
+- !private ["s7CVarArgP", "fillColor"]
+- !private ["s7CVarArgP", "fillMode"]
+- ["s7CVarArgP", "font"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isRemovedOnCompletion"]
+- !private ["s7CVarArgP", "kCAFillModeForwards"]
+- !private ["s7CVarArgP", "kCALineCapRound"]
+- !private ["s7CVarArgP", "layer"]
+- ["s7CVarArgP", "lineBreakMode"]
+- !private ["s7CVarArgP", "lineCap"]
+- !private ["s7CVarArgP", "lineWidth"]
+- ["s7CVarArgP", "numberOfLines"]
+- !private ["s7CVarArgP", "path"]
+- !private ["s7CVarArgP", "pi"]
+- !private ["s7CVarArgP", "strokeColor"]
+- !private ["s7CVarArgP", "strokeEnd"]
+- ["s7CVarArgP", "textAlignment"]
+- !private ["s7CVarArgP", "toValue"]
+- ["s7CVarArgP", ""]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "pi"]
+- !private ["s28CustomDebugStringConvertibleP", "CABasicAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "CAShapeLayer"]
+- !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
+- ["s28CustomDebugStringConvertibleP", "CGRect"]
+- !private ["s28CustomDebugStringConvertibleP", "Circle"]
+- !private ["s28CustomDebugStringConvertibleP", "DateLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBezierPath"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- ["s28CustomDebugStringConvertibleP", "UIFont"]
+- ["s28CustomDebugStringConvertibleP", "UILabel"]
+- ["s28CustomDebugStringConvertibleP", "UIView"]
+- !private ["s28CustomDebugStringConvertibleP", "add"]
+- !private ["s28CustomDebugStringConvertibleP", "addSublayer"]
+- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "center"]
+- !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "cgPath"]
+- !private ["s28CustomDebugStringConvertibleP", "clear"]
+- !private ["s28CustomDebugStringConvertibleP", "duration"]
+- !private ["s28CustomDebugStringConvertibleP", "fillColor"]
+- !private ["s28CustomDebugStringConvertibleP", "fillMode"]
+- ["s28CustomDebugStringConvertibleP", "font"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isRemovedOnCompletion"]
+- !private ["s28CustomDebugStringConvertibleP", "kCAFillModeForwards"]
+- !private ["s28CustomDebugStringConvertibleP", "kCALineCapRound"]
+- !private ["s28CustomDebugStringConvertibleP", "layer"]
+- ["s28CustomDebugStringConvertibleP", "lineBreakMode"]
+- !private ["s28CustomDebugStringConvertibleP", "lineCap"]
+- !private ["s28CustomDebugStringConvertibleP", "lineWidth"]
+- ["s28CustomDebugStringConvertibleP", "numberOfLines"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "strokeColor"]
+- !private ["s28CustomDebugStringConvertibleP", "strokeEnd"]
+- ["s28CustomDebugStringConvertibleP", "textAlignment"]
+- !private ["s28CustomDebugStringConvertibleP", "toValue"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "pi"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "CABasicAnimation"]
+- !private ["s23CustomStringConvertibleP", "CAShapeLayer"]
+- !private ["s23CustomStringConvertibleP", "CGFloat"]
+- ["s23CustomStringConvertibleP", "CGRect"]
+- !private ["s23CustomStringConvertibleP", "Circle"]
+- !private ["s23CustomStringConvertibleP", "DateLabel"]
+- !private ["s23CustomStringConvertibleP", "UIBezierPath"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- ["s23CustomStringConvertibleP", "UIFont"]
+- ["s23CustomStringConvertibleP", "UILabel"]
+- ["s23CustomStringConvertibleP", "UIView"]
+- !private ["s23CustomStringConvertibleP", "add"]
+- !private ["s23CustomStringConvertibleP", "addSublayer"]
+- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "center"]
+- !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "cgPath"]
+- !private ["s23CustomStringConvertibleP", "clear"]
+- !private ["s23CustomStringConvertibleP", "duration"]
+- !private ["s23CustomStringConvertibleP", "fillColor"]
+- !private ["s23CustomStringConvertibleP", "fillMode"]
+- ["s23CustomStringConvertibleP", "font"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isRemovedOnCompletion"]
+- !private ["s23CustomStringConvertibleP", "kCAFillModeForwards"]
+- !private ["s23CustomStringConvertibleP", "kCALineCapRound"]
+- !private ["s23CustomStringConvertibleP", "layer"]
+- ["s23CustomStringConvertibleP", "lineBreakMode"]
+- !private ["s23CustomStringConvertibleP", "lineCap"]
+- !private ["s23CustomStringConvertibleP", "lineWidth"]
+- ["s23CustomStringConvertibleP", "numberOfLines"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "pi"]
+- !private ["s23CustomStringConvertibleP", "strokeColor"]
+- !private ["s23CustomStringConvertibleP", "strokeEnd"]
+- ["s23CustomStringConvertibleP", "textAlignment"]
+- !private ["s23CustomStringConvertibleP", "toValue"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["7YouFood22DateCollectionViewCellC", "CABasicAnimation"]
+- !private ["7YouFood22DateCollectionViewCellC", "CAShapeLayer"]
+- !private ["7YouFood22DateCollectionViewCellC", "CGFloat"]
+- ["7YouFood22DateCollectionViewCellC", "CGRect"]
+- ["7YouFood22DateCollectionViewCellC", "Circle"]
+- ["7YouFood22DateCollectionViewCellC", "DateLabel"]
+- ["7YouFood22DateCollectionViewCellC", "DrawCircle"]
+- ["7YouFood22DateCollectionViewCellC", "NSCoder"]
+- !private ["7YouFood22DateCollectionViewCellC", "UIBezierPath"]
+- !private ["7YouFood22DateCollectionViewCellC", "UIColor"]
+- ["7YouFood22DateCollectionViewCellC", "UIFont"]
+- ["7YouFood22DateCollectionViewCellC", "UILabel"]
+- ["7YouFood22DateCollectionViewCellC", "UIView"]
+- !private ["7YouFood22DateCollectionViewCellC", "addSubview"]
+- ["7YouFood22DateCollectionViewCellC", "deinit"]
+- ["7YouFood22DateCollectionViewCellC", "init"]
+- !private ["7YouFood22DateCollectionViewCellC", "kCAFillModeForwards"]
+- !private ["7YouFood22DateCollectionViewCellC", "kCALineCapRound"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "pi"]
+- !private ["s9DecodableP", "width"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "pi"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EquatableP", "CABasicAnimation"]
+- !private ["s9EquatableP", "CAShapeLayer"]
+- !private ["s9EquatableP", "CGFloat"]
+- ["s9EquatableP", "CGRect"]
+- !private ["s9EquatableP", "Circle"]
+- !private ["s9EquatableP", "DateLabel"]
+- !private ["s9EquatableP", "UIBezierPath"]
+- !private ["s9EquatableP", "UIColor"]
+- ["s9EquatableP", "UIFont"]
+- ["s9EquatableP", "UILabel"]
+- ["s9EquatableP", "UIView"]
+- !private ["s9EquatableP", "add"]
+- !private ["s9EquatableP", "addSublayer"]
+- !private ["s9EquatableP", "addSubview"]
+- !private ["s9EquatableP", "backgroundColor"]
+- !private ["s9EquatableP", "bounds"]
+- ["s9EquatableP", "byWordWrapping"]
+- ["s9EquatableP", "center"]
+- !private ["s9EquatableP", "cgColor"]
+- !private ["s9EquatableP", "cgPath"]
+- !private ["s9EquatableP", "clear"]
+- !private ["s9EquatableP", "duration"]
+- !private ["s9EquatableP", "fillColor"]
+- !private ["s9EquatableP", "fillMode"]
+- ["s9EquatableP", "font"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isRemovedOnCompletion"]
+- !private ["s9EquatableP", "kCAFillModeForwards"]
+- !private ["s9EquatableP", "kCALineCapRound"]
+- !private ["s9EquatableP", "layer"]
+- ["s9EquatableP", "lineBreakMode"]
+- !private ["s9EquatableP", "lineCap"]
+- !private ["s9EquatableP", "lineWidth"]
+- ["s9EquatableP", "numberOfLines"]
+- !private ["s9EquatableP", "path"]
+- !private ["s9EquatableP", "pi"]
+- !private ["s9EquatableP", "strokeColor"]
+- !private ["s9EquatableP", "strokeEnd"]
+- ["s9EquatableP", "textAlignment"]
+- !private ["s9EquatableP", "toValue"]
+- !private ["s9EquatableP", "width"]
+- ["s9EquatableP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "pi"]
+- !private ["s27ExpressibleByIntegerLiteralP", "pi"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s13FloatingPointP", "pi"]
+- !private ["s8HashableP", "CABasicAnimation"]
+- !private ["s8HashableP", "CAShapeLayer"]
+- !private ["s8HashableP", "CGFloat"]
+- ["s8HashableP", "CGRect"]
+- !private ["s8HashableP", "Circle"]
+- !private ["s8HashableP", "DateLabel"]
+- !private ["s8HashableP", "UIBezierPath"]
+- !private ["s8HashableP", "UIColor"]
+- ["s8HashableP", "UIFont"]
+- ["s8HashableP", "UILabel"]
+- ["s8HashableP", "UIView"]
+- !private ["s8HashableP", "add"]
+- !private ["s8HashableP", "addSublayer"]
+- !private ["s8HashableP", "addSubview"]
+- !private ["s8HashableP", "backgroundColor"]
+- !private ["s8HashableP", "bounds"]
+- ["s8HashableP", "byWordWrapping"]
+- ["s8HashableP", "center"]
+- !private ["s8HashableP", "cgColor"]
+- !private ["s8HashableP", "cgPath"]
+- !private ["s8HashableP", "clear"]
+- !private ["s8HashableP", "duration"]
+- !private ["s8HashableP", "fillColor"]
+- !private ["s8HashableP", "fillMode"]
+- ["s8HashableP", "font"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "isRemovedOnCompletion"]
+- !private ["s8HashableP", "kCAFillModeForwards"]
+- !private ["s8HashableP", "kCALineCapRound"]
+- !private ["s8HashableP", "layer"]
+- ["s8HashableP", "lineBreakMode"]
+- !private ["s8HashableP", "lineCap"]
+- !private ["s8HashableP", "lineWidth"]
+- ["s8HashableP", "numberOfLines"]
+- !private ["s8HashableP", "path"]
+- !private ["s8HashableP", "pi"]
+- !private ["s8HashableP", "strokeColor"]
+- !private ["s8HashableP", "strokeEnd"]
+- ["s8HashableP", "textAlignment"]
+- !private ["s8HashableP", "toValue"]
+- ["s8HashableP", ""]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "CABasicAnimation"]
+- !private ["So8NSCodingP", "CAShapeLayer"]
+- !private ["So8NSCodingP", "CGFloat"]
+- ["So8NSCodingP", "CGRect"]
+- !private ["So8NSCodingP", "Circle"]
+- !private ["So8NSCodingP", "DateLabel"]
+- !private ["So8NSCodingP", "UIBezierPath"]
+- !private ["So8NSCodingP", "UIColor"]
+- ["So8NSCodingP", "UIFont"]
+- ["So8NSCodingP", "UILabel"]
+- ["So8NSCodingP", "UIView"]
+- !private ["So8NSCodingP", "add"]
+- !private ["So8NSCodingP", "addSublayer"]
+- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "center"]
+- !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "cgPath"]
+- !private ["So8NSCodingP", "clear"]
+- !private ["So8NSCodingP", "duration"]
+- !private ["So8NSCodingP", "fillColor"]
+- !private ["So8NSCodingP", "fillMode"]
+- ["So8NSCodingP", "font"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isRemovedOnCompletion"]
+- !private ["So8NSCodingP", "kCAFillModeForwards"]
+- !private ["So8NSCodingP", "kCALineCapRound"]
+- !private ["So8NSCodingP", "layer"]
+- ["So8NSCodingP", "lineBreakMode"]
+- !private ["So8NSCodingP", "lineCap"]
+- !private ["So8NSCodingP", "lineWidth"]
+- ["So8NSCodingP", "numberOfLines"]
+- !private ["So8NSCodingP", "path"]
+- !private ["So8NSCodingP", "strokeColor"]
+- !private ["So8NSCodingP", "strokeEnd"]
+- ["So8NSCodingP", "textAlignment"]
+- !private ["So8NSCodingP", "toValue"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "cgColor"]
+- !private ["So9NSCopyingP", "cgPath"]
+- !private ["So9NSCopyingP", "clear"]
+- !private ["So9NSCopyingP", "duration"]
+- !private ["So9NSCopyingP", "fillMode"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isRemovedOnCompletion"]
+- !private ["So9NSCopyingP", "toValue"]
+- !private ["So21NSItemProviderReadingP", "cgColor"]
+- !private ["So21NSItemProviderReadingP", "clear"]
+- ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "cgColor"]
+- !private ["So21NSItemProviderWritingP", "clear"]
+- ["So21NSItemProviderWritingP", "init"]
+- ["SC15NSLineBreakModeO", "byWordWrapping"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "CABasicAnimation"]
+- !private ["So8NSObjectC", "CAShapeLayer"]
+- !private ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "CGRect"]
+- ["So8NSObjectC", "Circle"]
+- ["So8NSObjectC", "DateLabel"]
+- ["So8NSObjectC", "DrawCircle"]
+- ["So8NSObjectC", "NSCoder"]
+- !private ["So8NSObjectC", "UIBezierPath"]
+- !private ["So8NSObjectC", "UIColor"]
+- ["So8NSObjectC", "UIFont"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIView"]
+- !private ["So8NSObjectC", "add"]
+- !private ["So8NSObjectC", "addSublayer"]
+- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "center"]
+- !private ["So8NSObjectC", "cgColor"]
+- !private ["So8NSObjectC", "cgPath"]
+- !private ["So8NSObjectC", "clear"]
+- !private ["So8NSObjectC", "duration"]
+- !private ["So8NSObjectC", "fillColor"]
+- !private ["So8NSObjectC", "fillMode"]
+- ["So8NSObjectC", "font"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isRemovedOnCompletion"]
+- !private ["So8NSObjectC", "kCAFillModeForwards"]
+- !private ["So8NSObjectC", "kCALineCapRound"]
+- !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "lineBreakMode"]
+- !private ["So8NSObjectC", "lineCap"]
+- !private ["So8NSObjectC", "lineWidth"]
+- ["So8NSObjectC", "numberOfLines"]
+- !private ["So8NSObjectC", "path"]
+- !private ["So8NSObjectC", "strokeColor"]
+- !private ["So8NSObjectC", "strokeEnd"]
+- ["So8NSObjectC", "textAlignment"]
+- !private ["So8NSObjectC", "toValue"]
+- !private ["So16NSObjectProtocolP", "CABasicAnimation"]
+- !private ["So16NSObjectProtocolP", "CAShapeLayer"]
+- !private ["So16NSObjectProtocolP", "CGFloat"]
+- ["So16NSObjectProtocolP", "CGRect"]
+- !private ["So16NSObjectProtocolP", "Circle"]
+- !private ["So16NSObjectProtocolP", "DateLabel"]
+- !private ["So16NSObjectProtocolP", "UIBezierPath"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
+- ["So16NSObjectProtocolP", "UIFont"]
+- ["So16NSObjectProtocolP", "UILabel"]
+- ["So16NSObjectProtocolP", "UIView"]
+- !private ["So16NSObjectProtocolP", "add"]
+- !private ["So16NSObjectProtocolP", "addSublayer"]
+- !private ["So16NSObjectProtocolP", "addSubview"]
+- !private ["So16NSObjectProtocolP", "backgroundColor"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "center"]
+- !private ["So16NSObjectProtocolP", "cgColor"]
+- !private ["So16NSObjectProtocolP", "cgPath"]
+- !private ["So16NSObjectProtocolP", "clear"]
+- !private ["So16NSObjectProtocolP", "duration"]
+- !private ["So16NSObjectProtocolP", "fillColor"]
+- !private ["So16NSObjectProtocolP", "fillMode"]
+- ["So16NSObjectProtocolP", "font"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isRemovedOnCompletion"]
+- !private ["So16NSObjectProtocolP", "kCAFillModeForwards"]
+- !private ["So16NSObjectProtocolP", "kCALineCapRound"]
+- !private ["So16NSObjectProtocolP", "layer"]
+- ["So16NSObjectProtocolP", "lineBreakMode"]
+- !private ["So16NSObjectProtocolP", "lineCap"]
+- !private ["So16NSObjectProtocolP", "lineWidth"]
+- ["So16NSObjectProtocolP", "numberOfLines"]
+- !private ["So16NSObjectProtocolP", "path"]
+- !private ["So16NSObjectProtocolP", "strokeColor"]
+- !private ["So16NSObjectProtocolP", "strokeEnd"]
+- ["So16NSObjectProtocolP", "textAlignment"]
+- !private ["So16NSObjectProtocolP", "toValue"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "add"]
+- !private ["So14NSSecureCodingP", "addSublayer"]
+- !private ["So14NSSecureCodingP", "backgroundColor"]
+- !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "cgPath"]
+- !private ["So14NSSecureCodingP", "clear"]
+- !private ["So14NSSecureCodingP", "duration"]
+- !private ["So14NSSecureCodingP", "fillColor"]
+- !private ["So14NSSecureCodingP", "fillMode"]
+- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "isRemovedOnCompletion"]
+- !private ["So14NSSecureCodingP", "lineCap"]
+- !private ["So14NSSecureCodingP", "lineWidth"]
+- !private ["So14NSSecureCodingP", "path"]
+- !private ["So14NSSecureCodingP", "strokeColor"]
+- !private ["So14NSSecureCodingP", "strokeEnd"]
+- !private ["So14NSSecureCodingP", "toValue"]
+- ["So8NSStringC", "init"]
+- ["SC15NSTextAlignmentO", "center"]
+- !private ["s7NumericP", "pi"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "byWordWrapping"]
+- ["s16RawRepresentableP", "center"]
+- ["s8SequenceP", "init"]
+- !private ["s13SignedNumericP", "pi"]
+- !private ["s10StrideableP", "pi"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "CABasicAnimation"]
+- !private ["So29UIAccessibilityIdentificationP", "CAShapeLayer"]
+- !private ["So29UIAccessibilityIdentificationP", "CGFloat"]
+- ["So29UIAccessibilityIdentificationP", "CGRect"]
+- !private ["So29UIAccessibilityIdentificationP", "Circle"]
+- !private ["So29UIAccessibilityIdentificationP", "DateLabel"]
+- !private ["So29UIAccessibilityIdentificationP", "UIBezierPath"]
+- !private ["So29UIAccessibilityIdentificationP", "UIColor"]
+- ["So29UIAccessibilityIdentificationP", "UIFont"]
+- ["So29UIAccessibilityIdentificationP", "UILabel"]
+- ["So29UIAccessibilityIdentificationP", "UIView"]
+- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "center"]
+- ["So29UIAccessibilityIdentificationP", "font"]
+- ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "kCAFillModeForwards"]
+- !private ["So29UIAccessibilityIdentificationP", "kCALineCapRound"]
+- !private ["So29UIAccessibilityIdentificationP", "layer"]
+- ["So29UIAccessibilityIdentificationP", "lineBreakMode"]
+- ["So29UIAccessibilityIdentificationP", "numberOfLines"]
+- ["So29UIAccessibilityIdentificationP", "textAlignment"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So12UIAppearanceP", "CABasicAnimation"]
+- !private ["So12UIAppearanceP", "CAShapeLayer"]
+- !private ["So12UIAppearanceP", "CGFloat"]
+- ["So12UIAppearanceP", "CGRect"]
+- !private ["So12UIAppearanceP", "Circle"]
+- !private ["So12UIAppearanceP", "DateLabel"]
+- !private ["So12UIAppearanceP", "UIBezierPath"]
+- !private ["So12UIAppearanceP", "UIColor"]
+- ["So12UIAppearanceP", "UIFont"]
+- ["So12UIAppearanceP", "UILabel"]
+- ["So12UIAppearanceP", "UIView"]
+- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "center"]
+- ["So12UIAppearanceP", "font"]
+- ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "kCAFillModeForwards"]
+- !private ["So12UIAppearanceP", "kCALineCapRound"]
+- !private ["So12UIAppearanceP", "layer"]
+- ["So12UIAppearanceP", "lineBreakMode"]
+- ["So12UIAppearanceP", "numberOfLines"]
+- ["So12UIAppearanceP", "textAlignment"]
+- ["So12UIAppearanceP", ""]
+- !private ["So21UIAppearanceContainerP", "CABasicAnimation"]
+- !private ["So21UIAppearanceContainerP", "CAShapeLayer"]
+- !private ["So21UIAppearanceContainerP", "CGFloat"]
+- ["So21UIAppearanceContainerP", "CGRect"]
+- !private ["So21UIAppearanceContainerP", "Circle"]
+- !private ["So21UIAppearanceContainerP", "DateLabel"]
+- !private ["So21UIAppearanceContainerP", "UIBezierPath"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
+- ["So21UIAppearanceContainerP", "UIFont"]
+- ["So21UIAppearanceContainerP", "UILabel"]
+- ["So21UIAppearanceContainerP", "UIView"]
+- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "center"]
+- ["So21UIAppearanceContainerP", "font"]
+- ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "kCAFillModeForwards"]
+- !private ["So21UIAppearanceContainerP", "kCALineCapRound"]
+- !private ["So21UIAppearanceContainerP", "layer"]
+- ["So21UIAppearanceContainerP", "lineBreakMode"]
+- ["So21UIAppearanceContainerP", "numberOfLines"]
+- ["So21UIAppearanceContainerP", "textAlignment"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So12UIBezierPathC", "cgPath"]
+- !private ["So12UIBezierPathC", "init"]
+- !private ["So24UICollectionReusableViewC", "CABasicAnimation"]
+- !private ["So24UICollectionReusableViewC", "CAShapeLayer"]
+- !private ["So24UICollectionReusableViewC", "CGFloat"]
+- ["So24UICollectionReusableViewC", "CGRect"]
+- ["So24UICollectionReusableViewC", "Circle"]
+- ["So24UICollectionReusableViewC", "DateLabel"]
+- ["So24UICollectionReusableViewC", "DrawCircle"]
+- ["So24UICollectionReusableViewC", "NSCoder"]
+- !private ["So24UICollectionReusableViewC", "UIBezierPath"]
+- !private ["So24UICollectionReusableViewC", "UIColor"]
+- ["So24UICollectionReusableViewC", "UIFont"]
+- ["So24UICollectionReusableViewC", "UILabel"]
+- ["So24UICollectionReusableViewC", "UIView"]
+- !private ["So24UICollectionReusableViewC", "addSubview"]
+- ["So24UICollectionReusableViewC", "init"]
+- !private ["So24UICollectionReusableViewC", "kCAFillModeForwards"]
+- !private ["So24UICollectionReusableViewC", "kCALineCapRound"]
+- !private ["So20UICollectionViewCellC", "CABasicAnimation"]
+- !private ["So20UICollectionViewCellC", "CAShapeLayer"]
+- !private ["So20UICollectionViewCellC", "CGFloat"]
+- ["So20UICollectionViewCellC", "CGRect"]
+- ["So20UICollectionViewCellC", "Circle"]
+- ["So20UICollectionViewCellC", "DateLabel"]
+- ["So20UICollectionViewCellC", "DrawCircle"]
+- ["So20UICollectionViewCellC", "NSCoder"]
+- !private ["So20UICollectionViewCellC", "UIBezierPath"]
+- !private ["So20UICollectionViewCellC", "UIColor"]
+- ["So20UICollectionViewCellC", "UIFont"]
+- ["So20UICollectionViewCellC", "UILabel"]
+- ["So20UICollectionViewCellC", "UIView"]
+- !private ["So20UICollectionViewCellC", "addSubview"]
+- ["So20UICollectionViewCellC", "init"]
+- !private ["So20UICollectionViewCellC", "kCAFillModeForwards"]
+- !private ["So20UICollectionViewCellC", "kCALineCapRound"]
+- ["So20UICollectionViewCellC", ""]
+- !private ["So7UIColorC", "cgColor"]
+- !private ["So7UIColorC", "clear"]
+- !private ["So7UIColorC", "init"]
+- ["So30UIContentSizeCategoryAdjustingP", "font"]
+- ["So30UIContentSizeCategoryAdjustingP", "init"]
+- ["So30UIContentSizeCategoryAdjustingP", "lineBreakMode"]
+- ["So30UIContentSizeCategoryAdjustingP", "numberOfLines"]
+- ["So30UIContentSizeCategoryAdjustingP", "textAlignment"]
+- !private ["So17UICoordinateSpaceP", "CABasicAnimation"]
+- !private ["So17UICoordinateSpaceP", "CAShapeLayer"]
+- !private ["So17UICoordinateSpaceP", "CGFloat"]
+- ["So17UICoordinateSpaceP", "CGRect"]
+- !private ["So17UICoordinateSpaceP", "Circle"]
+- !private ["So17UICoordinateSpaceP", "DateLabel"]
+- !private ["So17UICoordinateSpaceP", "UIBezierPath"]
+- !private ["So17UICoordinateSpaceP", "UIColor"]
+- ["So17UICoordinateSpaceP", "UIFont"]
+- ["So17UICoordinateSpaceP", "UILabel"]
+- ["So17UICoordinateSpaceP", "UIView"]
+- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "center"]
+- ["So17UICoordinateSpaceP", "font"]
+- ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "kCAFillModeForwards"]
+- !private ["So17UICoordinateSpaceP", "kCALineCapRound"]
+- !private ["So17UICoordinateSpaceP", "layer"]
+- ["So17UICoordinateSpaceP", "lineBreakMode"]
+- ["So17UICoordinateSpaceP", "numberOfLines"]
+- ["So17UICoordinateSpaceP", "textAlignment"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So13UIDynamicItemP", "CABasicAnimation"]
+- !private ["So13UIDynamicItemP", "CAShapeLayer"]
+- !private ["So13UIDynamicItemP", "CGFloat"]
+- ["So13UIDynamicItemP", "CGRect"]
+- !private ["So13UIDynamicItemP", "Circle"]
+- !private ["So13UIDynamicItemP", "DateLabel"]
+- !private ["So13UIDynamicItemP", "UIBezierPath"]
+- !private ["So13UIDynamicItemP", "UIColor"]
+- ["So13UIDynamicItemP", "UIFont"]
+- ["So13UIDynamicItemP", "UILabel"]
+- ["So13UIDynamicItemP", "UIView"]
+- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "center"]
+- ["So13UIDynamicItemP", "font"]
+- ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "kCAFillModeForwards"]
+- !private ["So13UIDynamicItemP", "kCALineCapRound"]
+- !private ["So13UIDynamicItemP", "layer"]
+- ["So13UIDynamicItemP", "lineBreakMode"]
+- ["So13UIDynamicItemP", "numberOfLines"]
+- ["So13UIDynamicItemP", "textAlignment"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So18UIFocusEnvironmentP", "CABasicAnimation"]
+- !private ["So18UIFocusEnvironmentP", "CAShapeLayer"]
+- !private ["So18UIFocusEnvironmentP", "CGFloat"]
+- ["So18UIFocusEnvironmentP", "CGRect"]
+- !private ["So18UIFocusEnvironmentP", "Circle"]
+- !private ["So18UIFocusEnvironmentP", "DateLabel"]
+- !private ["So18UIFocusEnvironmentP", "UIBezierPath"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
+- ["So18UIFocusEnvironmentP", "UIFont"]
+- ["So18UIFocusEnvironmentP", "UILabel"]
+- ["So18UIFocusEnvironmentP", "UIView"]
+- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "center"]
+- ["So18UIFocusEnvironmentP", "font"]
+- ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "kCAFillModeForwards"]
+- !private ["So18UIFocusEnvironmentP", "kCALineCapRound"]
+- !private ["So18UIFocusEnvironmentP", "layer"]
+- ["So18UIFocusEnvironmentP", "lineBreakMode"]
+- ["So18UIFocusEnvironmentP", "numberOfLines"]
+- ["So18UIFocusEnvironmentP", "textAlignment"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "CABasicAnimation"]
+- !private ["So11UIFocusItemP", "CAShapeLayer"]
+- !private ["So11UIFocusItemP", "CGFloat"]
+- ["So11UIFocusItemP", "CGRect"]
+- !private ["So11UIFocusItemP", "Circle"]
+- !private ["So11UIFocusItemP", "DateLabel"]
+- !private ["So11UIFocusItemP", "UIBezierPath"]
+- !private ["So11UIFocusItemP", "UIColor"]
+- ["So11UIFocusItemP", "UIFont"]
+- ["So11UIFocusItemP", "UILabel"]
+- ["So11UIFocusItemP", "UIView"]
+- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "center"]
+- ["So11UIFocusItemP", "font"]
+- ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "kCAFillModeForwards"]
+- !private ["So11UIFocusItemP", "kCALineCapRound"]
+- !private ["So11UIFocusItemP", "layer"]
+- ["So11UIFocusItemP", "lineBreakMode"]
+- ["So11UIFocusItemP", "numberOfLines"]
+- ["So11UIFocusItemP", "textAlignment"]
+- ["So11UIFocusItemP", ""]
+- ["So6UIFontC", "init"]
+- ["So7UILabelC", "font"]
+- ["So7UILabelC", "init"]
+- ["So7UILabelC", "lineBreakMode"]
+- ["So7UILabelC", "numberOfLines"]
+- ["So7UILabelC", "textAlignment"]
+- !private ["So30UIPasteConfigurationSupportingP", "CABasicAnimation"]
+- !private ["So30UIPasteConfigurationSupportingP", "CAShapeLayer"]
+- !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
+- ["So30UIPasteConfigurationSupportingP", "CGRect"]
+- !private ["So30UIPasteConfigurationSupportingP", "Circle"]
+- !private ["So30UIPasteConfigurationSupportingP", "DateLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBezierPath"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- ["So30UIPasteConfigurationSupportingP", "UIFont"]
+- ["So30UIPasteConfigurationSupportingP", "UILabel"]
+- ["So30UIPasteConfigurationSupportingP", "UIView"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "center"]
+- ["So30UIPasteConfigurationSupportingP", "font"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "kCAFillModeForwards"]
+- !private ["So30UIPasteConfigurationSupportingP", "kCALineCapRound"]
+- !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- ["So30UIPasteConfigurationSupportingP", "lineBreakMode"]
+- ["So30UIPasteConfigurationSupportingP", "numberOfLines"]
+- ["So30UIPasteConfigurationSupportingP", "textAlignment"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "CABasicAnimation"]
+- !private ["So11UIResponderC", "CAShapeLayer"]
+- !private ["So11UIResponderC", "CGFloat"]
+- ["So11UIResponderC", "CGRect"]
+- ["So11UIResponderC", "Circle"]
+- ["So11UIResponderC", "DateLabel"]
+- ["So11UIResponderC", "DrawCircle"]
+- ["So11UIResponderC", "NSCoder"]
+- !private ["So11UIResponderC", "UIBezierPath"]
+- !private ["So11UIResponderC", "UIColor"]
+- ["So11UIResponderC", "UIFont"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIView"]
+- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "bounds"]
+- !private ["So11UIResponderC", "center"]
+- ["So11UIResponderC", "font"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "kCAFillModeForwards"]
+- !private ["So11UIResponderC", "kCALineCapRound"]
+- !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "lineBreakMode"]
+- ["So11UIResponderC", "numberOfLines"]
+- ["So11UIResponderC", "textAlignment"]
+- !private ["So30UIResponderStandardEditActionsP", "CABasicAnimation"]
+- !private ["So30UIResponderStandardEditActionsP", "CAShapeLayer"]
+- !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
+- ["So30UIResponderStandardEditActionsP", "CGRect"]
+- !private ["So30UIResponderStandardEditActionsP", "Circle"]
+- !private ["So30UIResponderStandardEditActionsP", "DateLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBezierPath"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- ["So30UIResponderStandardEditActionsP", "UIFont"]
+- ["So30UIResponderStandardEditActionsP", "UILabel"]
+- ["So30UIResponderStandardEditActionsP", "UIView"]
+- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "center"]
+- ["So30UIResponderStandardEditActionsP", "font"]
+- ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "kCAFillModeForwards"]
+- !private ["So30UIResponderStandardEditActionsP", "kCALineCapRound"]
+- !private ["So30UIResponderStandardEditActionsP", "layer"]
+- ["So30UIResponderStandardEditActionsP", "lineBreakMode"]
+- ["So30UIResponderStandardEditActionsP", "numberOfLines"]
+- ["So30UIResponderStandardEditActionsP", "textAlignment"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So18UITraitEnvironmentP", "CABasicAnimation"]
+- !private ["So18UITraitEnvironmentP", "CAShapeLayer"]
+- !private ["So18UITraitEnvironmentP", "CGFloat"]
+- ["So18UITraitEnvironmentP", "CGRect"]
+- !private ["So18UITraitEnvironmentP", "Circle"]
+- !private ["So18UITraitEnvironmentP", "DateLabel"]
+- !private ["So18UITraitEnvironmentP", "UIBezierPath"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
+- ["So18UITraitEnvironmentP", "UIFont"]
+- ["So18UITraitEnvironmentP", "UILabel"]
+- ["So18UITraitEnvironmentP", "UIView"]
+- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "center"]
+- ["So18UITraitEnvironmentP", "font"]
+- ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "kCAFillModeForwards"]
+- !private ["So18UITraitEnvironmentP", "kCALineCapRound"]
+- !private ["So18UITraitEnvironmentP", "layer"]
+- ["So18UITraitEnvironmentP", "lineBreakMode"]
+- ["So18UITraitEnvironmentP", "numberOfLines"]
+- ["So18UITraitEnvironmentP", "textAlignment"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "CABasicAnimation"]
+- !private ["So6UIViewC", "CAShapeLayer"]
+- !private ["So6UIViewC", "CGFloat"]
+- ["So6UIViewC", "CGRect"]
+- ["So6UIViewC", "Circle"]
+- ["So6UIViewC", "DateLabel"]
+- ["So6UIViewC", "DrawCircle"]
+- ["So6UIViewC", "NSCoder"]
+- !private ["So6UIViewC", "UIBezierPath"]
+- !private ["So6UIViewC", "UIColor"]
+- ["So6UIViewC", "UIFont"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "UIView"]
+- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "center"]
+- ["So6UIViewC", "font"]
+- ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "kCAFillModeForwards"]
+- !private ["So6UIViewC", "kCALineCapRound"]
+- !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "lineBreakMode"]
+- ["So6UIViewC", "numberOfLines"]
+- ["So6UIViewC", "textAlignment"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s15_CVarArgAlignedP", "pi"]
+- !private ["s22_CVarArgPassedAsDoubleP", "pi"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CABasicAnimation"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CAShapeLayer"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "CGFloat"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "CGRect"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Circle"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "DateLabel"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIBezierPath"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "UIColor"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "UIFont"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "UILabel"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "UIView"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "center"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "font"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "kCAFillModeForwards"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "kCALineCapRound"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "layer"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "lineBreakMode"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "numberOfLines"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "textAlignment"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["s26_ExpressibleByColorLiteralP", "clear"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CABasicAnimation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CAShapeLayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Circle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DateLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBezierPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UILabel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "add"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSublayer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgPath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "duration"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fillColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fillMode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "font"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isRemovedOnCompletion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kCAFillModeForwards"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "kCALineCapRound"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "lineBreakMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lineCap"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lineWidth"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "numberOfLines"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "strokeColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "strokeEnd"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textAlignment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "toValue"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "pi"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "pi"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "So8CAActionP"
+- !private "So11CAAnimationC"
+- !private "So16CABasicAnimationC"
+- !private "So7CALayerC"
+- "So15CALayerDelegateP"
+- !private "So13CAMediaTimingP"
+- !private "So19CAPropertyAnimationC"
+- !private "So12CAShapeLayerC"
+- !private "12CoreGraphics7CGFloatV"
+- "SC6CGRectV"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "7YouFood22DateCollectionViewCellC"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "SC15NSLineBreakModeO"
+- "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "SC15NSTextAlignmentO"
+- !private "s7NumericP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "s8SequenceP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So12UIBezierPathC"
+- "So24UICollectionReusableViewC"
+- "So20UICollectionViewCellC"
+- !private "So7UIColorC"
+- "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So6UIFontC"
+- "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s23_BidirectionalIndexableP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRMutableData.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRSnapshotMetadata.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRCollectionReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentReference.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSource.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FirebaseStorage.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentChange.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthAPNSTokenType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataEventType.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FirebaseCore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FirebaseFirestore.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/Firebase.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthUIDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRServerValue.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRWriteBatch.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFieldPath.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuth.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageDownloadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageUploadTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageObservableTask.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthCredential.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRLoggerLevel.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FirebaseAuthVersion.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRListenerRegistration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRAnalyticsConfiguration.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTransaction.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAdditionalUserInfo.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRTimestamp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIRApp.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIROAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGitHubAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRGoogleAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRPhoneAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRFacebookAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIREmailAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRTwitterAuthProvider.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRUser.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRActionCodeSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthSettings.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseCore/FIROptions.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRFirestoreErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthErrors.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageConstants.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthDataResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAuth/FIRAuthTokenResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRTransactionResult.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRGeoPoint.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDataSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseStorage/FIRStorageTaskSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRDocumentSnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuerySnapshot.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseFirestore/FIRQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Headers/Public/FirebaseDatabase/FIRDatabaseQuery.h"
+- "/Users/skwon2345/Downloads/YouFood-master_sk_1/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/skwon2345/Downloads/YouFood-master_2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+interface-hash: "6e6750b8381705ecf7b957ce03d776d4"
