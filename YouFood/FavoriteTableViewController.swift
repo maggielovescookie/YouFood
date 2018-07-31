@@ -197,13 +197,13 @@ class FavoriteTableViewController: UITableViewController {
                 var nutrientsArray = [String]()
                 nutrientsArray = nutrientsString.components(separatedBy: ",")
                 i = 0
-                
-                /*
+                print(i)
+                print(nutrientsArray.count)
                 while i < nutrientsArray.count{
                     nutrients.append(Nutrient(name: nutrientsArray[i], quantity: Float(nutrientsArray[i+1])!, unit: nutrientsArray[i+2]))
                     i += 3
                 }
-                 */
+                 
                 
                 // Adding the recipe to the table
                 favoriteRecipes.append(Recipe(key: key, imageID: imageId, recipeImageUrl: recipeImageUrl, title: title1, author: author, ingredients: ingredients, cuisine: cuisine, mealType: mealType, timeToCook: timeToCook, servings: servings, directions: directions, nutrients: nutrients, numLikes: numLikes))

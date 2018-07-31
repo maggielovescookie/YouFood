@@ -38,6 +38,7 @@ class RecipeTableViewController: UITableViewController {
             loadTestRecipes()
             recipesLoaded = true
         }
+        tableView.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -26,6 +26,28 @@ class DetailedRecipeViewController: UIViewController {
     @IBOutlet weak var ratingStackView: RatingController!
     @IBOutlet weak var ingredientDirectionNutritionInformation: UITextView!
     
+    @IBAction func reportRecipe(_ sender: Any) {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["cloud.kanou@gmail.com"])
+            mail.setSubject("A recipe from YouFood has been reported")
+            mail.setMessageBody("A recipe has been reported!\nTitle: \(recipe!.title)\nAuthor: \(recipe!.author)", isHTML: false)
+            present(mail, animated: true)
+        } else {
+            let alert = UIAlertView()
+            alert.title = "Alert"
+            alert.message = "Your device is not set up to send emails"
+            alert.addButton(withTitle: "Ok")
+            alert.show()
+            return
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
     // If a user favorites this recipe, upload the whole recipe under the users unique ID
     @IBAction func buttonIsTapped(_ sender: UIButton) {
         if let recipe = recipe{
@@ -91,10 +113,13 @@ class DetailedRecipeViewController: UIViewController {
                     //**************************************************************
                     var storedNutrients: String = ""
                     
-                    var nutrientData: [Nutrient] = []
-                    
-                    for singleNutrient in recipe.nutrients{
-                        storedNutrients = "\(singleNutrient.name),\(singleNutrient.quantity),\(singleNutrient.unit),"
+                    for i in 0 ..< recipe.nutrients.count{
+                        // Don't want a trailing comma at the end of string
+                        if i == recipe.nutrients.count-1{
+                            storedNutrients += String(recipe.nutrients[i].name) + "," + String(recipe.nutrients[i].quantity) + "," + String(recipe.nutrients[i].unit)
+                        } else{
+                            storedNutrients += String(recipe.nutrients[i].name) + "," + String(recipe.nutrients[i].quantity) + "," + String(recipe.nutrients[i].unit) + ","
+                        }
                     }
                     //**************************************************************
                     
@@ -210,12 +235,7 @@ class DetailedRecipeViewController: UIViewController {
                     }
                 })
             }
-            
-            if (recipe.servings == 1){
-                self.servingsLabel.text = "\(recipe.servings) Serving"
-            }else{
-                self.servingsLabel.text = "\(recipe.servings) Servings"
-            }
+            self.servingsLabel.text = "Serves \(recipe.servings)"
             
             // Printing out Ingredients header
             headerText = NSMutableAttributedString(string: "Ingredients:\n", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 27)])
@@ -247,8 +267,9 @@ class DetailedRecipeViewController: UIViewController {
             textBody.append(headerText)
             
             // Printing out Nutrients details
+            
             for singleNutrient in recipe.nutrients{
-                infoText = NSMutableAttributedString(string: "\(singleNutrient.name) - \(singleNutrient.quantity) \(singleNutrient.unit)\n", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)])
+                infoText = NSMutableAttributedString(string: "\(singleNutrient.name) - \((round(singleNutrient.quantity*100.0) / 100.0)) \(singleNutrient.unit)\n", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17)])
                 textBody.append(infoText)
             }
             

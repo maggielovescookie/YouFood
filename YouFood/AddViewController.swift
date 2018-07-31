@@ -585,6 +585,7 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         directionsTable.insertRows(at: [indexPath], with: .automatic)
         directionsTable.selectRow(at: indexPath, animated: true, scrollPosition: .none)
         self.directionsInput.text = ""
+        directionsTable.scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
     
     //MARK:- UIPickerViewDataSource methods
