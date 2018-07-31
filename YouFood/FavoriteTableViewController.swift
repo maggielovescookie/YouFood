@@ -42,7 +42,7 @@ class FavoriteTableViewController: UITableViewController {
             let userName:String = user.displayName!
             userNameLabel.text = userName+"'s Favorite"
             userNameLabel.textColor = UIColor(red: 0/255, green: 202/255, blue: 157/255, alpha: 1.00)
-            userNameLabel.backgroundColor = UIColor(red: 100/255, green: 102/255, blue: 17/255, alpha: 1.00)
+            userNameLabel.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.00)
             userNameLabel.font = UIFont(name: "HelveticaNeue", size: 25)
             userNameLabel.textAlignment = .center
             let reference = Database.database().reference()
@@ -138,10 +138,6 @@ class FavoriteTableViewController: UITableViewController {
                      //=========================================================
                     */
                 }
-                
-                print("?????????????")
-                print(snapshot.value)
-                print("?????????????")
 
                 // Initializing variables that are used for the recipe class
                 var key: String = ""
@@ -214,7 +210,6 @@ class FavoriteTableViewController: UITableViewController {
                 
                 self.tableView.reloadData()
                 
-                print("skskskksksksksksskksskskskksksksksks")
                 ref.removeObserver(withHandle: self.databaseHandle_2)
             }) { (error) in
                 print(error.localizedDescription)
@@ -248,11 +243,6 @@ class FavoriteTableViewController: UITableViewController {
         
         //Fetches the next recipe to be displayed depending on the filter status
         var recipe = Recipe()
-        
-        print("TTTTTTTTTTTTTTTTTTTTT")
-        print(favoriteRecipes.count)
-        print(indexPath.row)
-        print("TTTTTTTTTTTTTTTTTTTTT")
         
         recipe = favoriteRecipes[indexPath.row]
         
@@ -337,14 +327,36 @@ class FavoriteTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        
+        guard let selectedRecipeCell = sender as? FavoriteTableViewCell else {
+            fatalError("Unexpected sender: \(String(describing: sender))")
+        }
+        
+        guard let indexPath = tableView.indexPath(for: selectedRecipeCell) else {
+            fatalError("The selected cell is not being displayed by the table")
+        }
+        
+        var selectedRecipe = Recipe()
+        selectedRecipe = favoriteRecipes[indexPath.row]
+
+        
+        //Can't pass data to a nagivationController directly. Must keep going through scenes until DetailedRecipeViewController
+        if segue.identifier == "DetailedRecipeViewController"{
+            if let nav = segue.destination as? RecipeNavigationController{
+                if let detailsVC = nav.viewControllers[0] as? DetailedRecipeViewController{
+                    detailsVC.recipe = selectedRecipe
+                }
+            }
+        }
     }
-    */
+    
 
 }

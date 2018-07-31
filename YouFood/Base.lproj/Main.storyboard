@@ -113,7 +113,7 @@
         <!--MealPlanningMain-->
         <scene sceneID="fwD-m5-GZE">
             <objects>
-                <viewController storyboardIdentifier="MainVC" title="MealPlanningMain" automaticallyAdjustsScrollViewInsets="NO" id="Tib-vZ-iXU" customClass="MealPlanMainViewController" customModule="YouFood" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" title="MealPlanningMain" automaticallyAdjustsScrollViewInsets="NO" id="Tib-vZ-iXU" customClass="MealPlanMainViewController" customModule="YouFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AQm-DW-0rz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +324,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NZi-fU-jz9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="YouFood" id="RgH-Yv-lVJ"/>
+                    <navigationItem key="navigationItem" title="Meal Plan" id="RgH-Yv-lVJ"/>
                     <connections>
                         <outlet property="MonthLabel" destination="VdG-h3-C2U" id="rUE-qx-lrg"/>
                         <outlet property="breakfastSelection" destination="0yY-Rn-SNo" id="Rci-gX-OgI"/>
@@ -1685,7 +1685,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="-2351" y="841"/>
         </scene>
-        <!--YouFood-->
+        <!--Favorites-->
         <scene sceneID="xVa-Y9-N88">
             <objects>
                 <tableViewController id="ErR-q6-0yG" customClass="FavoriteTableViewController" customModule="YouFood" customModuleProvider="target" sceneMemberID="viewController">
@@ -1750,6 +1750,7 @@ Cg
                                     <outlet property="authorLabel" destination="M2F-FS-tb7" id="VHI-YV-hMv"/>
                                     <outlet property="recipeImageView" destination="oMN-pB-V8H" id="WOt-fd-Str"/>
                                     <outlet property="titleLabel" destination="GK9-lT-ofd" id="EYX-dg-zAa"/>
+                                    <segue destination="jHp-SR-bdr" kind="presentation" identifier="DetailedRecipeViewController" id="sJO-2F-KEt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1758,7 +1759,7 @@ Cg
                             <outlet property="delegate" destination="ErR-q6-0yG" id="YDV-EW-Dad"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="YouFood" id="PPW-ur-czK"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="PPW-ur-czK"/>
                     <connections>
                         <outlet property="userNameLabel" destination="bW9-Ux-fUV" id="bRL-la-ERO"/>
                     </connections>
@@ -1775,7 +1776,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbM-fq-ubH">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbM-fq-ubH">
                                 <rect key="frame" x="0.0" y="64" width="375" height="1200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KqA-No-UvV">
@@ -2043,6 +2044,6 @@ Cg
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JpO-Ti-LEQ"/>
-        <segue reference="yWM-ZK-fAM"/>
+        <segue reference="sJO-2F-KEt"/>
     </inferredMetricsTieBreakers>
 </document>

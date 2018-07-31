@@ -310,6 +310,35 @@ class RecipeTableViewController: UITableViewController {
             
             self.tableView.reloadData()
         })
+        // Updating Number of likes for each recipe
+        ref.observe(.childAdded, with: {(snapshot) -> Void in
+            
+            // If there are no recipes
+            if (snapshot.value as AnyObject).allKeys == nil{
+                let alert = UIAlertView()
+                alert.title = "Alert"
+                alert.message = "There are currently no recipes available"
+                alert.addButton(withTitle: "Ok")
+                alert.show()
+                return
+            }
+            // Initializing variables that are used for the recipe class
+            var key: String = ""
+            var numLikes: Int = 0
+            
+            // Getting single values from Firebase
+            let value = snapshot.value as? NSDictionary
+            key = value?["key"] as? String ?? ""
+            numLikes = value?["numLikes"] as? Int ?? -1
+            
+            for i in 0 ..< testRecipes.count{
+                if testRecipes[i].key == key{
+                    testRecipes[i].numLikes = numLikes
+                }
+            }
+            
+            self.tableView.reloadData()
+        })
     }
     
     func searchBarIsEmpty() -> Bool {

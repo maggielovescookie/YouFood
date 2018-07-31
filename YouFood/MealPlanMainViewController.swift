@@ -168,14 +168,17 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         if todaysMealPlan.breakfast != nil{
             newMealPlan.setValue("\(todaysMealPlan.breakfast?.title ?? "")", forKey: "breakfastTitle")
             newMealPlan.setValue("\(todaysMealPlan.breakfast?.author ?? "")", forKey: "breakfastAuthor")
+            newMealPlan.setValue("\(todaysMealPlan.breakfast?.key ?? "")", forKey: "bKey")
         }
         if todaysMealPlan.lunch != nil{
             newMealPlan.setValue("\(todaysMealPlan.lunch?.title ?? "")", forKey: "lunchTitle")
             newMealPlan.setValue("\(todaysMealPlan.lunch?.author ?? "")", forKey: "lunchAuthor")
+            newMealPlan.setValue("\(todaysMealPlan.lunch?.key ?? "")", forKey: "lKey")
         }
         if todaysMealPlan.dinner != nil{
             newMealPlan.setValue("\(todaysMealPlan.dinner?.title ?? "")", forKey: "dinnerTitle")
             newMealPlan.setValue("\(todaysMealPlan.dinner?.author ?? "")", forKey: "dinnerAuthor")
+            newMealPlan.setValue("\(todaysMealPlan.dinner?.key ?? "")", forKey: "dKey")
         }
         
         newMealPlan.setValue("\(coreDataDay)", forKey: "dateDay")
@@ -369,6 +372,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
     var month = Calendar.current.component(.month, from: Date()) - 1
     var year = Calendar.current.component(.year, from: Date())
     
+    var thisMonth = Calendar.current.component(.month, from: Date()) - 1
+    
     // ALL STORED AS INTS
     // core data vars to actually reference to when loading data from care data
     var coreDataDay = Calendar.current.component(.day , from: Date())
@@ -495,7 +500,7 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                 
             }
             // the current day has a magenta colour
-            if indexPath.row == day-1 {
+            if indexPath.row == day-1 && thisMonth == month{
                 cellB.backgroundColor = UIColor.magenta
             }
             return cellB
@@ -536,12 +541,15 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                 
                 let searchBTitle = data.value(forKey: "breakfastTitle") as? String ?? ""
                 let searchBAuthor = data.value(forKey: "breakfastAuthor") as? String ?? ""
+                let searchBKey = data.value(forKey: "bKey") as? String ?? ""
                 
                 let searchLTitle = data.value(forKey: "lunchTitle") as? String ?? ""
                 let searchLAuthor = data.value(forKey: "lunchAuthor") as? String ?? ""
+                let searchLKey = data.value(forKey: "lKey") as? String ?? ""
                 
                 let searchDTitle = data.value(forKey: "dinnerTitle") as? String ?? ""
                 let searchDAuthor = data.value(forKey: "dinnerAuthor") as? String ?? ""
+                let searchDKey = data.value(forKey: "dKey") as? String ?? ""
                 
                 // if we find the correct day, load the data
                 if (searchYear == String(coreDataYear) && searchDay == String(coreDataDay) && searchMonth == String(coreDataMonth)){
@@ -549,10 +557,10 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                     
                     // if a title is not empty, put in the title of the recipe in the label and put it into todaysMealPlan
                     if searchBTitle != ""{
+                        self.breakfastSelection.text = searchBTitle
                         for i in 0 ..< testRecipes.count{
-                            if (testRecipes[i].title == searchBTitle && testRecipes[i].author == searchBAuthor){
+                            if (testRecipes[i].title == searchBTitle && testRecipes[i].author == searchBAuthor && testRecipes[i].key == searchBKey){
                                 todaysMealPlan.breakfast = testRecipes[i]
-                                self.breakfastSelection.text = todaysMealPlan.breakfast?.title
                             }
                         }
                     } else{
@@ -562,10 +570,10 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                     }
                     // if a title is not empty, put in the title of the recipe in the label and put it into todaysMealPlan
                     if searchLTitle != ""{
+                        self.lunchSelection.text = searchLTitle
                         for i in 0 ..< testRecipes.count{
-                            if (testRecipes[i].title == searchLTitle && testRecipes[i].author == searchLAuthor){
+                            if (testRecipes[i].title == searchLTitle && testRecipes[i].author == searchLAuthor && testRecipes[i].key == searchLKey){
                                 todaysMealPlan.lunch = testRecipes[i]
-                                self.lunchSelection.text = todaysMealPlan.lunch?.title
                             }
                         }
                     } else{
@@ -575,15 +583,15 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
                     }
                     // if a title is not empty, put in the title of the recipe in the label and put it into todaysMealPlan
                     if searchDTitle != ""{
+                        self.dinnerSelection.text = searchDTitle
                         for i in 0 ..< testRecipes.count{
-                            if (testRecipes[i].title == searchDTitle && testRecipes[i].author == searchDAuthor){
+                            if (testRecipes[i].title == searchDTitle && testRecipes[i].author == searchDAuthor && testRecipes[i].key == searchDKey){
                                 todaysMealPlan.dinner = testRecipes[i]
-                                self.dinnerSelection.text = todaysMealPlan.dinner?.title
                             }
                         }
                     } else{
                         // else, make the label nothing selected and nil the todaysMealPlan.lunch
-                        print("?Nothin selected or dinner")
+                        self.dinnerSelection.text = "Nothing Selected"
                         todaysMealPlan.dinner = nil
                     }
                 }
@@ -671,8 +679,8 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
             return
         }
         // whenever a cell is deselected, get rid of the cyan colour
-        // however, if it's the current datem turn it back to magenta
-        if indexPath.row == day-1{
+        // however, if it's the current date turn it back to magenta
+        if indexPath.row == day-1  && thisMonth == month{
             collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.magenta
         } else{
             collectionView.cellForItem(at: indexPath as IndexPath)?.backgroundColor = UIColor.clear

@@ -199,10 +199,6 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
             let pixelSizeW = (imageInput.size.width) * (imageInput.scale)
             let pixelSizeH = (imageInput.size.height) * (imageInput.scale)
             
-            print("------ Printing Size of the image -------")
-            print(pixelSizeW)
-            print(pixelSizeH)
-            print("------ Printing Size of the image -------")
             
             let imageName = NSUUID().uuidString
             let storageRef = Storage.storage().reference().child("recipe_images").child("\(imageName).png")
@@ -279,7 +275,6 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
             guard let data = data, let image = UIImage(data: data) else { return }
             self.userImageInput.contentMode = .scaleAspectFit
             self.userImageInput.image = image
-            print("image size:", image.size)
             completion(image)
         }
     }
@@ -299,7 +294,6 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     
     // Camera functions are implemented, but no one we know has an iPhone they were willing to let us borrow
     func requestCameraPermission() {
-        print("dd")
         AVCaptureDevice.requestAccess(for: .video, completionHandler: {accessGranted in
             guard accessGranted == true else { return }
             self.presentCamera()
@@ -307,7 +301,6 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     }
     
     func presentCamera() {
-        print("dds")
         let photoPicker = UIImagePickerController()
         photoPicker.sourceType = .camera
         photoPicker.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
@@ -316,7 +309,6 @@ class AddViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     }
     
     func alertCameraAccessNeeded() {
-        print("ddss")
         let settingsAppURL = URL(string: UIApplicationOpenSettingsURLString)!
         
         let alert = UIAlertController(

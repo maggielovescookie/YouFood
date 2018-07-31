@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1510" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="MealPlan" representedClassName="MealPlan" syncable="YES" codeGenerationType="class">
+        <attribute name="bKey" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="breakfastAuthor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="breakfastTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dateDay" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,10 +9,12 @@
         <attribute name="dateYear" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dinnerAuthor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dinnerTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lKey" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lunchAuthor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lunchTitle" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="MealPlan" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="MealPlan" positionX="-63" positionY="-18" width="128" height="225"/>
     </elements>
 </model>
