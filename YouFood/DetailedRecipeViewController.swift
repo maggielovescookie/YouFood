@@ -11,8 +11,9 @@
 import UIKit
 import CoreData
 import Firebase
+import MessageUI
 
-class DetailedRecipeViewController: UIViewController {
+class DetailedRecipeViewController: UIViewController,MFMailComposeViewControllerDelegate {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var numLikesLabel: UILabel!
     //MARK: Properties
@@ -27,21 +28,51 @@ class DetailedRecipeViewController: UIViewController {
     @IBOutlet weak var ingredientDirectionNutritionInformation: UITextView!
     
     @IBAction func reportRecipe(_ sender: Any) {
-        if MFMailComposeViewController.canSendMail() {
-            let mail = MFMailComposeViewController()
-            mail.mailComposeDelegate = self
-            mail.setToRecipients(["cloud.kanou@gmail.com"])
-            mail.setSubject("A recipe from YouFood has been reported")
-            mail.setMessageBody("A recipe has been reported!\nTitle: \(recipe!.title)\nAuthor: \(recipe!.author)", isHTML: false)
-            present(mail, animated: true)
-        } else {
-            let alert = UIAlertView()
-            alert.title = "Alert"
-            alert.message = "Your device is not set up to send emails"
-            alert.addButton(withTitle: "Ok")
-            alert.show()
-            return
-        }
+        let alert =  UIAlertController(title: "Alert", message: "Please only report a recipe if it contains inappropriate text or images", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            }}))
+        alert.addAction(UIAlertAction(title: "Report", style: .destructive, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                if MFMailComposeViewController.canSendMail() {
+                    let mail = MFMailComposeViewController()
+                    mail.mailComposeDelegate = self
+                    mail.setToRecipients(["cloud.kanou@gmail.com"])
+                    mail.setSubject("A recipe from YouFood has been reported")
+                    mail.setMessageBody("A recipe has been reported!\nTitle: \(self.recipe!.title)\nAuthor: \(self.recipe!.author)", isHTML: false)
+                    for i in 0 ..< testRecipes.count{
+                        if testRecipes[i].key == self.recipe!.key{
+                            testRecipes.remove(at: i)
+                            break
+                        }
+                    }
+                    self.present(mail, animated: true)
+                } else {
+                    let alert = UIAlertView()
+                    alert.title = "Alert"
+                    alert.message = "Your device is not set up to send emails"
+                    alert.addButton(withTitle: "Ok")
+                    alert.show()
+                    return
+                }
+            }}))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {

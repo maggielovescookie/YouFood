@@ -114,6 +114,11 @@ class RecipeTableViewController: UITableViewController {
         
         let imageUrlString = recipe.recipeImageUrl
         
+        if recipe.recipeImageUrl == ""{
+            recipe.actualImage = UIImage(named: "defaultRecipePhoto")!
+            cell.recipeImageView.image = recipe.actualImage
+            return cell
+        }
         // If this recipe has a valid image, load it and save it to the recipe itself
         if (recipe.recipeImageUrl != "" && recipe.actualImage == nil){
             cell.tag = indexPath.row

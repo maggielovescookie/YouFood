@@ -324,7 +324,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NZi-fU-jz9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Meal Plan" id="RgH-Yv-lVJ"/>
+                    <navigationItem key="navigationItem" title="Meal Plan" id="RgH-Yv-lVJ">
+                        <barButtonItem key="rightBarButtonItem" title="Delete Data" id="Q38-3b-uCV">
+                            <color key="tintColor" red="1" green="0.079694095110601215" blue="0.12529285980670535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="deleteAllCoreData:" destination="Tib-vZ-iXU" id="8Sk-aV-y1g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="MonthLabel" destination="VdG-h3-C2U" id="rUE-qx-lrg"/>
                         <outlet property="breakfastSelection" destination="0yY-Rn-SNo" id="Rci-gX-OgI"/>
@@ -2059,6 +2066,6 @@ Cg
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JpO-Ti-LEQ"/>
-        <segue reference="sJO-2F-KEt"/>
+        <segue reference="OJx-OX-Krx"/>
     </inferredMetricsTieBreakers>
 </document>

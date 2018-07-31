@@ -39,6 +39,52 @@ class MealPlanMainViewController: UIViewController,UICollectionViewDataSource,UI
         counter = 3
     }
     
+    @IBAction func deleteAllCoreData(_ sender: UIBarButtonItem) {
+        let alert =  UIAlertController(title: "Alert", message: "This will delete all your meal history from your phone!", preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+            }}))
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let context = appDelegate.persistentContainer.viewContext
+                let request = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlan")
+                request.returnsObjectsAsFaults = false
+                do {
+                    let resultDate = try context.fetch(request)
+                    for dates in resultDate as! [NSManagedObject]{
+                        context.delete(dates)
+                    }
+                } catch {
+                    print("Failed")
+                }
+                do {
+                    // make sure to save the deletion
+                    try context.save()
+                } catch {
+                    print("Save Error")
+                }
+                self.getMealsForDate(day: self.coreDataDay, month: self.coreDataMonth, year: self.coreDataYear)
+            }}))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func deleteBreakfast(_ sender: UIButton) {
         // If you try to delete a non-existent meal, throw a message
         if todaysMealPlan.breakfast == nil{
